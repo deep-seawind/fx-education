@@ -72,7 +72,7 @@ const CoursesDetails = () => {
       <div className="min-h-screen bg-white pb-20 font-sans text-slate-900">
         
         {/* 1. Hero Section */} 
-        <section className="relative pt-10 md:pt-16 pb-16 md:pb-24 overflow-hidden bg-[#fcfdfe]">
+        <section className="relative pt-10 md:pt-16 pb-16 md:pb-16 overflow-hidden bg-[#fcfdfe]">
           {/* Creative Background Accents */}
           <div className="absolute top-0 right-0 w-full md:w-1/3 h-full bg-slate-50 md:-skew-x-12 md:translate-x-20 -z-10 border-l border-slate-100" />
           <div className="absolute top-[10%] left-[-5%] w-72 h-72 bg-blue-50/50 rounded-full blur-[100px] -z-10" />

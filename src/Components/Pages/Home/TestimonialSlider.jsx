@@ -78,7 +78,7 @@ const TestimonialSlider = () => {
             </span>
             <h2 className="text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tighter leading-none">
               Trusted by the next
-              <span className="text-color ps-2">generation of managers.</span>
+              <span className="text-color ps-4">generation of managers.</span>
             </h2>
           </div>
 
@@ -115,7 +115,7 @@ const TestimonialSlider = () => {
             <SwiperSlide key={index} className="h-auto">
               {" "}
               {/* h-auto lets the slide fill the container height */}
-              <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] h-full flex flex-col justify-between relative group hover:border-indigo-100 transition-all duration-500">
+              <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col justify-between relative group hover:border-indigo-100 transition-all duration-500 h-68">
                 {/* Decorative Quote Icon */}
                 <div className="absolute top-10 right-10 text-6xl text-slate-50 opacity-10 group-hover:text-indigo-100 transition-colors pointer-events-none">
                   <BiSolidQuoteRight />

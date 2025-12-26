@@ -1,10 +1,13 @@
 // src/components/course/CourseModules.jsx
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, Suspense, lazy } from "react";
 import EducationVideo from "../../../../../assets/education-video/education-video.mp4";
 import CourseHeader from "./CourseHeader";
-import ModuleAccordion from "./ModuleAccordion";
 import CourseCompletionBanner from "./CourseCompletionBanner";
-import CourseVideo from "../CourseVideo";
+
+// Lazy load heavy components
+const ModuleAccordion = lazy(() => import("./ModuleAccordion"));
+const CourseVideo = lazy(() => import("../CourseVideo"));
+
 import courseModulesData from "../../../../Data/courseModules.json";
 
 const CourseModules = () => {
@@ -13,30 +16,32 @@ const CourseModules = () => {
   const [videoDurations, setVideoDurations] = useState({});
   const [completedVideos, setCompletedVideos] = useState({});
 
-  const COURSE_START_DATE = new Date("2025-12-26T00:00:00");
-  const today = new Date();
-  const daysSinceStart = Math.floor((today - COURSE_START_DATE) / 86400000);
-  const currentDay = Math.max(1, daysSinceStart + 1);
+  // Fixed date logic
+  const currentDay = useMemo(() => {
+    const start = new Date("2025-12-26T00:00:00");
+    const daysSince = Math.floor((Date.now() - start) / 86400000);
+    return Math.max(1, daysSince + 1);
+  }, []);
 
- 
-const modules = courseModulesData.map(module => ({
-    ...module,
-    details: module.details.map(item =>
-      item.type === "video"
-        ? { ...item, src: EducationVideo }
-        : item
-    ),
-  }));
-
-  const allVideoIds = useMemo(
-    () =>
-      modules.flatMap((m) =>
-        m.details.filter((d) => d.type === "video").map((v) => v.id)
+  // Add src to videos once
+  const modules = useMemo(() => 
+    courseModulesData.map(module => ({
+      ...module,
+      details: module.details.map(item =>
+        item.type === "video" ? { ...item, src: EducationVideo } : item
       ),
+    })), []
+  );
+
+  const allVideoIds = useMemo(() =>
+    modules.flatMap(m => m.details.filter(d => d.type === "video").map(v => v.id)),
     [modules]
   );
 
-  const courseCompleted = allVideoIds.every((id) => completedVideos[id]);
+  const courseCompleted = useMemo(() =>
+    allVideoIds.every(id => completedVideos[id]),
+    [allVideoIds, completedVideos]
+  );
 
   const handleVideoComplete = (video) => {
     const updated = { ...completedVideos, [video.id]: true };
@@ -51,9 +56,9 @@ const modules = courseModulesData.map(module => ({
   }, []);
 
   const formatTime = (seconds) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, "0")}`;
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m}:${s.toString().padStart(2, "0")}`;
   };
 
   return (
@@ -65,20 +70,22 @@ const modules = courseModulesData.map(module => ({
       />
 
       <div className="space-y-4">
-        {modules.map((module) => (
-          <ModuleAccordion
-            key={module.id}
-            module={module}
-            isOpen={openModule === module.id}
-            onToggle={() =>
-              setOpenModule(openModule === module.id ? null : module.id)
-            }
-            currentDay={currentDay}
-            videoDurations={videoDurations}
-            completedVideos={completedVideos}
-            onVideoClick={setActiveVideo}
-          />
-        ))}
+        <Suspense fallback={<div className="space-y-4">{Array(12).fill().map((_, i) => (
+          <div key={i} className="h-24 bg-slate-100 rounded-3xl animate-pulse" />
+        ))}</div>}>
+          {modules.map((module) => (
+            <ModuleAccordion
+              key={module.id}
+              module={module}
+              isOpen={openModule === module.id}
+              onToggle={() => setOpenModule(openModule === module.id ? null : module.id)}
+              currentDay={currentDay}
+              videoDurations={videoDurations}
+              completedVideos={completedVideos}
+              onVideoClick={setActiveVideo}
+            />
+          ))}
+        </Suspense>
       </div>
 
       <CourseCompletionBanner
@@ -86,33 +93,38 @@ const modules = courseModulesData.map(module => ({
         currentDay={currentDay}
       />
 
+      {/* Video Modal - Lazy Loaded */}
       {activeVideo && (
-        <CourseVideo
-          video={activeVideo}
-          onComplete={() => handleVideoComplete(activeVideo)}
-          onClose={() => setActiveVideo(null)}
-        />
+        <Suspense fallback={<div className="fixed inset-0 bg-black/80 flex items-center justify-center"><div className="text-white">Loading player...</div></div>}>
+          <CourseVideo
+            video={activeVideo}
+            onComplete={() => handleVideoComplete(activeVideo)}
+            onClose={() => setActiveVideo(null)}
+          />
+        </Suspense>
       )}
 
-      {/* Hidden videos for metadata */}
-      {modules.flatMap((module, mIndex) =>
-        module.details
-          .filter((item) => item.type === "video")
-          .map((item, idx) => (
-            <video
-              key={`${mIndex}-${idx}`}
-              src={item.src}
-              preload="metadata"
-              style={{ display: "none" }}
-              onLoadedMetadata={(e) =>
-                setVideoDurations((prev) => ({
-                  ...prev,
-                  [`${mIndex}-${idx}`]: formatTime(e.target.duration),
-                }))
-              }
-            />
-          ))
-      )}
+      {/* Critical Optimization: Only load metadata for visible/open modules */}
+      {modules
+        .filter((_, i) => openModule === i) // Only for open module
+        .flatMap((module, mIndex) =>
+          module.details
+            .filter(item => item.type === "video")
+            .map((item, idx) => (
+              <video
+                key={`${mIndex}-${idx}`}
+                src={item.src}
+                preload="metadata"
+                style={{ display: "none" }}
+                onLoadedMetadata={(e) =>
+                  setVideoDurations(prev => ({
+                    ...prev,
+                    [`${mIndex}-${idx}`]: formatTime(e.target.duration),
+                  }))
+                }
+              />
+            ))
+        )}
     </section>
   );
 };
