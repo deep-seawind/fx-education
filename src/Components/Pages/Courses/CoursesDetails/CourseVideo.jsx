@@ -25,11 +25,10 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
     stored[video.src] = true;
 
     sessionStorage.setItem("completedVideos", JSON.stringify(stored));
-
-    // ✅ Notify parent AFTER Vidstack settles
+ 
     setTimeout(() => {
       onComplete?.();
-    }, 300); // 🔥 CRITICAL DELAY
+    }, 300); 
   };
 
   return (
@@ -46,7 +45,7 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
         <div className="flex justify-between items-center px-6 py-4 border-b bg-white">
           <div className="flex items-center gap-3">
             <IoPlayCircleOutline size={24} className="text-blue-600" />
-            <h3 className="font-bold text-slate-900">{video.title}</h3>
+            <h3 className="font-semibold text-slate-900">{video.title}</h3>
           </div>
           <button onClick={onClose}>
             <IoCloseCircleOutline

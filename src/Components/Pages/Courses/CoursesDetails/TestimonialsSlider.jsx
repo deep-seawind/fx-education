@@ -32,7 +32,7 @@ const testimonials = [
 const TestimonialsSlider = () => {
   return (
     <section className="bg-slate-900 rounded-[3rem] text-white">
-      <h2 className="text-3xl font-bold mb-10 text-center">
+      <h2 className="text-3xl font-semibold mb-10 text-center">
         Student Success Stories
       </h2>
 
@@ -61,7 +61,7 @@ const TestimonialsSlider = () => {
                 <HiOutlineStar />
               </div>
               <p className="italic text-slate-300 text-sm">"{t.text}"</p>
-              <div className="font-bold text-xs uppercase tracking-widest text-white">
+              <div className="font-semibold text-xs uppercase tracking-widest text-white">
                 — {t.name},{" "}
                 <span className="text-slate-500 font-medium">{t.role}</span>
               </div>

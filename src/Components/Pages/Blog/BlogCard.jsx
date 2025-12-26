@@ -122,7 +122,7 @@ const BlogCard = () => {
               <div className="absolute inset-0 bg-linear-to-t from-slate-900/40 to-transparent" />
 
               <div
-                className="absolute top-6 left-6 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-white shadow-lg backdrop-blur-md"
+                className="absolute top-6 left-6 px-4 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-widest text-white shadow-lg backdrop-blur-md"
                 style={{ backgroundColor: `${brandColor}dd` }}
               >
                 {post.category}
@@ -131,7 +131,7 @@ const BlogCard = () => {
 
             {/* Content */}
             <div className="p-8 flex flex-col grow z-20 relative">
-              <div className="flex items-center gap-4 mb-4 text-slate-400 text-xs font-bold uppercase">
+              <div className="flex items-center gap-4 mb-4 text-slate-400 text-xs font-semibold uppercase">
                 <div className="flex items-center gap-1.5">
                   <HiOutlineClock />
                   {post.readTime}
@@ -140,7 +140,7 @@ const BlogCard = () => {
                 <span>{post.date}</span>
               </div>
 
-              <h3 className="text-2xl font-bold text-slate-900 leading-tight mb-4 group-hover:text-[#0e5da0] transition-colors">
+              <h3 className="text-2xl font-semibold text-slate-900 leading-tight mb-4 group-hover:text-[#0e5da0] transition-colors">
                 {post.title}
               </h3>
 

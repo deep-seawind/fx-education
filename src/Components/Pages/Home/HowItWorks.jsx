@@ -104,13 +104,13 @@ const HowItWorks = () => {
         >
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-12 bg-slate-400" />
-            <span className="text-xs font-bold tracking-[0.3em] capitalize text-color">
+            <span className="text-xs font-semibold tracking-[0.3em] capitalize text-color">
               The Roadmap
             </span>
             <div className="h-px w-12 bg-slate-400" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl text-slate-900 tracking-tighter leading-none mb-8 font-bold">
+          <h2 className="text-4xl md:text-5xl text-slate-900 tracking-tighter leading-none mb-8 font-semibold">
             From Learning to <span className="text-color">Earning.</span>
           </h2>
 
@@ -157,7 +157,7 @@ const HowItWorks = () => {
             >
               {/* Step Badge */}
               <div className="flex justify-center lg:justify-start mb-6">
-                <div className="w-12 h-12 rounded-full bg-white border border-slate-100 shadow-xl flex items-center justify-center text-sm font-bold text-slate-900 group-hover:bg-[#135f9b] group-hover:text-white transition-all duration-500 z-20">
+                <div className="w-12 h-12 rounded-full bg-white border border-slate-100 shadow-xl flex items-center justify-center text-sm font-semibold text-slate-900 group-hover:bg-[#135f9b] group-hover:text-white transition-all duration-500 z-20">
                   {step.step}
                 </div>
               </div>
@@ -171,7 +171,7 @@ const HowItWorks = () => {
                     <step.icon className="text-3xl text-white" />
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-4">
                     {step.title}
                   </h3>
                   <p className="text-slate-500 text-[15px] font-medium leading-relaxed">
@@ -211,7 +211,7 @@ const HowItWorks = () => {
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="text-center md:text-left">
-                <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                <h4 className="text-2xl md:text-3xl font-semibold text-white mb-2">
                   Ready to start Level 01?
                 </h4>
                 <p className="text-slate-400 font-medium italic">
@@ -219,7 +219,7 @@ const HowItWorks = () => {
                 </p>
               </div>
 
-              <button className="px-10 py-5 bg-primary-color hover:bg-white hover:text-color text-white font-bold rounded-2xl shadow-xl transition-all duration-300 active:scale-95 flex items-center gap-3">
+              <button className="px-10 py-5 bg-primary-color hover:bg-white hover:text-color text-white font-semibold rounded-2xl shadow-xl transition-all duration-300 active:scale-95 flex items-center gap-3">
                 Join the Program <BiChevronRight className="text-2xl" />
               </button>
             </div>

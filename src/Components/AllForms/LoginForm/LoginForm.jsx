@@ -6,7 +6,7 @@ const LogForm = () => {
     <>
       <form className="space-y-6">
         <div className="space-y-2">
-          <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
+          <label className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 ml-1">
             Account Email
           </label>
           <div className="relative group">
@@ -21,10 +21,10 @@ const LogForm = () => {
 
         <div className="space-y-2">
           <div className="flex justify-between items-center px-1">
-            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            <label className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
               Security Password
             </label>
-            <span className="text-[10px] font-bold text-color cursor-pointer hover:underline">
+            <span className="text-[10px] font-semibold text-color cursor-pointer hover:underline">
               Forgot?
             </span>
           </div>
@@ -50,7 +50,7 @@ const LogForm = () => {
           </div>
         </div>
 
-        <button className="w-1/2 py-5 bg-slate-900 text-white rounded-3xl font-bold flex items-center justify-center gap-3 group hover:bg-color transition-all shadow-xl shadow-slate-200 active:scale-[0.98]">
+        <button className="w-1/2 py-5 bg-slate-900 text-white rounded-3xl font-semibold flex items-center justify-center gap-3 group hover:bg-color transition-all shadow-xl shadow-slate-200 active:scale-[0.98]">
           Initialize Terminal
           <BiChevronRight className="text-2xl group-hover:translate-x-1 transition-transform" />
         </button>

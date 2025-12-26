@@ -83,12 +83,12 @@ const MCQQuiz = () => {
     return (
       <div className="fixed inset-0 bg-[#020617] flex items-center justify-center text-white">
         <div className="bg-slate-900 p-12 rounded-3xl text-center max-w-lg">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-semibold mb-4">
             {result.passed ? "✅ Exam Passed" : "❌ Exam Failed"}
           </h2>
 
           <p className="text-slate-400 mb-6">
-            Score: <span className="font-bold">{result.percent}%</span>
+            Score: <span className="font-semibold">{result.percent}%</span>
           </p>
 
           {result.autoSubmitted && (
@@ -99,7 +99,7 @@ const MCQQuiz = () => {
 
           <button
             onClick={() => window.location.href = "/course-details"}
-            className="mt-4 px-8 py-4 bg-[#0e5da0] rounded-xl font-bold"
+            className="mt-4 px-8 py-4 bg-[#0e5da0] rounded-xl font-semibold"
           >
             Exit Exam
           </button>
@@ -111,13 +111,13 @@ const MCQQuiz = () => {
   return (
     <div className="fixed inset-0 bg-[#020617] text-white overflow-y-auto">
       <div className="max-w-4xl mx-auto py-20 px-6">
-        <h1 className="text-4xl font-bold mb-10 text-center">
+        <h1 className="text-4xl font-semibold mb-10 text-center">
           Final MCQ Examination
         </h1>
 
         {QUESTIONS.map((q, index) => (
           <div key={q.id} className="mb-10">
-            <h3 className="font-bold mb-4">
+            <h3 className="font-semibold mb-4">
               {index + 1}. {q.question}
             </h3>
 
@@ -144,7 +144,7 @@ const MCQQuiz = () => {
 
         <button
           onClick={() => submitExam(false)}
-          className="w-full py-5 bg-[#0e5da0] rounded-2xl font-bold uppercase tracking-widest"
+          className="w-full py-5 bg-[#0e5da0] rounded-2xl font-semibold uppercase tracking-widest"
         >
           Submit Exam
         </button>

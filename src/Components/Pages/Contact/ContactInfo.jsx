@@ -85,7 +85,7 @@ const contactMethods = [
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-5xl md:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tighter italic mb-8">
+              <h2 className="text-5xl md:text-6xl font-semibold text-slate-900 leading-[1.1] tracking-tighter italic mb-8">
                 Establish Connection.
               </h2>
               <p className="text-slate-500 text-lg leading-relaxed mb-12 max-w-md">
@@ -121,17 +121,17 @@ const contactMethods = [
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group p-8 bg-blue-50 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_80px_rgba(14,93,160,0.1)] hover:-translate-y-2 transition-all duration-500"
+                className="group p-8 bg-slate-200/50 rounded-[2.5rem] border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_80px_rgba(14,93,160,0.1)] hover:-translate-y-2 transition-all duration-500"
               >
                 <div
                   className={`w-14 h-14 ${method.color} text-white rounded-2xl flex items-center justify-center text-2xl mb-8 shadow-lg group-hover:scale-110 transition-transform`}
                 >
                   {method.icon}
                 </div>
-                <h4 className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-2">
+                <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-[0.2em] mb-2">
                   {method.title}
                 </h4>
-                <p className="text-xl font-bold text-slate-900 mb-2">
+                <p className="text-xl font-semibold text-slate-900 mb-2">
                   {method.detail}
                 </p>
                 <p className="text-sm text-slate-500 font-medium">

@@ -8,20 +8,20 @@ const MainCourses = () => {
   return (
     <>
       <CourseFilterProvider>
-        <Breadcrumbs paths={["Home", "Courses", "Institutional Modules"]} />
+        <Breadcrumbs paths={["Home", "Courses", "Institutional Courses"]} />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-9 gap-10">
+       
             {/* Left Sidebar Filter */}
-            <div className="col-span-1 lg:col-span-2">
+            {/* <div className="col-span-1 lg:col-span-2">
               <CourseFilter />
-            </div>
+            </div> */}
 
             {/* Right Courses Grid */}
             <div className="col-span-1 lg:col-span-7">
               <CourseCard />
             </div>
-          </div>
+           
         </div>
       </CourseFilterProvider>
     </>

@@ -44,15 +44,15 @@ const AboutPage = () => {
             >
               {/* Premium Breadcrumb Tag */}
               <div className="inline-flex items-center gap-3 px-2 py-1 bg-white border border-slate-200 rounded-full mb-8 shadow-sm">
-                <span className="bg-color text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                <span className="bg-color text-white px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider">
                   New Era
                 </span>
-                <span className="text-[10px] font-bold text-slate-500 pr-3 uppercase tracking-widest">
+                <span className="text-[10px] font-semibold text-slate-500 pr-3 uppercase tracking-widest">
                   Institutional Finance 2.0
                 </span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 tracking-tighter mb-8 leading-[1.1]">
+              <h1 className="text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tighter mb-8 leading-[1.1]">
                 We are redefining
                 <span className="relative ms-4">
                   <span className="relative z-10 text-color italic font-serif">
@@ -91,7 +91,7 @@ const AboutPage = () => {
 
               {/* Action Group */}
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-color text-white rounded-2xl font-bold flex items-center gap-2 hover:bg-indigo-700 transition-all hover:shadow-xl hover:shadow-indigo-200">
+                <button className="px-8 py-4 bg-color text-white rounded-2xl font-semibold flex items-center gap-2 hover:bg-indigo-700 transition-all hover:shadow-xl hover:shadow-indigo-200">
                   Explore Programs <BiChevronRight className="text-xl" />
                 </button>
                 <div className="flex -space-x-3 items-center ml-4">
@@ -106,7 +106,7 @@ const AboutPage = () => {
                       />
                     </div>
                   ))}
-                  <span className="text-xs font-bold text-slate-400 ml-4">
+                  <span className="text-xs font-semibold text-slate-400 ml-4">
                     +2k Students
                   </span>
                 </div>
@@ -141,10 +141,10 @@ const AboutPage = () => {
       {/* <section className="py-24 relative bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-20">
-            <span className="text-[10px] font-bold text-color uppercase tracking-[0.4em] mb-4 block">
+            <span className="text-[10px] font-semibold text-color uppercase tracking-[0.4em] mb-4 block">
               Core Foundations
             </span>
-            <h2 className="text-4xl font-bold text-slate-900 tracking-tighter leading-tight">
+            <h2 className="text-4xl font-semibold text-slate-900 tracking-tighter leading-tight">
               Driven by Purpose, <br /> Governed by Discipline.
             </h2>
           </div>
@@ -154,7 +154,7 @@ const AboutPage = () => {
             <div className="group relative p-12 rounded-[4rem] bg-indigo-50/50 border border-indigo-100 hover:bg-white hover:shadow-3xl hover:shadow-indigo-100/50 transition-all duration-700 overflow-hidden">
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-white rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <BiShow className="text-6xl text-color/20 mb-8 group-hover:text-color transition-colors duration-500" />
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-6">
                 Our Vision
               </h3>
               <p className="text-slate-500 font-medium leading-relaxed">
@@ -169,7 +169,7 @@ const AboutPage = () => {
               <div className="w-16 h-16 bg-slate-900 rounded-[1.5rem] flex items-center justify-center mb-8 shadow-xl group-hover:bg-color group-hover:rotate-[15deg] transition-all">
                 <BiTargetLock className="text-3xl text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-6 tracking-tight">
                 Our Mission
               </h3>
               <p className="text-slate-500 font-medium leading-relaxed">
@@ -212,7 +212,7 @@ const AboutPage = () => {
 
               <div className="grid lg:grid-cols-12 gap-16 items-center relative z-20">
                 <div className="lg:col-span-6">
-                  <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8 tracking-tighter">
+                  <h2 className="text-4xl lg:text-5xl font-semibold text-white mb-8 tracking-tighter">
                     Quantifying our
                     <span className="text-color ps-2">
                       Institutional Impact.
@@ -227,7 +227,7 @@ const AboutPage = () => {
                     ].map((text) => (
                       <div
                         key={text}
-                        className="flex items-center gap-3 text-slate-200 font-bold text-lg group"
+                        className="flex items-center gap-3 text-slate-200 font-semibold text-lg group"
                       >
                         <div className="w-2 h-2 rounded-full bg-indigo-500 group-hover:scale-150 transition-transform shadow-[0_0_10px_rgba(99,102,241,0.5)]" />
                         {text}
@@ -265,7 +265,7 @@ const AboutPage = () => {
                         <div className="text-3xl mb-4 group-hover:scale-110 transition-transform bg-primary-color table rounded p-1">
                           {stat.icon}
                         </div>
-                        <div className="text-3xl font-bold text-white mb-1 tracking-tighter">
+                        <div className="text-3xl font-semibold text-white mb-1 tracking-tighter">
                           {stat.val}
                         </div>
                         <div className="text-[10px] font-semibold text-slate-200 uppercase tracking-[0.2em] group-hover:text-slate-300">

@@ -94,10 +94,10 @@ const FeaturedPrograms = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-[0.2em] uppercase text-color bg-indigo-50 rounded-full">
+          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-color bg-indigo-50 rounded-full">
             NIFESD Curriculum
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6 tracking-tight">
             Industry-Leading Finance Courses
           </h2>
           <p className="text-lg text-slate-500 font-medium leading-relaxed">
@@ -134,7 +134,7 @@ const FeaturedPrograms = () => {
 
               {/* Content */}
               <div className="mb-4">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   {program.title}
                 </h3>
                 <p className="text-slate-500 text-[14px] leading-relaxed">
@@ -144,11 +144,11 @@ const FeaturedPrograms = () => {
 
               {/* Benefits */}
               <div className="flex flex-col gap-2 mb-4">
-                <div className="flex items-center gap-2 text-[12px] font-bold text-slate-500">
+                <div className="flex items-center gap-2 text-[12px] font-semibold text-slate-500">
                   <BiCheckCircle className="text-emerald-500" />
                   Live Trading Access
                 </div>
-                <div className="flex items-center gap-2 text-[12px] font-bold text-slate-500">
+                <div className="flex items-center gap-2 text-[12px] font-semibold text-slate-500">
                   <BiCheckCircle className="text-emerald-500" />
                   Global Certification
                 </div>
@@ -156,7 +156,7 @@ const FeaturedPrograms = () => {
 
               {/* Footer */}
               <div className="flex items-center justify-between pt-4 border-t border-slate-50">
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-900 uppercase">
+                <div className="flex items-center gap-2 text-xs font-semibold text-slate-900 uppercase">
                   <BiTimeFive className="text-lg text-indigo-500" />
                   {program.duration}
                 </div>
@@ -193,11 +193,11 @@ const FeaturedPrograms = () => {
               </div>
             ))}
           </div>
-          <p className="text-sm font-bold text-slate-700 hidden sm:block">
+          <p className="text-sm font-semibold text-slate-700 hidden sm:block">
             Join <span className="text-color underline">1,200+ students</span>{" "}
             learning this week
           </p>
-          <button className="bg-primary-color text-white px-6 py-3 rounded-2xl text-sm font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
+          <button className="bg-primary-color text-white px-6 py-3 rounded-2xl text-sm font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
             Explore All Courses
           </button>
         </motion.div>

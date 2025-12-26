@@ -24,7 +24,7 @@ const CourseReview = () => {
 
   return (
     <section id="Reviews" className="scroll-mt-32 space-y-10">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8">
         Ratings & Reviews
       </h2>
 
@@ -41,7 +41,7 @@ const CourseReview = () => {
             <HiOutlineStar />
             <HiOutlineStar />
           </div>
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
+          <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-[0.2em]">
             Global Rating
           </p>
         </div>
@@ -50,7 +50,7 @@ const CourseReview = () => {
         <div className="w-full flex-1 space-y-3">
           {ratingDistribution.map((w, i) => (
             <div key={i} className="flex items-center gap-4">
-              <span className="text-xs font-bold text-slate-400 w-3">
+              <span className="text-xs font-semibold text-slate-400 w-3">
                 {5 - i}
               </span>
               <div className="flex-1 h-1.5 bg-slate-200 rounded-full overflow-hidden">
@@ -59,7 +59,7 @@ const CourseReview = () => {
                   style={{ width: `${w}%` }}
                 />
               </div>
-              <span className="text-xs font-bold text-slate-400 w-8">{w}%</span>
+              <span className="text-xs font-semibold text-slate-400 w-8">{w}%</span>
             </div>
           ))}
         </div>
@@ -73,7 +73,7 @@ const CourseReview = () => {
             className="p-6 md:p-8 bg-white rounded-2xl border border-slate-100 shadow-sm"
           >
             <div className="flex items-center justify-between mb-2">
-              <h4 className="font-bold text-slate-900">{review.name}</h4>
+              <h4 className="font-semibold text-slate-900">{review.name}</h4>
               <div className="flex text-amber-500">
                 {Array.from({ length: review.rating }).map((_, i) => (
                   <HiOutlineStar key={i} />

@@ -7,7 +7,7 @@ const SigForm = () => {
       <form className="space-y-6">
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
-            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 pb-2">
+            <label className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 ml-1 pb-2">
               First Name
             </label>
             <div className="relative group">
@@ -20,7 +20,7 @@ const SigForm = () => {
             </div>
           </div>
           <div className="space-y-2">
-            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
+            <label className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 ml-1">
               Last Name
             </label>
             <input
@@ -32,7 +32,7 @@ const SigForm = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
+          <label className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 ml-1">
             Email Address
           </label>
           <div className="relative group">
@@ -46,7 +46,7 @@ const SigForm = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
+          <label className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 ml-1">
             Security Password
           </label>
           <div className="relative group">
@@ -66,13 +66,13 @@ const SigForm = () => {
           />
           <p className="text-sm text-slate-500 font-medium">
             I agree to the{" "}
-            <span className="text-color font-bold hover:underline cursor-pointer">
+            <span className="text-color font-semibold hover:underline cursor-pointer">
               Terms of Service
             </span>
           </p>
         </div>
 
-        <button className="w-1/2 py-5 bg-slate-900 text-white rounded-3xl font-bold flex items-center justify-center gap-3 group hover:bg-color transition-all shadow-xl shadow-slate-200 active:scale-[0.98]">
+        <button className="w-1/2 py-5 bg-slate-900 text-white rounded-3xl font-semibold flex items-center justify-center gap-3 group hover:bg-color transition-all shadow-xl shadow-slate-200 active:scale-[0.98]">
           Complete Registration
           <BiChevronRight className="text-2xl group-hover:translate-x-1 transition-transform" />
         </button>

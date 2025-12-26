@@ -51,14 +51,14 @@ const WhyChooseUs = () => {
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-xs font-bold uppercase tracking-[0.4em] text-emerald-400 mb-4 block"
+            className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-400 mb-4 block"
           >
             The Competitive Advantage
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-5xl lg:text-6xl font-bold tracking-tighter"
+            className="text-5xl lg:text-6xl font-semibold tracking-tighter"
           >
             Why Professional Traders <br />
             <span
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
                 >
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-400 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">
@@ -126,16 +126,16 @@ const WhyChooseUs = () => {
 
         {/* Bottom Trust Line */}
         <div className="mt-20 pt-10 border-t border-white/5 flex flex-wrap justify-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-          <span className="font-bold italic text-2xl tracking-tighter">
+          <span className="font-semibold italic text-2xl tracking-tighter">
             METATRADER 5
           </span>
-          <span className="font-bold italic text-2xl tracking-tighter">
+          <span className="font-semibold italic text-2xl tracking-tighter">
             TRADINGVIEW
           </span>
-          <span className="font-bold italic text-2xl tracking-tighter">
+          <span className="font-semibold italic text-2xl tracking-tighter">
             FTMO FUNDED
           </span>
-          <span className="font-bold italic text-2xl tracking-tighter">
+          <span className="font-semibold italic text-2xl tracking-tighter">
             MYFOREXFUNDS
           </span>
         </div>

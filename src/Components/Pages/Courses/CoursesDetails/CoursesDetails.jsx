@@ -68,7 +68,7 @@ const CoursesDetails = () => {
 
   return (
     <>
-      <Breadcrumbs paths={["Home", "Courses", "Institutional Modules"]} />
+      <Breadcrumbs paths={["Home", "Courses", "Institutional Courses"]} />
       <div className="min-h-screen bg-white pb-20 font-sans text-slate-900">
         
         {/* 1. Hero Section */} 
@@ -82,21 +82,21 @@ const CoursesDetails = () => {
             {/* Left Content: Forex Course Details */}
             <div className="order-2 lg:order-1">
               <div className="flex flex-wrap items-center gap-3 mb-6">
-                <span className="px-3 py-1 rounded-lg bg-orange-100 text-orange-700 text-[10px] font-bold uppercase tracking-widest shadow-sm border border-orange-200">
+                <span className="px-3 py-1 rounded-lg bg-orange-100 text-orange-700 text-[10px] font-semibold uppercase tracking-widest shadow-sm border border-orange-200">
                   Hot & New
                 </span>
-                <span className="px-3 py-1 rounded-lg bg-[#0e5da0]/10 text-[#0e5da0] text-[10px] font-bold uppercase tracking-widest border border-[#0e5da0]/10">
+                <span className="px-3 py-1 rounded-lg bg-[#0e5da0]/10 text-[#0e5da0] text-[10px] font-semibold uppercase tracking-widest border border-[#0e5da0]/10">
                   Beginner Level 2026
                 </span> 
               </div>
 
-              <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-tight text-black">
+              <h1 className="text-2xl md:text-5xl font-semibold mb-4 tracking-tight text-black">
               Master MT4/MT5 & TradingView 
               </h1>
 
               <p className="text-lg text-slate-600 mb-8 leading-relaxed   font-medium">
                 Learn Forex trading with 85% Accuracy: High-probability 
-                <span className="text-slate-900 font-bold"> Live setups </span> 
+                <span className="text-slate-900 font-semibold"> Live setups </span> 
                 on TradingView + MT4/MT5 strategies designed for 2026 markets.
               </p>
 
@@ -105,15 +105,15 @@ const CoursesDetails = () => {
 
                 {/* Technical Specs */}
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-4">
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-500">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
                       <HiOutlineStar className="text-amber-500 text-lg fill-current" />
                       <span className="text-slate-900">4.8 Rating</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-500">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
                       <HiOutlineGlobeAlt className="text-blue-500 text-lg" />
                       <span>English [Auto]</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-500">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
                       <HiOutlineClock className="text-slate-400 text-lg" />
                       <span>Updated 10/2025</span>
                   </div>
@@ -151,7 +151,7 @@ const CoursesDetails = () => {
                 <button
                   key={tab}
                   onClick={() => handleTabClick(tab)}
-                  className={`py-4 md:py-5 text-sm md:text-lg font-bold transition-all relative whitespace-nowrap ${
+                  className={`py-4 md:py-5 text-sm md:text-lg font-semibold transition-all relative whitespace-nowrap ${
                     activeTab === tab
                       ? "text-[#0e5da0]"
                       : "text-slate-400 hover:text-slate-600"
@@ -172,7 +172,7 @@ const CoursesDetails = () => {
           <div className="lg:col-span-2 space-y-12 md:space-y-20">
             {/* About Section */}
             <section ref={aboutRef} id="About" className="scroll-mt-32">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6">
                 About this course
               </h2>
               <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-6 md:mb-8 tracking-tight">

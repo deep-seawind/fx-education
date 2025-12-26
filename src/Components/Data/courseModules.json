@@ -1,0 +1,491 @@
+[
+  {
+    "id": 0,
+    "title": "Week 1 – Introduction to Financial Markets",
+    "lastVideoId": "v6",
+    "details": [
+      {
+        "id": "v1",
+        "type": "video",
+        "title": "Global Market Structure Overview",
+        "day": 1,
+        "pdf": "/pdfs/week1-global-market-structure.pdf",
+        "mcqPath": "/course/mcq/v1"
+      },
+      {
+        "id": "v2",
+        "type": "video",
+        "title": "Exchanges, Brokers & Liquidity Providers",
+        "day": 2,
+        "pdf": "/pdfs/week1-exchanges-brokers.pdf",
+        "mcqPath": "/course/mcq/v2"
+      },
+      {
+        "id": "v3",
+        "type": "video",
+        "title": "Market Participants: Retail, Institutional & HFT",
+        "day": 3,
+        "pdf": "/pdfs/week1-market-participants.pdf",
+        "mcqPath": "/course/mcq/v3"
+      },
+      {
+        "id": "v4",
+        "type": "video",
+        "title": "Indian & Global Exchanges (NYSE, CME, NSE, MCX)",
+        "day": 4,
+        "pdf": "/pdfs/week1-global-exchanges.pdf",
+        "mcqPath": "/course/mcq/v4"
+      },
+      {
+        "id": "v5",
+        "type": "video",
+        "title": "Trading Instruments & Categories",
+        "day": 5,
+        "pdf": "/pdfs/week1-trading-instruments.pdf",
+        "mcqPath": "/course/mcq/v5"
+      },
+      {
+        "id": "v6",
+        "type": "video",
+        "title": "Week 1 Summary & Key Takeaways",
+        "day": 6,
+        "pdf": "/pdfs/week1-summary.pdf",
+        "mcqPath": "/course/mcq/week1-final"
+      },
+      {
+        "type": "reading",
+        "title": "Additional Notes on Market Structure",
+        "time": "10 min read"
+      },
+      {
+        "type": "assignment",
+        "title": "Assignment: Identify 10 Global Exchanges",
+        "time": "30 min"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Week 2 – Equity Markets",
+    "lastVideoId": "v12",
+    "details": [
+      {
+        "id": "v7",
+        "type": "video",
+        "title": "What Makes Stock Prices Move?",
+        "day": 7,
+        "pdf": "/pdfs/week2-stock-prices.pdf",
+        "mcqPath": "/course/mcq/v7"
+      },
+      {
+        "id": "v8",
+        "type": "video",
+        "title": "Corporate Finance Basics",
+        "day": 8,
+        "pdf": "/pdfs/week2-corporate-finance.pdf",
+        "mcqPath": "/course/mcq/v8"
+      },
+      {
+        "id": "v9",
+        "type": "video",
+        "title": "Understanding Market Cycles",
+        "day": 9,
+        "pdf": "/pdfs/week2-market-cycles.pdf",
+        "mcqPath": "/course/mcq/v9"
+      },
+      {
+        "id": "v10",
+        "type": "video",
+        "title": "Index Composition: S&P500, Nifty50, Nasdaq",
+        "day": 10,
+        "pdf": "/pdfs/week2-indices.pdf",
+        "mcqPath": "/course/mcq/v10"
+      },
+      {
+        "id": "v11",
+        "type": "video",
+        "title": "Key Fundamentals: EPS, P/E, ROE, DCF",
+        "day": 11,
+        "pdf": "/pdfs/week2-fundamentals.pdf",
+        "mcqPath": "/course/mcq/v11"
+      },
+      {
+        "id": "v12",
+        "type": "video",
+        "title": "Week 2 Recap",
+        "day": 12,
+        "pdf": "/pdfs/week2-summary.pdf",
+        "mcqPath": "/course/mcq/week2-final"
+      },
+      {
+        "type": "reading",
+        "title": "Deep Dive into Valuation Metrics",
+        "time": "15 min read"
+      },
+      {
+        "type": "assignment",
+        "title": "Assignment: Analyse 3 Large-Cap Companies",
+        "time": "45 min"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Week 3 – Derivative Markets (Equity Futures & Options)",
+    "lastVideoId": "v17",
+    "details": [
+      {
+        "id": "v13",
+        "type": "video",
+        "title": "Futures vs Options Explained",
+        "day": 13,
+        "pdf": "/pdfs/week3-futures-vs-options.pdf",
+        "mcqPath": "/course/mcq/v13"
+      },
+      {
+        "id": "v14",
+        "type": "video",
+        "title": "Index & Stock Futures Deep Dive",
+        "day": 14,
+        "pdf": "/pdfs/week3-futures-deep.pdf",
+        "mcqPath": "/course/mcq/v14"
+      },
+      {
+        "id": "v15",
+        "type": "video",
+        "title": "Options Greeks: Delta, Gamma, Theta, Vega",
+        "day": 15,
+        "pdf": "/pdfs/week3-options-greeks.pdf",
+        "mcqPath": "/course/mcq/v15"
+      },
+      {
+        "id": "v16",
+        "type": "video",
+        "title": "Hedging vs Speculation Strategies",
+        "day": 16,
+        "pdf": "/pdfs/week3-hedging-speculation.pdf",
+        "mcqPath": "/course/mcq/v16"
+      },
+      {
+        "id": "v17",
+        "type": "video",
+        "title": "Practical Mock Futures Trade Walkthrough",
+        "day": 17,
+        "pdf": "/pdfs/week3-mock-trade.pdf",
+        "mcqPath": "/course/mcq/week3-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: Place Mock Futures Trade (Demo Account)",
+        "time": "40 min"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Week 4 – Commodity & Currency Markets",
+    "lastVideoId": "v21",
+    "details": [
+      {
+        "id": "v18",
+        "type": "video",
+        "title": "MCX Commodities: Gold, Oil, Silver",
+        "day": 18,
+        "pdf": "/pdfs/week4-commodities.pdf",
+        "mcqPath": "/course/mcq/v18"
+      },
+      {
+        "id": "v19",
+        "type": "video",
+        "title": "Forex Major Pairs & Economic Drivers",
+        "day": 19,
+        "pdf": "/pdfs/week4-forex-pairs.pdf",
+        "mcqPath": "/course/mcq/v19"
+      },
+      {
+        "id": "v20",
+        "type": "video",
+        "title": "CFD Trading Basics",
+        "day": 20,
+        "pdf": "/pdfs/week4-cfd-basics.pdf",
+        "mcqPath": "/course/mcq/v20"
+      },
+      {
+        "id": "v21",
+        "type": "video",
+        "title": "Live Demo: Gold & EUR/USD Trade Setup",
+        "day": 21,
+        "pdf": "/pdfs/week4-live-demo.pdf",
+        "mcqPath": "/course/mcq/week4-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: Demo Trades on Gold & EUR/USD",
+        "time": "50 min"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Week 5 – Technical Analysis — Basics",
+    "lastVideoId": "v24",
+    "details": [
+      {
+        "id": "v22",
+        "type": "video",
+        "title": "Chart Types & Candlestick Patterns",
+        "day": 22,
+        "pdf": "/pdfs/week5-candlesticks.pdf",
+        "mcqPath": "/course/mcq/v22"
+      },
+      {
+        "id": "v23",
+        "type": "video",
+        "title": "Trendlines, Channels & Support/Resistance",
+        "day": 23,
+        "pdf": "/pdfs/week5-trendlines.pdf",
+        "mcqPath": "/course/mcq/v23"
+      },
+      {
+        "id": "v24",
+        "type": "video",
+        "title": "Volume Analysis Essentials",
+        "day": 24,
+        "pdf": "/pdfs/week5-volume.pdf",
+        "mcqPath": "/course/mcq/week5-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Assignment: Identify 5 Major Patterns in Charts",
+        "time": "35 min"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Week 6 – Technical Analysis — Indicators",
+    "lastVideoId": "v27",
+    "details": [
+      {
+        "id": "v25",
+        "type": "video",
+        "title": "Moving Averages & RSI Deep Dive",
+        "day": 25,
+        "pdf": "/pdfs/week6-moving-averages-rsi.pdf",
+        "mcqPath": "/course/mcq/v25"
+      },
+      {
+        "id": "v26",
+        "type": "video",
+        "title": "MACD, Bollinger Bands & ATR",
+        "day": 26,
+        "pdf": "/pdfs/week6-macd-bollinger-atr.pdf",
+        "mcqPath": "/course/mcq/v26"
+      },
+      {
+        "id": "v27",
+        "type": "video",
+        "title": "Building Indicator-Based Strategies",
+        "day": 27,
+        "pdf": "/pdfs/week6-indicator-strategies.pdf",
+        "mcqPath": "/course/mcq/week6-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: Create a Basic Indicator Strategy",
+        "time": "45 min"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Week 7 – Trading Psychology",
+    "lastVideoId": "v29",
+    "details": [
+      {
+        "id": "v28",
+        "type": "video",
+        "title": "Discipline, Fear & Greed in Trading",
+        "day": 28,
+        "pdf": "/pdfs/week7-psychology-fear-greed.pdf",
+        "mcqPath": "/course/mcq/v28"
+      },
+      {
+        "id": "v29",
+        "type": "video",
+        "title": "Common Behavioural Biases",
+        "day": 29,
+        "pdf": "/pdfs/week7-biases.pdf",
+        "mcqPath": "/course/mcq/week7-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: 7-Day Emotional Tracking Journal",
+        "time": "Ongoing"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Week 8 – Global Macroeconomics",
+    "lastVideoId": "v32",
+    "details": [
+      {
+        "id": "v30",
+        "type": "video",
+        "title": "Key Indicators: GDP, CPI, Inflation",
+        "day": 30,
+        "pdf": "/pdfs/week8-macro-indicators.pdf",
+        "mcqPath": "/course/mcq/v30"
+      },
+      {
+        "id": "v31",
+        "type": "video",
+        "title": "Central Banks: FOMC, RBI, ECB Impact",
+        "day": 31,
+        "pdf": "/pdfs/week8-central-banks.pdf",
+        "mcqPath": "/course/mcq/v31"
+      },
+      {
+        "id": "v32",
+        "type": "video",
+        "title": "Interest Rates & Bond Yields",
+        "day": 32,
+        "pdf": "/pdfs/week8-rates-yields.pdf",
+        "mcqPath": "/course/mcq/week8-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: Interpret a Central Bank Report",
+        "time": "30 min"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Week 9 – Risk Management",
+    "lastVideoId": "v34",
+    "details": [
+      {
+        "id": "v33",
+        "type": "video",
+        "title": "Position Sizing & Risk-Reward",
+        "day": 33,
+        "pdf": "/pdfs/week9-position-sizing.pdf",
+        "mcqPath": "/course/mcq/v33"
+      },
+      {
+        "id": "v34",
+        "type": "video",
+        "title": "Stop Loss Design & Drawdown Control",
+        "day": 34,
+        "pdf": "/pdfs/week9-stop-loss.pdf",
+        "mcqPath": "/course/mcq/week9-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: 10-Trade Risk Simulation Report",
+        "time": "60 min"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Week 10 – Trading Systems & Execution",
+    "lastVideoId": "v36",
+    "details": [
+      {
+        "id": "v35",
+        "type": "video",
+        "title": "Order Types & Liquidity",
+        "day": 35,
+        "pdf": "/pdfs/week10-order-types.pdf",
+        "mcqPath": "/course/mcq/v35"
+      },
+      {
+        "id": "v36",
+        "type": "video",
+        "title": "Slippage, Clearing & Settlements",
+        "day": 36,
+        "pdf": "/pdfs/week10-slippage-settlement.pdf",
+        "mcqPath": "/course/mcq/week10-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: 1-Week Paper Trading Test",
+        "time": "1 week"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Week 11 – Strategy Development",
+    "lastVideoId": "v38",
+    "details": [
+      {
+        "id": "v37",
+        "type": "video",
+        "title": "Swing, Intraday & Momentum Strategies",
+        "day": 37,
+        "pdf": "/pdfs/week11-strategy-types.pdf",
+        "mcqPath": "/course/mcq/v37"
+      },
+      {
+        "id": "v38",
+        "type": "video",
+        "title": "Breakout & Mean Reversion Systems",
+        "day": 38,
+        "pdf": "/pdfs/week11-breakout-reversion.pdf",
+        "mcqPath": "/course/mcq/week11-final"
+      },
+      {
+        "type": "assignment",
+        "title": "Practical: Build & Document 1 Strategy",
+        "time": "60 min"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Week 12 – Final Revision + Exam",
+    "lastVideoId": "v40",
+    "details": [
+      {
+        "id": "v39",
+        "type": "video",
+        "title": "Full Course Revision (Part 1)",
+        "day": 39,
+        "pdf": "/pdfs/week12-revision-part1.pdf",
+        "mcqPath": "/course/mcq/v39"
+      },
+      {
+        "id": "v40",
+        "type": "video",
+        "title": "Full Course Revision (Part 2)",
+        "day": 40,
+        "pdf": "/pdfs/week12-revision-part2.pdf",
+        "mcqPath": "/course/mcq/week12-final"
+      },
+      {
+        "type": "reading",
+        "title": "Final Summary Notes",
+        "time": "2 hours"
+      },
+      {
+        "type": "assignment",
+        "title": "Mock Test (100 MCQs)",
+        "time": "2 hours"
+      },
+      {
+        "type": "assignment",
+        "title": "Demo Trading Test (10 Days)",
+        "time": "10 days"
+      },
+      {
+        "type": "assignment",
+        "title": "Final Certification Exam",
+        "time": "3 hours"
+      }
+    ]
+  }
+]

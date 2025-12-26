@@ -59,11 +59,11 @@ const Footer = () => {
             <div className="relative z-10 text-center lg:text-left space-y-3">
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <RiVerifiedBadgeFill className="text-color text-xl" />
-                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-color">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-color">
                   Join the Elite 1%
                 </span>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-white tracking-tighter">
+              <h3 className="text-3xl lg:text-4xl font-semibold text-white tracking-tighter">
                 Ready to Trade{" "}
                 <span className="italic font-serif font-normal">
                   Institutional?
@@ -102,13 +102,13 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
                   <BiMailSend className="text-xl group-hover:text-white" />
                 </div>
-                <span className="text-sm font-bold">admissions@nifesd.com</span>
+                <span className="text-sm font-semibold">admissions@nifesd.com</span>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
                   <BiPhoneCall className="text-xl group-hover:text-white" />
                 </div>
-                <span className="text-sm font-bold">+91 123 456 7890</span>
+                <span className="text-sm font-semibold">+91 123 456 7890</span>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Footer = () => {
           <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
             {Object.entries(footerLinks).map(([title, links]) => (
               <div key={title}>
-                <h4 className=" font-bold text-blue-400 capitalize tracking-[0.2em] mb-8">
+                <h4 className=" font-semibold text-blue-400 capitalize tracking-[0.2em] mb-8">
                   {title}
                 </h4>
                 <ul className="space-y-4">
@@ -147,14 +147,14 @@ const Footer = () => {
             <div className="flex items-center gap-4 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
               <div className="flex items-center gap-2">
                 <BiShieldQuarter className="text-emerald-500" />
-                <span className="text-[9px] font-bold text-slate-400 uppercase">
+                <span className="text-[9px] font-semibold text-slate-400 uppercase">
                   ISO 27001
                 </span>
               </div>
               <div className="w-1px h-3 bg-slate-700" />
               <div className="flex items-center gap-2">
                 <BiGlobe className="text-blue-400" />
-                <span className="text-[9px] font-bold text-slate-400 uppercase">
+                <span className="text-[9px] font-semibold text-slate-400 uppercase">
                   Global Access
                 </span>
               </div>

@@ -73,10 +73,10 @@ const TestimonialSlider = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className=" ">
-            <span className="inline-block text-color font-bold text-sm capitalize tracking-[0.3em] mb-4">
+            <span className="inline-block text-color font-semibold text-sm capitalize tracking-[0.3em] mb-4">
               Success Stories
             </span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 tracking-tighter leading-none">
+            <h2 className="text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tighter leading-none">
               Trusted by the next
               <span className="text-color ps-2">generation of managers.</span>
             </h2>
@@ -142,7 +142,7 @@ const TestimonialSlider = () => {
                     <div className="min-w-0">
                       {" "}
                       {/* Prevents text overflow */}
-                      <h4 className="font-bold text-slate-900 tracking-tight truncate">
+                      <h4 className="font-semibold text-slate-900 tracking-tight truncate">
                         {item.name}
                       </h4>
                     </div>
@@ -150,7 +150,7 @@ const TestimonialSlider = () => {
 
                   {/* Subtle Badge */}
                   <div className="hidden xl:block shrink-0">
-                    <span className="px-3 py-1 rounded-full bg-slate-50 text-[10px] font-bold text-slate-400 uppercase tracking-widest border border-slate-100">
+                    <span className="px-3 py-1 rounded-full bg-slate-50 text-[10px] font-semibold text-slate-400 uppercase tracking-widest border border-slate-100">
                       Certified Graduate
                     </span>
                   </div>

@@ -28,18 +28,18 @@ const BuySellPanel = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-linear-to-r from-transparent via-[#0e5da0] to-transparent opacity-50" />
 
       <div className="flex items-center justify-between mb-10">
-        <h3 className="text-sm font-bold tracking-[0.25em] text-slate-300 flex items-center gap-2">
+        <h3 className="text-sm font-semibold tracking-[0.25em] text-slate-300 flex items-center gap-2">
           <HiOutlineLightningBolt className="text-[#0e5da0]" /> Instant Execution
         </h3>
         <div className="px-3 py-1 rounded-lg bg-white/5 border border-white/10">
-           <span className="text-[9px] font-bold text-slate-400 tracking-widest">Market</span>
+           <span className="text-[9px] font-semibold text-slate-400 tracking-widest">Market</span>
         </div>
       </div>
 
       {/* PRICE DISPLAY BLOCK */}
       <div className="mb-10 p-6 rounded-4xl bg-white/2 border border-white/5 text-center relative group">
-        <p className="text-[10px] font-bold   tracking-widest text-slate-300 mb-2">Live Quote</p>
-        <div className={`text-4xl font-bold tracking-tighter transition-colors duration-300 ${priceColor}`}>
+        <p className="text-[10px] font-semibold   tracking-widest text-slate-300 mb-2">Live Quote</p>
+        <div className={`text-4xl font-semibold tracking-tighter transition-colors duration-300 ${priceColor}`}>
           ${livePrice || "1.0842"}
         </div>
         {/* Decorative Grid behind price */}
@@ -49,14 +49,14 @@ const BuySellPanel = () => {
 
       {/* QUANTITY SELECTOR */}
       <div className="space-y-4 mb-10">
-        <label className="text-[10px] font-bold tracking-[0.15em] text-slate-300 ml-2">Position Size (Lots)</label>
+        <label className="text-[10px] font-semibold tracking-[0.15em] text-slate-300 ml-2">Position Size (Lots)</label>
         <div className="flex items-center gap-3"> 
           
           <input
             type="number"
             value={qty}
             onChange={(e) => setQty(Number(e.target.value))}
-            className="flex-1 h-14 bg-transparent border-2 border-white/5 rounded-2xl text-center font-bold text-xl text-white outline-none focus:border-[#0e5da0]/50 transition-all"
+            className="flex-1 h-14 bg-transparent border-2 border-white/5 rounded-2xl text-center font-semibold text-xl text-white outline-none focus:border-[#0e5da0]/50 transition-all"
           /> 
         </div>
       </div>
@@ -70,7 +70,7 @@ const BuySellPanel = () => {
         >
           <div className="relative z-10 flex flex-col items-center justify-center text-slate-950">
             <BiTrendingUp className="text-2xl mb-1 group-hover:scale-125 transition-transform" />
-            <span className="text-[10px] font-bold uppercase tracking-widest">Long / Buy</span>
+            <span className="text-[10px] font-semibold uppercase tracking-widest">Long / Buy</span>
           </div>
           <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform" />
         </button>
@@ -82,7 +82,7 @@ const BuySellPanel = () => {
         >
           <div className="relative z-10 flex flex-col items-center justify-center text-white">
             <BiTrendingDown className="text-2xl mb-1 group-hover:scale-125 transition-transform" />
-            <span className="text-[10px] font-bold uppercase tracking-widest text-white/90">Short / Sell</span>
+            <span className="text-[10px] font-semibold uppercase tracking-widest text-white/90">Short / Sell</span>
           </div>
           <div className="absolute inset-0 bg-black/10 translate-y-full group-hover:translate-y-0 transition-transform" />
         </button>

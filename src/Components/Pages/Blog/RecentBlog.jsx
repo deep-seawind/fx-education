@@ -27,7 +27,7 @@ const RecentBlog = () => {
   return (
     <div className="sticky top-28 space-y-10">
       <div className="p-8 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm">
-        <h4 className="text-xl font-bold text-slate-900 mb-8 tracking-tighter">
+        <h4 className="text-xl font-semibold text-slate-900 mb-8 tracking-tighter">
           Recent <span className="text-[#0e5da0]">Insights</span>
         </h4>
 
@@ -50,19 +50,19 @@ const RecentBlog = () => {
                 {/* Content */}
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-[10px] font-bold text-[#0e5da0] uppercase tracking-widest bg-blue-50 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-semibold text-[#0e5da0] uppercase tracking-widest bg-blue-50 px-2 py-0.5 rounded">
                       {post.category}
                     </span>
-                    <span className="text-[10px] text-slate-400 font-bold uppercase">
+                    <span className="text-[10px] text-slate-400 font-semibold uppercase">
                       {post.date}
                     </span>
                   </div>
 
-                  <h5 className="font-bold text-slate-900 leading-snug group-hover:text-[#0e5da0] transition-colors line-clamp-2">
+                  <h5 className="font-semibold text-slate-900 leading-snug group-hover:text-[#0e5da0] transition-colors line-clamp-2">
                     {post.title}
                   </h5>
 
-                  <div className="mt-2 flex items-center gap-1 text-[10px] font-bold uppercase text-[#0e5da0] opacity-0 group-hover:opacity-100 transition-all -translate-x-2.5 group-hover:translate-x-0">
+                  <div className="mt-2 flex items-center gap-1 text-[10px] font-semibold uppercase text-[#0e5da0] opacity-0 group-hover:opacity-100 transition-all -translate-x-2.5 group-hover:translate-x-0">
                     Read More <HiOutlineChevronRight />
                   </div>
                 </div>
@@ -71,7 +71,7 @@ const RecentBlog = () => {
           ))}
         </div>
 
-        <button className="w-full mt-8 py-4 border-2 border-slate-100 rounded-2xl text-xs font-bold uppercase tracking-widest text-slate-400  bg-color hover:text-white   transition-all">
+        <button className="w-full mt-8 py-4 border-2 border-slate-100 rounded-2xl text-xs font-semibold uppercase tracking-widest text-slate-400  bg-color hover:text-white   transition-all">
           View Newsroom
         </button>
       </div>

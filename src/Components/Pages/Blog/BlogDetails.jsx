@@ -18,18 +18,18 @@ const BlogDetails = () => {
           <article className="col-span-12 lg:col-span-8">
             {/* Header Section */}
             <header className="mb-8">
-              <h1 className="text-4xl md:text-6xl font-bold text-slate-900  ">
+              <h1 className="text-4xl md:text-6xl font-semibold text-slate-900  ">
                 Mastering Institutional
               </h1>
 
               <div className="flex flex-wrap items-center gap-8 py-6 border-y border-slate-100">
-                <div className="flex items-center gap-2 text-slate-500 text-sm font-bold">
+                <div className="flex items-center gap-2 text-slate-500 text-sm font-semibold">
                   <HiOutlineCalendar className="text-[#0e5da0]" /> Dec 24, 2025
                 </div>
-                <div className="flex items-center gap-2 text-slate-500 text-sm font-bold">
+                <div className="flex items-center gap-2 text-slate-500 text-sm font-semibold">
                   <HiOutlineClock className="text-[#0e5da0]" /> 12 Min Read
                 </div>
-                <div className="flex items-center gap-2 text-slate-500 text-sm font-bold">
+                <div className="flex items-center gap-2 text-slate-500 text-sm font-semibold">
                   <HiOutlineUser className="text-[#0e5da0]" /> 1.2k Views
                 </div>
               </div>
@@ -53,7 +53,7 @@ const BlogDetails = () => {
                 footprint of "Smart Money."
               </p>
 
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 uppercase tracking-tight">
+              <h3 className="text-2xl font-semibold text-slate-900 mt-12 mb-6 uppercase tracking-tight">
                 The Anatomy of a Valid Entry
               </h3>
               <p className="mb-8">
@@ -66,7 +66,7 @@ const BlogDetails = () => {
               {/* Callout Box */}
               <div className="bg-slate-900 rounded-4xl p-10 my-12 text-white relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#0e5da0]/20 rounded-full blur-3xl group-hover:bg-[#0e5da0]/40 transition-all" />
-                <h4 className="text-[#0e5da0] font-bold uppercase tracking-widest text-xs mb-4">
+                <h4 className="text-[#0e5da0] font-semibold uppercase tracking-widest text-xs mb-4">
                   Pro Strategy Tip
                 </h4>
                 <p className="text-lg italic font-medium leading-relaxed">

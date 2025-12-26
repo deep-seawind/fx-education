@@ -24,11 +24,11 @@ const TradingPractice = () => {
               <div className="space-y-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0e5da0]/10 border border-[#0e5da0]/20 text-[#0e5da0] mb-2">
                   <HiOutlineCpuChip className="animate-pulse" />
-                  <span className="text-[9px] font-bold uppercase tracking-[0.2em]">
+                  <span className="text-[9px] font-semibold uppercase tracking-[0.2em]">
                     Neural Engine v2.0
                   </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-none">
+                <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tighter leading-none">
                   Trading <span className="text-[#0e5da0]">Practice</span>{" "}
                   Simulator
                 </h1>
@@ -44,10 +44,10 @@ const TradingPractice = () => {
                 <div className="px-6 py-4 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center gap-4">
                   <div className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
                   <div>
-                    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">
+                    <p className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest">
                       Market Status
                     </p>
-                    <p className="text-xs font-bold text-slate-900 uppercase">
+                    <p className="text-xs font-semibold text-slate-900 uppercase">
                       London Open
                     </p>
                   </div>
@@ -55,10 +55,10 @@ const TradingPractice = () => {
                 <div className="px-6 py-4 bg-slate-900 rounded-3xl shadow-xl flex items-center gap-4">
                   <HiOutlineGlobeAlt className="text-[#0e5da0] text-xl" />
                   <div>
-                    <p className="text-[9px] font-bold text-slate-500 uppercase tracking-widest">
+                    <p className="text-[9px] font-semibold text-slate-500 uppercase tracking-widest">
                       Active Server
                     </p>
-                    <p className="text-xs font-bold text-white uppercase">
+                    <p className="text-xs font-semibold text-white uppercase">
                       NY-LD4 Node
                     </p>
                   </div>

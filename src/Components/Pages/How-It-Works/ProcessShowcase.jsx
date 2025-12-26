@@ -43,10 +43,10 @@ const ProcessShowcase = () => {
                 className="w-full h-100 object-cover"
               />
               <div className="absolute bottom-6 left-6 p-4 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl">
-                <p className="text-[10px] font-bold text-white uppercase tracking-widest">
+                <p className="text-[10px] font-semibold text-white uppercase tracking-widest">
                   Platform Sync
                 </p>
-                <p className="text-sm font-bold text-white mt-1">
+                <p className="text-sm font-semibold text-white mt-1">
                   Live MT5 Integration
                 </p>
               </div>
@@ -61,12 +61,12 @@ const ProcessShowcase = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0e5da0]/5 border border-[#0e5da0]/10">
               <HiOutlineSparkles className="text-[#0e5da0]" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0e5da0]">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#0e5da0]">
                 The Environment
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tighter leading-tight">
               Master the{" "}
               <span
                 className="text-transparent bg-clip-text"
@@ -92,7 +92,7 @@ const ProcessShowcase = () => {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-center gap-3 text-slate-700 font-bold"
+                  className="flex items-center gap-3 text-slate-700 font-semibold"
                 >
                   <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center">
                     <HiOutlineShieldCheck className="text-[#0e5da0] text-sm" />
@@ -102,7 +102,7 @@ const ProcessShowcase = () => {
               ))}
             </ul>
 
-            <button className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#0e5da0] group">
+            <button className="flex items-center gap-3 text-sm font-semibold uppercase tracking-widest text-[#0e5da0] group">
               Explore Software Modules
               <HiOutlineArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
@@ -127,12 +127,12 @@ const ProcessShowcase = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100">
               <HiOutlineChartBarSquare className="text-indigo-600" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-600">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-indigo-600">
                 The Strategy
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tighter leading-tight">
               A High-Precision{" "}
               <span
                 className="text-transparent bg-clip-text"
@@ -153,14 +153,14 @@ const ProcessShowcase = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="p-6 rounded-4xl bg-slate-50 border border-slate-100 shadow-inner">
-                <h4 className="text-2xl font-bold text-slate-900">1:3+</h4>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">
+                <h4 className="text-2xl font-semibold text-slate-900">1:3+</h4>
+                <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mt-1">
                   Risk Reward Ratio
                 </p>
               </div>
               <div className="p-6 rounded-4xl bg-slate-50 border border-slate-100 shadow-inner">
-                <h4 className="text-2xl font-bold text-slate-900">Pure</h4>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">
+                <h4 className="text-2xl font-semibold text-slate-900">Pure</h4>
+                <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mt-1">
                   Price Action Logic
                 </p>
               </div>
@@ -182,10 +182,10 @@ const ProcessShowcase = () => {
                 className="w-full h-100 object-cover"
               />
               <div className="absolute top-6 right-6 p-6 backdrop-blur-xl bg-slate-900/80 border border-white/10 rounded-4xl text-white shadow-2xl">
-                <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-indigo-400">
+                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-indigo-400">
                   Winning Probability
                 </p>
-                <p className="text-3xl font-bold mt-1">85.4%</p>
+                <p className="text-3xl font-semibold mt-1">85.4%</p>
                 <div className="mt-3 w-full h-1 bg-white/10 rounded-full overflow-hidden">
                   <div className="h-full w-[85%] bg-indigo-400" />
                 </div>

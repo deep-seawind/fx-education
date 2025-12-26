@@ -36,7 +36,7 @@ const Breadcrumbs = ({
                 <div className="group/item relative">
                   <button
                     className={`
-                    px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-tight transition-all flex items-center gap-1 sm:gap-2
+                    px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-tight transition-all flex items-center gap-1 sm:gap-2
                     ${
                       index === paths.length - 1
                         ? "bg-white text-color shadow-sm border border-indigo-50"
@@ -62,7 +62,7 @@ const Breadcrumbs = ({
                   </button>
 
                   {/* Creative Hover Label */}
-                  <div className="absolute -bottom-10 sm:-bottom-12 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 bg-slate-900 text-[8px] sm:text-[9px] font-bold text-white uppercase tracking-[0.15em] sm:tracking-[0.2em] rounded-md opacity-0 group-hover/item:opacity-100 transition-all translate-y-2 group-hover/item:translate-y-0 pointer-events-none whitespace-nowrap z-50 shadow-xl">
+                  <div className="absolute -bottom-10 sm:-bottom-12 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 bg-slate-900 text-[8px] sm:text-[9px] font-semibold text-white uppercase tracking-[0.15em] sm:tracking-[0.2em] rounded-md opacity-0 group-hover/item:opacity-100 transition-all translate-y-2 group-hover/item:translate-y-0 pointer-events-none whitespace-nowrap z-50 shadow-xl">
                     Open {path}
                   </div>
                 </div>

@@ -36,7 +36,7 @@ const OurMission = () => {
     <section className="relative py-24 bg-white overflow-hidden">
       {/* Background Subtle Branding */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-[0.02] pointer-events-none">
-        <h2 className="text-[30rem] font-bold text-center leading-none uppercase tracking-tighter">
+        <h2 className="text-[30rem] font-semibold text-center leading-none uppercase tracking-tighter">
           Mission
         </h2>
       </div>
@@ -53,12 +53,12 @@ const OurMission = () => {
           >
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-slate-300" />
-              <span className="text-xs font-bold uppercase tracking-[0.3em]" style={{ color: brandColor }}>
+              <span className="text-xs font-semibold uppercase tracking-[0.3em]" style={{ color: brandColor }}>
                 Our Core Purpose
               </span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-[1.1] mb-8">
+            <h2 className="text-4xl lg:text-5xl font-semibold text-slate-900 leading-[1.1] mb-8">
               Empowering the Next <br />
               <span className="text-transparent bg-clip-text"style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>
                 Generation of Elites.
@@ -71,12 +71,12 @@ const OurMission = () => {
 
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <h4 className="text-3xl font-bold text-slate-900 italic">99%</h4>
-                <p className="text-xs uppercase font-bold text-slate-400 tracking-widest mt-1">Success Rate in Labs</p>
+                <h4 className="text-3xl font-semibold text-slate-900 italic">99%</h4>
+                <p className="text-xs uppercase font-semibold text-slate-400 tracking-widest mt-1">Success Rate in Labs</p>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-slate-900 italic">50K+</h4>
-                <p className="text-xs uppercase font-bold text-slate-400 tracking-widest mt-1">Traders Empowered</p>
+                <h4 className="text-3xl font-semibold text-slate-900 italic">50K+</h4>
+                <p className="text-xs uppercase font-semibold text-slate-400 tracking-widest mt-1">Traders Empowered</p>
               </div>
             </div>
           </motion.div>
@@ -107,7 +107,7 @@ const OurMission = () => {
                 >
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">{item.title}</h3>
                 <p className="text-sm text-slate-500 leading-relaxed">
                   {item.desc}
                 </p>

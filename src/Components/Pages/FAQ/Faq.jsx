@@ -44,10 +44,10 @@ const Faq = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.3em] mb-4 block" style={{ color: brandColor }}>
+              <span className="text-xs font-semibold uppercase tracking-[0.3em] mb-4 block" style={{ color: brandColor }}>
                 Knowledge Base
               </span>
-              <h2 className="text-5xl font-bold text-slate-900 tracking-tighter mb-6 leading-tight">
+              <h2 className="text-5xl font-semibold text-slate-900 tracking-tighter mb-6 leading-tight">
                 Frequently Asked <br />
                 <span className="text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>
                   Questions.
@@ -62,7 +62,7 @@ const Faq = () => {
                   <HiOutlineQuestionMarkCircle size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900">Still have questions?</h4>
+                  <h4 className="font-semibold text-slate-900">Still have questions?</h4>
                   <p className="text-sm text-slate-400">support@NIFESDforex.com</p>
                 </div>
               </div>
@@ -99,10 +99,10 @@ const Faq = () => {
                         {faq.icon}
                       </div>
                       <div>
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1 block">
+                        <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 mb-1 block">
                           {faq.category}
                         </span>
-                        <h3 className={`text-xl font-bold transition-colors ${activeIndex === index ? 'text-slate-900' : 'text-slate-600'}`}>
+                        <h3 className={`text-xl font-semibold transition-colors ${activeIndex === index ? 'text-slate-900' : 'text-slate-600'}`}>
                           {faq.question}
                         </h3>
                       </div>

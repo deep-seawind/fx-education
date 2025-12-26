@@ -12,7 +12,7 @@ const CourseExam = () => {
       
       {/* Heading */}
       <div>
-        <h3 className="text-3xl font-bold text-slate-900 mb-3">
+        <h3 className="text-3xl font-semibold text-slate-900 mb-3">
           Assessment & Examination System
         </h3>
         <p className="text-slate-500 max-w-2xl">
@@ -23,7 +23,7 @@ const CourseExam = () => {
 
       {/* MCQ QUIZ SYSTEM */}
       <div>
-        <h4 className="text-xl font-bold text-slate-900 mb-6 uppercase tracking-tight">
+        <h4 className="text-xl font-semibold text-slate-900 mb-6 uppercase tracking-tight">
           MCQ Quiz System
         </h4>
 
@@ -49,7 +49,7 @@ const CourseExam = () => {
 
       {/* LEVEL EXAMS */}
       <div>
-        <h4 className="text-xl font-bold text-slate-900 mb-6 uppercase tracking-tight">
+        <h4 className="text-xl font-semibold text-slate-900 mb-6 uppercase tracking-tight">
           Level Exams (LMS)
         </h4>
 
@@ -86,7 +86,7 @@ const ExamFeature = ({ icon, title, desc }) => (
       {icon}
     </div>
     <div>
-      <h5 className="font-bold text-slate-900 mb-1">{title}</h5>
+      <h5 className="font-semibold text-slate-900 mb-1">{title}</h5>
       <p className="text-sm text-slate-500">{desc}</p>
     </div>
   </div>

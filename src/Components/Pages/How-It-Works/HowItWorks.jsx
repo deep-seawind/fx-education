@@ -72,10 +72,10 @@ const HowItWorks = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="px-4 py-1.5 rounded-full bg-blue-50 text-[#0e5da0] text-[10px] font-bold uppercase tracking-[0.3em] mb-4 border border-blue-100">
+            <span className="px-4 py-1.5 rounded-full bg-blue-50 text-[#0e5da0] text-[10px] font-semibold uppercase tracking-[0.3em] mb-4 border border-blue-100">
               The Roadmap
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tighter mb-6">
               Your Path to <span className="text-transparent bg-clip-text"  style={{
                     backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)`,
                   }}>Consistent Profits</span>
@@ -107,7 +107,7 @@ const HowItWorks = () => {
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
                 {/* Step Number Glow */}
-                <div className="absolute top-6 right-8 text-6xl font-bold text-slate-50 opacity-[0.05] group-hover:opacity-[0.08] transition-opacity">
+                <div className="absolute top-6 right-8 text-6xl font-semibold text-slate-50 opacity-[0.05] group-hover:opacity-[0.08] transition-opacity">
                   {step.id}
                 </div>
 
@@ -120,7 +120,7 @@ const HowItWorks = () => {
 
                 {/* Text Content */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-slate-900 tracking-tight">
+                  <h3 className="text-xl font-semibold text-slate-900 tracking-tight">
                     {step.title}
                   </h3>
                   <p className="text-sm leading-relaxed text-slate-500 font-medium">
@@ -130,7 +130,7 @@ const HowItWorks = () => {
 
                 {/* Bottom Progress Indicator */}
                 <div className="mt-8 pt-6 border-t border-slate-50 flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
                     Phase {step.id}
                   </span>
                   <div
@@ -166,7 +166,7 @@ const HowItWorks = () => {
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-color rounded-full blur-[100px] opacity-20" />
             <div className="relative z-10">
-              <h4 className="text-2xl font-bold mb-2">
+              <h4 className="text-2xl font-semibold mb-2">
                 Ready to change your trading curve?
               </h4>
               <p className="text-slate-400 text-sm">

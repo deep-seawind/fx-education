@@ -69,7 +69,7 @@ const NotFound = () => {
             <motion.h1
               animate={reduceMotion ? {} : { y: [0, -5, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="text-[12rem] md:text-[18rem] font-bold leading-none tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/10 select-none"
+              className="text-[12rem] md:text-[18rem] font-semibold leading-none tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/10 select-none"
             >
               404
             </motion.h1>
@@ -77,7 +77,7 @@ const NotFound = () => {
 
           {/* Message */}
           <div className="max-w-md mx-auto -mt-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
               Signal Lost in Transmission
             </h2>
             <p className="text-slate-400 mb-10 leading-relaxed">
@@ -95,7 +95,7 @@ const NotFound = () => {
                 <motion.button
                   whileHover={{ scale: reduceMotion ? 1 : 1.05 }}
                   whileTap={{ scale: reduceMotion ? 1 : 0.95 }}
-                  className="px-8 py-4 bg-[#0e5da0] text-white rounded-2xl font-bold flex items-center gap-3 shadow-[0_20px_40px_rgba(14,93,160,0.3)] hover:shadow-[0_25px_50px_rgba(14,93,160,0.5)] transition-all"
+                  className="px-8 py-4 bg-[#0e5da0] text-white rounded-2xl font-semibold flex items-center gap-3 shadow-[0_20px_40px_rgba(14,93,160,0.3)] hover:shadow-[0_25px_50px_rgba(14,93,160,0.5)] transition-all"
                 >
                   <HiOutlineArrowLeft className="text-xl" />
                   Return to Dashboard
@@ -109,7 +109,7 @@ const NotFound = () => {
                       ? "transparent"
                       : "rgba(255,255,255,0.05)",
                   }}
-                  className="px-8 py-4 bg-transparent border border-slate-700 text-slate-300 rounded-2xl font-bold transition-colors"
+                  className="px-8 py-4 bg-transparent border border-slate-700 text-slate-300 rounded-2xl font-semibold transition-colors"
                 >
                   Contact Support
                 </motion.button>
@@ -173,10 +173,10 @@ const FloatingPrice = ({
     style={{ top, left, right, position: "absolute" }}
     className="hidden lg:block p-4 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-md will-change-transform"
   >
-    <div className="text-[10px] font-bold text-slate-500 uppercase mb-1">
+    <div className="text-[10px] font-semibold text-slate-500 uppercase mb-1">
       {label}
     </div>
-    <div className="font-mono font-bold" style={{ color }}>
+    <div className="font-mono font-semibold" style={{ color }}>
       {price}
     </div>
   </motion.div>

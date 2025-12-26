@@ -70,13 +70,13 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <Link to="/login">
-              <button className="px-5 py-2.5 text-sm font-bold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color cursor-pointer">
+              <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color cursor-pointer">
                 Login
               </button>
             </Link>
 
             <Link to="/signup">
-              <button className="px-5 py-2.5 text-sm font-bold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-primary-color cursor-pointer">
+              <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-primary-color cursor-pointer">
                 Sign Up
               </button>
             </Link>
@@ -104,7 +104,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="flex items-center justify-between px-4 py-3.5 text-sm font-bold text-slate-600 hover:text-color hover:bg-indigo-50 rounded-xl transition-all duration-200"
+                  className="flex items-center justify-between px-4 py-3.5 text-sm font-semibold text-slate-600 hover:text-color hover:bg-indigo-50 rounded-xl transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -112,10 +112,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-slate-50">
-                <button className="w-full py-3.5 text-sm font-bold text-slate-900 bg-slate-50 rounded-xl border border-slate-200">
+                <button className="w-full py-3.5 text-sm font-semibold text-slate-900 bg-slate-50 rounded-xl border border-slate-200">
                   Login
                 </button>
-                <button className="w-full py-3.5 text-sm font-bold text-white bg-color rounded-xl shadow-lg shadow-indigo-100">
+                <button className="w-full py-3.5 text-sm font-semibold text-white bg-color rounded-xl shadow-lg shadow-indigo-100">
                   Sign Up
                 </button>
               </div>

@@ -59,11 +59,11 @@ const CertificationUI = () => {
                 <div className="space-y-1">
                   <div className="flex items-center gap-2 text-[#0e5da0] mb-2">
                     <BiShieldQuarter className="text-2xl" />
-                    <span className="text-[10px] font-bold uppercase tracking-[0.3em]">
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">
                       Official Credentials
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 tracking-tighter">
+                  <h3 className="text-2xl font-semibold text-slate-900 tracking-tighter">
                     Board of Governors
                   </h3>
                 </div>
@@ -75,11 +75,11 @@ const CertificationUI = () => {
 
               {/* Awarded To */}
               <div className="mb-20 relative">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
                   Awarded To
                 </p>
                 <div className="relative inline-block">
-                  <h4 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter">
+                  <h4 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tighter">
                     Alexander Pierce
                   </h4>
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-[#0e5da0] to-transparent rounded-full" />
@@ -88,7 +88,7 @@ const CertificationUI = () => {
 
               {/* Level */}
               <div className="flex items-center gap-6 mb-16">
-                <div className="px-5 py-2 rounded-full bg-[#0e5da0] text-white text-xs font-bold tracking-widest uppercase shadow">
+                <div className="px-5 py-2 rounded-full bg-[#0e5da0] text-white text-xs font-semibold tracking-widest uppercase shadow">
                   Level 04 Certified
                 </div>
                 <div className="h-px flex-1 bg-slate-200" />
@@ -99,7 +99,7 @@ const CertificationUI = () => {
                 <div className="space-y-4">
                   <BiQrScan className="text-5xl text-slate-300 group-hover:text-[#0e5da0] transition-colors duration-500" />
                   <div>
-                    <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                    <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-widest">
                       Verification Hash
                     </p>
                     <p className="text-xs font-mono text-slate-700">
@@ -110,7 +110,7 @@ const CertificationUI = () => {
 
                 <div className="text-center">
                   <BiBadgeCheck className="text-5xl text-emerald-500 mx-auto mb-2 drop-shadow-sm" />
-                  <p className="text-[10px] font-bold text-slate-900 capitalize tracking-widest">
+                  <p className="text-[10px] font-semibold text-slate-900 capitalize tracking-widest">
                     Authenticated
                   </p>
                 </div>
@@ -124,10 +124,10 @@ const CertificationUI = () => {
                   <BiCheckCircle />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-slate-900 tracking-tight">
+                  <p className="text-xs font-semibold text-slate-900 tracking-tight">
                     Placement Ready
                   </p>
-                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">
+                  <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-tighter">
                     Score: 98/100
                   </p>
                 </div>
@@ -138,13 +138,13 @@ const CertificationUI = () => {
           {/* RIGHT: CONTENT & PATHWAY */}
           <div className="w-full lg:w-1/2 space-y-12">
             <div>
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-blue-500/10 rounded-full text-color font-bold text-[10px] uppercase tracking-widest mb-8 border border-blue-500/20">
+              <div className="inline-flex items-center gap-3 px-4 py-2 bg-blue-500/10 rounded-full text-color font-semibold text-[10px] uppercase tracking-widest mb-8 border border-blue-500/20">
                 <span className="relative flex h-2 w-2">
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-color"></span>
                 </span>
                 Career Placement Protocol
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter leading-none mb-8">
+              <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tighter leading-none mb-8">
                 The Proof of <span className=" text-color">Skill Pathway.</span>
               </h2>
               <p className="text-xl text-slate-400 font-medium leading-relaxed">
@@ -167,7 +167,7 @@ const CertificationUI = () => {
                 `}
                 >
                   <div
-                    className={`w-14 h-14 rounded-2xl flex items-center justify-center font-bold text-lg transition-all
+                    className={`w-14 h-14 rounded-2xl flex items-center justify-center font-semibold text-lg transition-all
                     ${
                       item.status === "Locked"
                         ? "bg-slate-500 text-slate-300"
@@ -179,7 +179,7 @@ const CertificationUI = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <h4 className="font-bold text-white tracking-tight">
+                      <h4 className="font-semibold text-white tracking-tight">
                         {item.title}
                       </h4>
                       {item.status === "Completed" && (
@@ -191,7 +191,7 @@ const CertificationUI = () => {
                     </p>
                   </div>
                   <div
-                    className={`text-[10px] font-bold uppercase tracking-widest transition-colors
+                    className={`text-[10px] font-semibold uppercase tracking-widest transition-colors
                     ${
                       item.status === "Active"
                         ? "text-indigo-400"

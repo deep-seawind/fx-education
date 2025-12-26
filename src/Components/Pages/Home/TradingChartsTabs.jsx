@@ -20,7 +20,7 @@ const TradingChartsTabs = () => {
         {/* Header Section */}
         <div className=" mb-10 gap-4">
           <div>
-            <h2 className="text-3xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-3xl font-semibold text-slate-900 tracking-tight">
               Market Intelligence
             </h2>
             <p className="text-slate-500 mt-1 flex items-center gap-2">

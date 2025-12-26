@@ -33,7 +33,7 @@ const LoginFormUI = () => {
               <div className="w-12 h-12 bg-color rounded-2xl flex items-center justify-center mb-10 shadow-lg shadow-indigo-500/40">
                 <BiShieldQuarter className="text-2xl text-white" />
               </div>
-              <h2 className="text-4xl font-bold text-white tracking-tighter leading-tight mb-6">
+              <h2 className="text-4xl font-semibold text-white tracking-tighter leading-tight mb-6">
                 Institutional
                 <span className="text-secondary-color ps-2">Market</span> <br />
                 Intelligence.
@@ -57,7 +57,7 @@ const LoginFormUI = () => {
                   <div className="text-indigo-400 group-hover:scale-125 transition-transform text-2xl">
                     {item.icon}
                   </div>
-                  <span className="font-bold tracking-tight">{item.text}</span>
+                  <span className="font-semibold tracking-tight">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -65,7 +65,7 @@ const LoginFormUI = () => {
             <div className="relative z-10 pt-10 border-t border-white/10 mt-10">
               <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
                 <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-300">
                   Global Servers Operational
                 </p>
               </div>
@@ -76,13 +76,13 @@ const LoginFormUI = () => {
           <div className="lg:w-7/12 p-12 lg:p-16 bg-white">
             <div className="max-w-lg mx-auto">
               <div className="mb-12">
-                <h3 className="text-3xl font-bold text-slate-900 tracking-tighter mb-2">
+                <h3 className="text-3xl font-semibold text-slate-900 tracking-tighter mb-2">
                   Secure Login
                 </h3>
                 <p className="text-slate-500 font-medium">
                   Need terminal access?{" "}
                   <Link to={"/signup"}>
-                    <span className="text-color font-bold cursor-pointer hover:underline">
+                    <span className="text-color font-semibold cursor-pointer hover:underline">
                       Register Now
                     </span>
                   </Link>
@@ -101,10 +101,10 @@ const LoginFormUI = () => {
               <LogForm />
 
               <div className="mt-12 pt-8 border-t border-slate-100 flex items-center justify-between opacity-60">
-                <div className="text-[9px] font-bold tracking-widest uppercase text-slate-400">
+                <div className="text-[9px] font-semibold tracking-widest uppercase text-slate-400">
                   AES-256 Encrypted
                 </div>
-                <div className="text-[9px] font-bold tracking-widest uppercase text-slate-400">
+                <div className="text-[9px] font-semibold tracking-widest uppercase text-slate-400">
                   Session ID: 492-XPL
                 </div>
               </div>

@@ -83,7 +83,7 @@ const slides = [
               {slide.badge}
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-slate-100 leading-[1.1] tracking-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-6xl font-semibold text-slate-100 leading-[1.1] tracking-tight">
               {slide.title}
             </h1>
 
@@ -92,12 +92,12 @@ const slides = [
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="flex items-center gap-2 px-8 py-4 bg-primary-color hover:bg-white text-white hover:text-color rounded-2xl font-bold shadow-xl transition-all hover:-translate-y-1">
+              <button className="flex items-center gap-2 px-8 py-4 bg-primary-color hover:bg-white text-white hover:text-color rounded-2xl font-semibold shadow-xl transition-all hover:-translate-y-1">
                 Start Learning
                 <BiRightArrowAlt className="text-2xl" />
               </button>
 
-              <button className="flex items-center gap-2 px-8 py-4 bg-white backdrop-blur border border-slate-200 text-slate-700 rounded-2xl font-bold">
+              <button className="flex items-center gap-2 px-8 py-4 bg-white backdrop-blur border border-slate-200 text-slate-700 rounded-2xl font-semibold">
                 <BiPlayCircle className="text-2xl text-color" />
                 Explore Courses
               </button>
@@ -111,14 +111,14 @@ const slides = [
                     <div className="space-y-8">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+                          <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest">
                             Portfolio Value
                           </p>
-                          <h3 className="text-4xl font-bold text-slate-900 mt-1">
+                          <h3 className="text-4xl font-semibold text-slate-900 mt-1">
                             $124,500.00
                           </h3>
                         </div>
-                        <div className="bg-emerald-50 text-emerald-600 px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-1">
+                        <div className="bg-emerald-50 text-emerald-600 px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-1">
                           <BiTrendingUp /> +12.4%
                         </div>
                       </div>
@@ -147,10 +147,10 @@ const slides = [
                             key={i}
                             className="bg-slate-50 rounded-2xl p-4 border border-slate-100/50"
                           >
-                            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1">
+                            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-tighter mb-1">
                               {item}
                             </p>
-                            <p className="text-lg font-bold text-slate-800">
+                            <p className="text-lg font-semibold text-slate-800">
                               {i === 1 ? "78%" : i === 2 ? "Elite" : "247"}
                             </p>
                           </div>
@@ -164,10 +164,10 @@ const slides = [
                         <BiAward className="w-6 h-6 text-emerald-600" />
                       </div>
                       <div>
-                        <p className="text-sm font-bold text-slate-900 tracking-tight">
+                        <p className="text-sm font-semibold text-slate-900 tracking-tight">
                           Level 3 Complete
                         </p>
-                        <p className="text-[10px] font-bold text-emerald-500 uppercase">
+                        <p className="text-[10px] font-semibold text-emerald-500 uppercase">
                           Certified Global Trader
                         </p>
                       </div>
@@ -178,10 +178,10 @@ const slides = [
                         <BiTrendingUp className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <p className="text-sm font-bold text-white tracking-tight">
+                        <p className="text-sm font-semibold text-white tracking-tight">
                           Active Trade Profit
                         </p>
-                        <p className="text-xs font-bold text-emerald-400">
+                        <p className="text-xs font-semibold text-emerald-400">
                           +$2,450.00
                         </p>
                       </div>

@@ -33,7 +33,7 @@ const SignupFormUI = () => {
               <div className="w-12 h-12 bg-color rounded-2xl flex items-center justify-center mb-10 shadow-lg shadow-indigo-500/40">
                 <BiShieldQuarter className="text-2xl text-white" />
               </div>
-              <h2 className="text-4xl font-bold text-white tracking-tighter leading-tight mb-6 ">
+              <h2 className="text-4xl font-semibold text-white tracking-tighter leading-tight mb-6 ">
                 Start your
                 <span className="text-secondary-color ps-2">Institutional</span> <br />
                 journey today.
@@ -57,18 +57,18 @@ const SignupFormUI = () => {
                   <div className="text-indigo-400 group-hover:scale-125 transition-transform text-2xl">
                     {item.icon}
                   </div>
-                  <span className=" font-bold tracking-tight">{item.text}</span>
+                  <span className=" font-semibold tracking-tight">{item.text}</span>
                 </div>
               ))}
             </div>
 
             <div className="relative z-10 pt-10 border-t border-white/10 mt-10">
-              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500">
                 Official Partner of
               </p>
               <div className="flex gap-6 mt-4 opacity-50 grayscale contrast-125">
-                <div className="font-bold text-white italic">TRUSTED</div>
-                <div className="font-bold text-white italic">SECURE</div>
+                <div className="font-semibold text-white italic">TRUSTED</div>
+                <div className="font-semibold text-white italic">SECURE</div>
               </div>
             </div>
           </div>
@@ -77,13 +77,13 @@ const SignupFormUI = () => {
           <div className="lg:w-7/12 p-12 lg:p-16 bg-white">
             <div className="max-w-lg mx-auto">
               <div className="mb-12">
-                <h3 className="text-3xl font-bold text-slate-900 tracking-tighter mb-2">
+                <h3 className="text-3xl font-semibold text-slate-900 tracking-tighter mb-2">
                   Create Account
                 </h3>
                 <p className="text-slate-500 font-medium">
                   Already have an account?{" "}
                   <Link to={"/login"}>
-                    <span className="text-color font-bold cursor-pointer hover:underline">
+                    <span className="text-color font-semibold cursor-pointer hover:underline">
                       Login
                     </span>
                   </Link>

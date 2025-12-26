@@ -21,7 +21,7 @@ const ContactForm = () => {
   `;
 
   return (
-    <div className="py-20 px-4 bg-slate-50/50 min-h-screen">
+    <div className="py-20 px-4 bg-slate-200/50 min-h-screen">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -39,12 +39,12 @@ const ContactForm = () => {
             className="flex items-center gap-2 mb-4"
           >
             <div className="h-px w-8 bg-[#0e5da0]" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0e5da0]">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#0e5da0]">
               Communication Port
             </span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-4">
             Connect with <span className="italic font-light">Precision.</span>
           </h2>
           <p className="text-slate-500 text-lg">
@@ -59,7 +59,7 @@ const ContactForm = () => {
         >
           {/* Subject Selection Tags */}
           <div className="space-y-4">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">
               Select Department
             </span>
             <div className="flex flex-wrap gap-3">
@@ -69,7 +69,7 @@ const ContactForm = () => {
                     key={tag}
                     type="button"
                     onClick={() => setSelectedTag(tag)}
-                    className={`px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 border
+                    className={`px-6 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-300 border
                     ${
                       selectedTag === tag
                         ? "bg-slate-900 border-slate-900 text-white shadow-lg"
@@ -138,7 +138,7 @@ const ContactForm = () => {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full md:w-auto px-12 py-5 bg-[#0e5da0] text-white rounded-2xl font-bold uppercase tracking-[0.2em] text-xs flex items-center justify-center gap-4 shadow-[0_20px_40px_rgba(14,93,160,0.2)] hover:shadow-[0_25px_50px_rgba(14,93,160,0.3)] transition-all mx-auto"
+              className="w-full md:w-auto px-12 py-5 bg-[#0e5da0] text-white rounded-2xl font-semibold uppercase tracking-[0.2em] text-xs flex items-center justify-center gap-4 shadow-[0_20px_40px_rgba(14,93,160,0.2)] hover:shadow-[0_25px_50px_rgba(14,93,160,0.3)] transition-all mx-auto"
             >
               Submit Message
             </motion.button>

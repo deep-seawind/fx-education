@@ -10,9 +10,9 @@ const CourseSidebar = () => {
         {/* Pricing Section */}
         <div className="mb-6">
           <div className="flex flex-wrap items-baseline gap-2 mb-1">
-            <span className="text-4xl md:text-5xl font-bold text-slate-900">₹549</span>
+            <span className="text-4xl md:text-5xl font-semibold text-slate-900">₹549</span>
             <span className="text-base md:text-lg text-slate-400 line-through decoration-rose-500/30">₹799</span>
-            <span className="text-xs font-bold text-emerald-500 bg-emerald-50 px-2 py-0.5 rounded-lg">31% OFF</span>
+            <span className="text-xs font-semibold text-emerald-500 bg-emerald-50 px-2 py-0.5 rounded-lg">31% OFF</span>
           </div>
 
           <div className="flex items-center gap-2 mt-4 p-3 bg-rose-50 rounded-2xl border border-rose-100/50">
@@ -29,7 +29,7 @@ const CourseSidebar = () => {
         {/* Primary Actions */}
         <div className="space-y-3 mb-6 md:mb-8">
             <Link to={"/checkout"}>
-          <button className="w-full py-4 md:py-4 bg-[#0e5da0] text-white rounded-2xl text-xl font-semibold tracking-widest shadow-xl shadow-[#0e5da0]/20 hover:-translate-y-1 active:scale-95 transition-all">
+          <button className="w-full py-4 md:py-4 bg-color text-white rounded-2xl text-xl font-semibold tracking-widest shadow-xl shadow-[#0e5da0]/20 hover:-translate-y-1 active:scale-95 transition-all">
             Enroll Now
           </button>  
           </Link>
@@ -37,7 +37,7 @@ const CourseSidebar = () => {
 
         {/* Features List */}
         <div className="pt-6 border-t border-slate-50">
-          <p className="text-[10px] font-bold text-slate-400 tracking-widest mb-4">
+          <p className="text-[10px] font-semibold text-slate-400 tracking-widest mb-4">
             This course includes:
           </p>
           <div className="grid grid-cols-1 gap-4">

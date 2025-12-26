@@ -70,12 +70,12 @@ const DemoTrading = () => {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
                 <span className="w-2 h-2 rounded-full bg-color animate-pulse" />
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#0e5da0]">
+                <span className="text-[10px] font-semibold uppercase tracking-widest text-[#0e5da0]">
                   Sandbox Environment
                 </span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
+              <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 leading-tight mb-6">
                 Institutional Trading <br />
                 <span className="text-color">Without the Capital Risk.</span>
               </h2>
@@ -108,7 +108,7 @@ const DemoTrading = () => {
                     <f.icon />
                   </div>
 
-                  <h4 className="font-bold text-slate-900 mb-1">
+                  <h4 className="font-semibold text-slate-900 mb-1">
                     {f.title}
                   </h4>
                   <p className="text-sm text-slate-500 font-medium leading-relaxed">

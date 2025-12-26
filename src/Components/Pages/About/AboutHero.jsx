@@ -25,7 +25,7 @@ const AboutHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-8 leading-[0.95]"
+            className="text-4xl md:text-5xl font-semibold tracking-tighter text-slate-900 mb-8 leading-[0.95]"
           >
             Master the <span className="text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>Global</span> 
             <span className="italic font-serif font-light ps-2" style={{ color: brandColor }}>Financial Markets.</span>
@@ -37,7 +37,7 @@ const AboutHero = () => {
             transition={{ delay: 0.4 }}
             className=" text-slate-500 font-medium leading-relaxed"
           >
-            Join over 50,000+ traders worldwide. We provide the <span className="text-slate-900 font-bold">tools, psychology, and precision</span> 
+            Join over 50,000+ traders worldwide. We provide the <span className="text-slate-900 font-semibold">tools, psychology, and precision</span> 
             needed to navigate the Forex markets with institutional-level edge.
           </motion.p>
         </div>
@@ -68,7 +68,7 @@ const AboutHero = () => {
               
               <div className="absolute bottom-10 left-10 text-white">
                
-                <h3 className="text-4xl font-bold">Trade Like a <span className='text-[#52afff]'>Professional.</span></h3>
+                <h3 className="text-4xl font-semibold">Trade Like a <span className='text-[#52afff]'>Professional.</span></h3>
               </div>
             </div>
           </motion.div>
@@ -86,8 +86,8 @@ const AboutHero = () => {
                 style={{ color: brandColor }}
               />
               <div className="flex justify-between items-start">
-                <h2 className="text-6xl font-bold" style={{ color: brandColor }}>24/7</h2>
-                <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[10px] font-bold">MARKET HOURS</span>
+                <h2 className="text-6xl font-semibold" style={{ color: brandColor }}>24/7</h2>
+                <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[10px] font-semibold">MARKET HOURS</span>
               </div>
               <p className="text-slate-600 text-lg font-semibold leading-snug">
                 Structured learning designed for <span style={{ color: brandColor }}>every time zone</span>, from London Open to New York Close.
@@ -107,7 +107,7 @@ const AboutHero = () => {
                 <HiOutlineChartBar className="text-emerald-300" />
               </div>
               <div>
-                <h4 className="text-2xl font-bold mb-1">Elite Curriculum</h4>
+                <h4 className="text-2xl font-semibold mb-1">Elite Curriculum</h4>
                 <p className="text-white/70 font-medium text-sm">From basics to advanced Smart Money Concepts (SMC).</p>
               </div>
             </motion.div>
