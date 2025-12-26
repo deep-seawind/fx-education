@@ -12,12 +12,12 @@ body.exam-mode header,
 body.exam-mode footer {
   display: none !important;
 }
- 
+
 body.exam-mode {
   overflow: hidden;
 }
 
-p{
+p {
   font-size: 16px;
 }
 
@@ -31,10 +31,16 @@ p{
   background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
   color: white;
 }
-.bg-primary-color{
-   background: linear-gradient(30deg, #de9f17 2%, #cf9a15 31%, #fff68a 68%, #ffcf45 96%);
+.bg-primary-color {
+  background: linear-gradient(
+    30deg,
+    #de9f17 2%,
+    #cf9a15 31%,
+    #fff68a 68%,
+    #ffcf45 96%
+  );
   color: black;
-} 
+}
 .text-color {
   color: var(--primary-blue);
 }
@@ -69,4 +75,3 @@ p{
 .goog-te-gadget {
   font-size: 0 !important;
 }
- 
