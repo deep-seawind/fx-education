@@ -47,11 +47,11 @@ const TradingChartsTabs = () => {
                   {isActive && (
                     <motion.div
                       layoutId="activeTabIndicator"
-                      className="absolute inset-0 bg-blue-600 rounded-xl shadow-md shadow-blue-200"
+                      className="absolute inset-0 bg-color rounded-xl shadow-md shadow-blue-200"
                       transition={{ type: "spring", duration: 0.5 }}
                     />
                   )}
-                  <span className="relative flex items-center gap-2">
+                  <span className="relative flex items-center justify-center gap-2">
                     <span>{chart.icon}</span>
                     {chart.title}
                   </span>

@@ -58,7 +58,7 @@ const OurMission = () => {
               </span>
             </div>
             
-            <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] mb-8">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-[1.1] mb-8">
               Empowering the Next <br />
               <span className="text-transparent bg-clip-text"style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>
                 Generation of Elites.

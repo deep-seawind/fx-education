@@ -82,10 +82,10 @@ const CoursesDetails = () => {
             {/* Left Content: Forex Course Details */}
             <div className="order-2 lg:order-1">
               <div className="flex flex-wrap items-center gap-3 mb-6">
-                <span className="px-3 py-1 rounded-lg bg-orange-100 text-orange-700 text-[10px] font-black uppercase tracking-widest shadow-sm border border-orange-200">
+                <span className="px-3 py-1 rounded-lg bg-orange-100 text-orange-700 text-[10px] font-bold uppercase tracking-widest shadow-sm border border-orange-200">
                   Hot & New
                 </span>
-                <span className="px-3 py-1 rounded-lg bg-[#0e5da0]/10 text-[#0e5da0] text-[10px] font-black uppercase tracking-widest border border-[#0e5da0]/10">
+                <span className="px-3 py-1 rounded-lg bg-[#0e5da0]/10 text-[#0e5da0] text-[10px] font-bold uppercase tracking-widest border border-[#0e5da0]/10">
                   Beginner Level 2026
                 </span> 
               </div>
@@ -110,13 +110,13 @@ const CoursesDetails = () => {
                       alt="Instructor"
                     />
                     <div className="flex flex-col">
-                      <span className="text-[10px] font-black text-slate-400 uppercase leading-none mb-1">Created by</span>
+                      <span className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Created by</span>
                       <span className="text-sm font-bold text-slate-800 leading-none">Alex Rivera</span>
                     </div>
                   </div>
                   
                   <div className="flex flex-col">
-                    <span className="text-[10px] font-black text-slate-400 uppercase leading-none mb-1">Students Enrolled</span>
+                    <span className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Students Enrolled</span>
                     <span className="text-sm font-bold text-slate-700 leading-none">450 Active Traders</span>
                   </div>
                 </div>

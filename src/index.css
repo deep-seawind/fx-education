@@ -8,6 +8,19 @@ body {
   top: 0px !important;
 }
 
+body.exam-mode header,
+body.exam-mode footer {
+  display: none !important;
+}
+ 
+body.exam-mode {
+  overflow: hidden;
+}
+
+p{
+  font-size: 16px;
+}
+
 :root {
   --primary-dark: #0a2955;
   --primary-blue: #0e5da0;
@@ -18,7 +31,10 @@ body {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
   color: white;
 }
-
+.bg-primary-color{
+   background: linear-gradient(30deg, #de9f17 2%, #cf9a15 31%, #fff68a 68%, #ffcf45 96%);
+  color: black;
+} 
 .text-color {
   color: var(--primary-blue);
 }
@@ -54,11 +70,3 @@ body {
   font-size: 0 !important;
 }
  
-body.exam-mode header,
-body.exam-mode footer {
-  display: none !important;
-}
- 
-body.exam-mode {
-  overflow: hidden;
-}

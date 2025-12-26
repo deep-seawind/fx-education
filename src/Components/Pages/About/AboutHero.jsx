@@ -6,7 +6,7 @@ const AboutHero = () => {
   const brandColor = "#0e5da0";
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-white">
+    <section className="relative flex items-center justify-center py-16 overflow-hidden bg-white">
       
       {/* Dynamic Financial Mesh Background */}
       <div className="absolute inset-0 z-0">
@@ -27,8 +27,8 @@ const AboutHero = () => {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-8 leading-[0.95]"
           >
-            Master the <span className="text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>Global</span> <br />
-            <span className="italic font-serif font-light" style={{ color: brandColor }}>Financial Markets.</span>
+            Master the <span className="text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>Global</span> 
+            <span className="italic font-serif font-light ps-2" style={{ color: brandColor }}>Financial Markets.</span>
           </motion.h1>
 
           <motion.p 
@@ -59,19 +59,16 @@ const AboutHero = () => {
             
             <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-2xl bg-slate-900">
               <img 
-                src="https://images.unsplash.com/photo-1611974717482-9831d6196f6a?auto=format&fit=crop&q=80&w=1200" 
+                src="https://plus.unsplash.com/premium_photo-1681487767138-ddf2d67b35c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Zm9yZXglMjB0cmFkaW5nfGVufDB8fDB8fHww" 
                 alt="Forex Charts Analytics"
-                className="w-full h-130 object-cover opacity-60 transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-130 object-cover transition-transform duration-1000 group-hover:scale-105"
               />
               {/* Data Overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent" />
               
               <div className="absolute bottom-10 left-10 text-white">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
-                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-400">Live Market Access</p>
-                </div>
-                <h3 className="text-4xl font-bold">Trade Like a <br/><span style={{ color: brandColor }}>Professional.</span></h3>
+               
+                <h3 className="text-4xl font-bold">Trade Like a <span className='text-[#52afff]'>Professional.</span></h3>
               </div>
             </div>
           </motion.div>

@@ -22,7 +22,7 @@ const BlogSection = () => {
                 Educational Insights
               </span>
 
-              <h2 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tighter leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tighter leading-tight">
                 Latest from the
                 <span
                   className="text-transparent bg-clip-text pe-2"
@@ -36,8 +36,8 @@ const BlogSection = () => {
             </div>
 
             <button
-              className="px-8 py-4 rounded-2xl font-bold text-white transition-transform hover:scale-105 shadow-xl shadow-blue-100"
-              style={{ backgroundColor: brandColor }}
+              className="px-8 py-4 rounded-2xl font-bold text-white transition-transform hover:scale-105 shadow-xl shadow-blue-100 bg-color"
+        
             >
               View All Articles
             </button>

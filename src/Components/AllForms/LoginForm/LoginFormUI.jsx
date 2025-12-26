@@ -18,7 +18,7 @@ const LoginFormUI = () => {
     <>
       <Breadcrumbs paths={["Authentication", "Institutional Login"]} />
 
-      <div className="min-h-screen bg-[#fafbff] flex items-center justify-center p-6 lg:p-12 relative overflow-hidden">
+      <div className="bg-[#fafbff] flex items-center justify-center p-6 lg:p-12 relative overflow-hidden">
         {/* Dynamic Background Elements */}
         <div className="absolute top-[-10%] left-[-5%] w-160 h-160 bg-indigo-50 rounded-full blur-[120px] -z-10" />
         <div className="absolute bottom-[-10%] right-[-5%] w-120 h-120 bg-blue-50 rounded-full blur-[100px] -z-10" />
@@ -65,7 +65,7 @@ const LoginFormUI = () => {
             <div className="relative z-10 pt-10 border-t border-white/10 mt-10">
               <div className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
                 <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-300">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300">
                   Global Servers Operational
                 </p>
               </div>
@@ -101,10 +101,10 @@ const LoginFormUI = () => {
               <LogForm />
 
               <div className="mt-12 pt-8 border-t border-slate-100 flex items-center justify-between opacity-60">
-                <div className="text-[9px] font-black tracking-widest uppercase text-slate-400">
+                <div className="text-[9px] font-bold tracking-widest uppercase text-slate-400">
                   AES-256 Encrypted
                 </div>
-                <div className="text-[9px] font-black tracking-widest uppercase text-slate-400">
+                <div className="text-[9px] font-bold tracking-widest uppercase text-slate-400">
                   Session ID: 492-XPL
                 </div>
               </div>

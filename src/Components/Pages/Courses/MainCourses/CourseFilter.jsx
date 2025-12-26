@@ -32,7 +32,7 @@ const CourseFilter = () => {
       <div className="w-10 h-10 rounded-xl bg-[#0e5da0]/10 text-[#0e5da0] flex items-center justify-center text-xl">
         <BiSliderAlt />
       </div>
-      <h3 className="font-black text-slate-900 tracking-tight">
+      <h3 className="font-bold text-slate-900 tracking-tight">
         Filter Courses
       </h3>
     </div>
@@ -51,7 +51,7 @@ const CourseFilter = () => {
 
     {/* CATEGORIES */}
     <div className="space-y-2 mb-10">
-      <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">
         Categories
       </p>
 
@@ -75,7 +75,7 @@ const CourseFilter = () => {
     {/* QUICK FILTERS */}
     <div className="space-y-6 border-t border-slate-100 pt-6">
       <div>
-        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">
           Sort By
         </p>
         <select
@@ -90,7 +90,7 @@ const CourseFilter = () => {
       </div>
 
       <div>
-        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3">
           Filters
         </p>
         <div className="space-y-3">

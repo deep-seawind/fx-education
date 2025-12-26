@@ -92,7 +92,7 @@ const slides = [
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="flex items-center gap-2 px-8 py-4 bg-color hover:bg-white text-white hover:text-color rounded-2xl font-bold shadow-xl transition-all hover:-translate-y-1">
+              <button className="flex items-center gap-2 px-8 py-4 bg-primary-color hover:bg-white text-white hover:text-color rounded-2xl font-bold shadow-xl transition-all hover:-translate-y-1">
                 Start Learning
                 <BiRightArrowAlt className="text-2xl" />
               </button>
@@ -114,7 +114,7 @@ const slides = [
                           <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                             Portfolio Value
                           </p>
-                          <h3 className="text-4xl font-black text-slate-900 mt-1">
+                          <h3 className="text-4xl font-bold text-slate-900 mt-1">
                             $124,500.00
                           </h3>
                         </div>

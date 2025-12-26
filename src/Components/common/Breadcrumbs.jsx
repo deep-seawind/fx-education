@@ -62,7 +62,7 @@ const Breadcrumbs = ({
                   </button>
 
                   {/* Creative Hover Label */}
-                  <div className="absolute -bottom-10 sm:-bottom-12 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 bg-slate-900 text-[8px] sm:text-[9px] font-black text-white uppercase tracking-[0.15em] sm:tracking-[0.2em] rounded-md opacity-0 group-hover/item:opacity-100 transition-all translate-y-2 group-hover/item:translate-y-0 pointer-events-none whitespace-nowrap z-50 shadow-xl">
+                  <div className="absolute -bottom-10 sm:-bottom-12 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 bg-slate-900 text-[8px] sm:text-[9px] font-bold text-white uppercase tracking-[0.15em] sm:tracking-[0.2em] rounded-md opacity-0 group-hover/item:opacity-100 transition-all translate-y-2 group-hover/item:translate-y-0 pointer-events-none whitespace-nowrap z-50 shadow-xl">
                     Open {path}
                   </div>
                 </div>

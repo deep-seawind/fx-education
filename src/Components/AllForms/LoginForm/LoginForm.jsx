@@ -6,7 +6,7 @@ const LogForm = () => {
     <>
       <form className="space-y-6">
         <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">
+          <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
             Account Email
           </label>
           <div className="relative group">
@@ -21,7 +21,7 @@ const LogForm = () => {
 
         <div className="space-y-2">
           <div className="flex justify-between items-center px-1">
-            <label className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
               Security Password
             </label>
             <span className="text-[10px] font-bold text-color cursor-pointer hover:underline">

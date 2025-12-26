@@ -10,7 +10,7 @@ const navItems = [
   { name: "How It Works", href: "/how-it-works" },
   { name: "Courses", href: "/main-courses" },
   { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contact Us", href: "/contact" },
 ];
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,13 +70,13 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <Link to="/login">
-              <button className="text-sm font-bold hover:text-[#135f9b] transition-colors">
+              <button className="px-5 py-2.5 text-sm font-bold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color cursor-pointer">
                 Login
               </button>
             </Link>
 
             <Link to="/signup">
-              <button className="px-5 py-2.5 text-sm font-bold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color">
+              <button className="px-5 py-2.5 text-sm font-bold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-primary-color cursor-pointer">
                 Sign Up
               </button>
             </Link>

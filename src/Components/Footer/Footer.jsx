@@ -3,7 +3,7 @@ import React from "react";
 import {
   BiTrendingUp,
   BiMailSend,
-  BiPhoneCall, 
+  BiPhoneCall,
   BiLogoYoutube,
   BiLogoInstagramAlt,
   BiChevronRight,
@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="relative z-10 text-center lg:text-left space-y-3">
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <RiVerifiedBadgeFill className="text-color text-xl" />
-                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-color">
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-color">
                   Join the Elite 1%
                 </span>
               </div>
@@ -75,16 +75,13 @@ const Footer = () => {
             </div>
 
             <div className="relative z-10 flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
-              <button className="px-8 py-4 bg-white text-slate-900 font-semibold rounded-xl hover:bg-color hover:text-white transition-all duration-300 active:scale-95 shadow-lg">
-                Begin Application
-              </button>
-              <div className="relative flex-1 sm:w-64">
+              <div className="relative flex-1 sm:w-90">
                 <input
                   type="email"
                   placeholder="Market Newsletter"
                   className="w-full px-5 py-4 bg-slate-900/50 border border-slate-700 rounded-xl focus:outline-none focus:border-indigo-400 transition-all text-sm"
                 />
-                <button className="absolute right-2 top-2 p-2 bg-slate-800 rounded-lg hover:text-white transition-colors">
+                <button className="absolute right-2 top-2 p-2.5 bg-primary-color rounded-lg hover:text-white transition-colors">
                   <BiSend />
                 </button>
               </div>
@@ -97,9 +94,9 @@ const Footer = () => {
           {/* Brand & Corporate ID */}
           <div className="lg:col-span-4 space-y-8">
             <div className="flex items-center gap-3">
-               <img src={Logo} alt="" className="w-28 bg-white p-2 rounded-md"/>
+              <img src={Logo} alt="" className="w-28 bg-white p-2 rounded-md" />
             </div>
- 
+
             <div className="space-y-4">
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
@@ -144,20 +141,20 @@ const Footer = () => {
         {/* --- 03. COMPLIANCE & SOCIAL BAR --- */}
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <p className="text-[11px] font-bold text-slate-200 uppercase tracking-widest">
+            <p className=" font-semibold text-slate-200 uppercase tracking-widest">
               © {new Date().getFullYear()} NIFESD Institutional ecosystem
             </p>
             <div className="flex items-center gap-4 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
               <div className="flex items-center gap-2">
                 <BiShieldQuarter className="text-emerald-500" />
-                <span className="text-[9px] font-black text-slate-400 uppercase">
+                <span className="text-[9px] font-bold text-slate-400 uppercase">
                   ISO 27001
                 </span>
               </div>
               <div className="w-1px h-3 bg-slate-700" />
               <div className="flex items-center gap-2">
                 <BiGlobe className="text-blue-400" />
-                <span className="text-[9px] font-black text-slate-400 uppercase">
+                <span className="text-[9px] font-bold text-slate-400 uppercase">
                   Global Access
                 </span>
               </div>
@@ -188,7 +185,7 @@ const Footer = () => {
                 key={social.label}
                 to={social.links}
                 target="_blank"
-                className="w-11 h-11 rounded-xl bg-color border border-slate-700 flex items-center justify-center text-xl text-white  hover:bg-white hover:text-slate-900 hover:-translate-y-1 transition-all duration-300"
+                className="w-11 h-11 rounded-xl bg-primary-color border border-slate-700 flex items-center justify-center text-xl text-white  hover:bg-white hover:text-slate-900 hover:-translate-y-1 transition-all duration-300"
                 aria-label={social.label}
               >
                 <social.icon />

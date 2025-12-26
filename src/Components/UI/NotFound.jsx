@@ -69,7 +69,7 @@ const NotFound = () => {
             <motion.h1
               animate={reduceMotion ? {} : { y: [0, -5, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="text-[12rem] md:text-[18rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/10 select-none"
+              className="text-[12rem] md:text-[18rem] font-bold leading-none tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/10 select-none"
             >
               404
             </motion.h1>

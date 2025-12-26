@@ -83,7 +83,7 @@ const MCQQuiz = () => {
     return (
       <div className="fixed inset-0 bg-[#020617] flex items-center justify-center text-white">
         <div className="bg-slate-900 p-12 rounded-3xl text-center max-w-lg">
-          <h2 className="text-3xl font-black mb-4">
+          <h2 className="text-3xl font-bold mb-4">
             {result.passed ? "✅ Exam Passed" : "❌ Exam Failed"}
           </h2>
 
@@ -111,7 +111,7 @@ const MCQQuiz = () => {
   return (
     <div className="fixed inset-0 bg-[#020617] text-white overflow-y-auto">
       <div className="max-w-4xl mx-auto py-20 px-6">
-        <h1 className="text-4xl font-black mb-10 text-center">
+        <h1 className="text-4xl font-bold mb-10 text-center">
           Final MCQ Examination
         </h1>
 
@@ -144,7 +144,7 @@ const MCQQuiz = () => {
 
         <button
           onClick={() => submitExam(false)}
-          className="w-full py-5 bg-[#0e5da0] rounded-2xl font-black uppercase tracking-widest"
+          className="w-full py-5 bg-[#0e5da0] rounded-2xl font-bold uppercase tracking-widest"
         >
           Submit Exam
         </button>

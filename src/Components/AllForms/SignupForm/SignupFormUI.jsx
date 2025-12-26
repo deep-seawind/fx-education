@@ -18,7 +18,7 @@ const SignupFormUI = () => {
     <>
       <Breadcrumbs paths={["Authentication", "Secure Signup"]} />
 
-      <div className="min-h-screen bg-[#fafbff] flex items-center justify-center p-6 lg:p-12 relative overflow-hidden">
+      <div className="  bg-[#fafbff] flex items-center justify-center p-6 lg:p-12 relative overflow-hidden">
         {/* Dynamic Background Elements */}
         <div className="absolute top-[-10%] right-[-5%] w-160 h-160 bg-indigo-50 rounded-full blur-[120px] -z-10" />
         <div className="absolute bottom-[-10%] left-[-5%] w-120 h-120 bg-blue-50 rounded-full blur-[100px] -z-10" />
@@ -63,12 +63,12 @@ const SignupFormUI = () => {
             </div>
 
             <div className="relative z-10 pt-10 border-t border-white/10 mt-10">
-              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
+              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
                 Official Partner of
               </p>
               <div className="flex gap-6 mt-4 opacity-50 grayscale contrast-125">
-                <div className="font-black text-white italic">TRUSTED</div>
-                <div className="font-black text-white italic">SECURE</div>
+                <div className="font-bold text-white italic">TRUSTED</div>
+                <div className="font-bold text-white italic">SECURE</div>
               </div>
             </div>
           </div>

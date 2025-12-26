@@ -39,7 +39,7 @@ const ContactForm = () => {
             className="flex items-center gap-2 mb-4"
           >
             <div className="h-px w-8 bg-[#0e5da0]" />
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#0e5da0]">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#0e5da0]">
               Communication Port
             </span>
           </motion.div>

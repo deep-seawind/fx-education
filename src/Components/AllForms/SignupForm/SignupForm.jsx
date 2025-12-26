@@ -7,7 +7,7 @@ const SigForm = () => {
       <form className="space-y-6">
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
-            <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1 pb-2">
+            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 pb-2">
               First Name
             </label>
             <div className="relative group">
@@ -20,7 +20,7 @@ const SigForm = () => {
             </div>
           </div>
           <div className="space-y-2">
-            <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">
+            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
               Last Name
             </label>
             <input
@@ -32,7 +32,7 @@ const SigForm = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">
+          <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
             Email Address
           </label>
           <div className="relative group">
@@ -46,7 +46,7 @@ const SigForm = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">
+          <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">
             Security Password
           </label>
           <div className="relative group">

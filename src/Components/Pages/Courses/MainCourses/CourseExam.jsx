@@ -12,7 +12,7 @@ const CourseExam = () => {
       
       {/* Heading */}
       <div>
-        <h3 className="text-3xl font-black text-slate-900 mb-3">
+        <h3 className="text-3xl font-bold text-slate-900 mb-3">
           Assessment & Examination System
         </h3>
         <p className="text-slate-500 max-w-2xl">

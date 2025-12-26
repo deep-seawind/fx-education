@@ -163,7 +163,7 @@ const FeaturedPrograms = () => {
                 <motion.button
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-color transition-all"
+                  className="w-12 h-12 rounded-full bg-color text-white flex items-center justify-center group-hover:bg-color transition-all"
                 >
                   <BiRightArrowAlt className="text-2xl" />
                 </motion.button>
@@ -180,19 +180,24 @@ const FeaturedPrograms = () => {
           viewport={{ once: true }}
           className="mt-16 bg-white p-4 rounded-3xl border border-slate-100 shadow-sm inline-flex items-center gap-6 relative left-1/2 -translate-x-1/2"
         >
-            <div className="flex -space-x-3 pl-2">
-             {[1,2,3,4].map(i => (
-               <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
-                 <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="student" />
-               </div>
-             ))}
-           </div>
+          <div className="flex -space-x-3 pl-2">
+            {[1, 2, 3, 4].map((i) => (
+              <div
+                key={i}
+                className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"
+              >
+                <img
+                  src={`https://i.pravatar.cc/100?img=${i + 10}`}
+                  alt="student"
+                />
+              </div>
+            ))}
+          </div>
           <p className="text-sm font-bold text-slate-700 hidden sm:block">
-            Join{" "}
-            <span className="text-color underline">1,200+ students</span>{" "}
+            Join <span className="text-color underline">1,200+ students</span>{" "}
             learning this week
           </p>
-          <button className="bg-color text-white px-6 py-3 rounded-2xl text-sm font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
+          <button className="bg-primary-color text-white px-6 py-3 rounded-2xl text-sm font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
             Explore All Courses
           </button>
         </motion.div>

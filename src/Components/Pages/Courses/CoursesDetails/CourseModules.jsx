@@ -103,7 +103,7 @@ const CourseModules = () => {
                       : "bg-slate-100 text-slate-400"
                   }`}
                 >
-                  <span className="text-sm font-black">0{module.id + 1}</span>
+                  <span className="text-sm font-bold">0{module.id + 1}</span>
                 </div>
                 <h4 className="font-bold text-slate-800 text-lg">{module.title}</h4>
               </div>
@@ -163,7 +163,7 @@ const CourseModules = () => {
         <div className="mt-10 text-center">
           <button
             onClick={() => navigate("/course/quiz")}
-            className="px-10 py-5 bg-[#0e5da0] text-white rounded-2xl font-black uppercase tracking-widest hover:bg-blue-600 transition-all"
+            className="px-10 py-5 bg-[#0e5da0] text-white rounded-2xl font-bold uppercase tracking-widest hover:bg-blue-600 transition-all"
           >
             Start MCQ Quiz
           </button>

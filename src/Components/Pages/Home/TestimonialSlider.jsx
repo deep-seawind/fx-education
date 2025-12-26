@@ -150,7 +150,7 @@ const TestimonialSlider = () => {
 
                   {/* Subtle Badge */}
                   <div className="hidden xl:block shrink-0">
-                    <span className="px-3 py-1 rounded-full bg-slate-50 text-[10px] font-black text-slate-400 uppercase tracking-widest border border-slate-100">
+                    <span className="px-3 py-1 rounded-full bg-slate-50 text-[10px] font-bold text-slate-400 uppercase tracking-widest border border-slate-100">
                       Certified Graduate
                     </span>
                   </div>

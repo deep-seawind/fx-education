@@ -7,6 +7,7 @@ import {
   BiChevronRight,
   BiRocket,
 } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -64,41 +65,70 @@ const colorTheme = {
   slate: "from-slate-700 to-slate-900 shadow-slate-100",
 };
 
+/* Motion Variants (DIV only) */
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const fadeDown = {
+  hidden: { opacity: 0, y: -30 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const stagger = {
+  visible: {
+    transition: { staggerChildren: 0.15 },
+  },
+};
+
 const HowItWorks = () => {
   return (
     <section
       id="how-it-works"
       className="py-24 lg:py-10 bg-zinc-100 relative overflow-hidden"
     >
-      {/* Dynamic Background Accents */}
+      {/* Background Accents */}
       <div className="absolute top-0 right-0 w-125 h-125 bg-indigo-50/50 rounded-full blur-[120px] -mr-64 -mt-64" />
       <div className="absolute bottom-0 left-0 w-125 h-125 bg-blue-50/50 rounded-full blur-[120px] -ml-64 -mb-64" />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Creative Header */}
-        <div className="flex flex-col items-center text-center mb-20">
+        {/* Header */}
+        <motion.div
+          className="flex flex-col items-center text-center mb-20"
+          variants={fadeDown}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-12 bg-slate-400" />
-            <span className="text-xs font-black tracking-[0.3em] capitalize text-color">
+            <span className="text-xs font-bold tracking-[0.3em] capitalize text-color">
               The Roadmap
             </span>
             <div className="h-px w-12 bg-slate-400" />
           </div>
+
           <h2 className="text-4xl md:text-5xl text-slate-900 tracking-tighter leading-none mb-8 font-bold">
-            From Learning to{" "}
-            <span className="text-color">
-              Earning.
-            </span>
+            From Learning to <span className="text-color">Earning.</span>
           </h2>
+
           <p className="text-lg text-slate-500 font-medium">
             Our structured 5-step framework is built to bypass traditional
             barriers and place you directly into the world of high-finance.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Steps Journey */}
-        <div className="relative grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4">
-          {/* Decorative Path Line (Desktop) */}
+        {/* Steps */}
+        <motion.div
+          className="relative grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4"
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {/* Desktop Path */}
           <svg
             className="hidden lg:block absolute top-1/2 left-0 w-full h-24 -translate-y-full opacity-20 pointer-events-none"
             viewBox="0 0 1000 100"
@@ -119,40 +149,35 @@ const HowItWorks = () => {
           </svg>
 
           {steps.map((step, index) => (
-            <div
+            <motion.div
               key={step.title}
-              className={`relative group ${step.offset} transition-all duration-500`}
+              className={`relative group ${step.offset}`}
+              variants={fadeUp}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              {/* Step Number Badge */}
+              {/* Step Badge */}
               <div className="flex justify-center lg:justify-start mb-6">
-                <div
-                  className={`w-12 h-12 rounded-full bg-white border border-slate-100 shadow-xl flex items-center justify-center text-sm font-black text-slate-900 group-hover:bg-[#135f9b] group-hover:text-white transition-all duration-500 z-20`}
-                >
+                <div className="w-12 h-12 rounded-full bg-white border border-slate-100 shadow-xl flex items-center justify-center text-sm font-bold text-slate-900 group-hover:bg-[#135f9b] group-hover:text-white transition-all duration-500 z-20">
                   {step.step}
                 </div>
               </div>
 
-              {/* Card Container */}
+              {/* Card */}
               <div className="relative p-1 rounded-[2.5rem] bg-linear-to-b from-slate-100 to-transparent group-hover:from-indigo-200 transition-all duration-500">
                 <div className="bg-white rounded-[2.4rem] p-8 h-full shadow-[0_4px_25px_rgba(0,0,0,0.03)] group-hover:shadow-[0_20px_50px_rgba(79,70,229,0.1)] transition-all duration-500">
-                  {/* Icon Box */}
                   <div
-                    className={`w-16 h-16 rounded-2xl bg-linear-to-br ${
-                      colorTheme[step.color]
-                    } flex items-center justify-center mb-8 shadow-lg shadow-opacity-20 group-hover:-rotate-6 transition-transform duration-500`}
+                    className={`w-16 h-16 rounded-2xl bg-linear-to-br ${colorTheme[step.color]} flex items-center justify-center mb-8 shadow-lg group-hover:-rotate-6 transition-transform duration-500`}
                   >
                     <step.icon className="text-3xl text-white" />
                   </div>
 
-                  {/* Text Content */}
-                  <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight leading-tight">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">
                     {step.title}
                   </h3>
                   <p className="text-slate-500 text-[15px] font-medium leading-relaxed">
                     {step.description}
                   </p>
 
-                  {/* Mobile Indicator */}
                   {index < steps.length - 1 && (
                     <div className="lg:hidden mt-8 flex justify-center">
                       <div className="h-12 w-px bg-linear-to-b from-indigo-500 to-transparent" />
@@ -161,18 +186,24 @@ const HowItWorks = () => {
                 </div>
               </div>
 
-              {/* Connecting Desktop Arrow */}
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-6 -right-2 text-slate-200">
                   <BiChevronRight className="text-2xl" />
                 </div>
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Floating Success Indicator */}
-        <div className="mt-20 mb-10 flex flex-col items-center">
+        {/* CTA */}
+        <motion.div
+          className="mt-20 mb-10 flex flex-col items-center"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <div className="bg-slate-900 rounded-3xl p-8 md:p-12 w-full max-w-5xl relative overflow-hidden shadow-2xl shadow-indigo-200">
             <div className="absolute top-0 right-0 p-8 opacity-10">
               <BiRocket className="text-9xl text-white" />
@@ -187,12 +218,13 @@ const HowItWorks = () => {
                   Join the next cohort starting this Monday.
                 </p>
               </div>
-              <button className="px-10 py-5 bg-color hover:bg-white hover:text-color text-white font-black rounded-2xl shadow-xl transition-all duration-300 active:scale-95 flex items-center gap-3">
+
+              <button className="px-10 py-5 bg-primary-color hover:bg-white hover:text-color text-white font-bold rounded-2xl shadow-xl transition-all duration-300 active:scale-95 flex items-center gap-3">
                 Join the Program <BiChevronRight className="text-2xl" />
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
