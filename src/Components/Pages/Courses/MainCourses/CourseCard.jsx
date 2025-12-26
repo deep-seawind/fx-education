@@ -197,7 +197,7 @@ const CourseCard = () => {
                           <BiTimeFive className="text-[#0e5da0] text-xl" />
                         </div>
                         <div>
-                          <p className="text-[10px] uppercase text-slate-400 font-bold">
+                          <p className="text-[10px] text-slate-400 font-bold">
                             Duration
                           </p>
                           <p className="text-sm font-bold text-slate-900">
@@ -210,7 +210,7 @@ const CourseCard = () => {
                           <BiLayer className="text-[#0e5da0] text-xl" />
                         </div>
                         <div>
-                          <p className="text-[10px] uppercase text-slate-400 font-bold">
+                          <p className="text-[10px] text-slate-400 font-bold">
                             Curriculum
                           </p>
                           <p className="text-sm font-bold text-slate-900">
@@ -223,7 +223,7 @@ const CourseCard = () => {
                           <BiBarChartAlt className="text-[#0e5da0] text-xl" />
                         </div>
                         <div>
-                          <p className="text-[10px] uppercase text-slate-400 font-bold">
+                          <p className="text-[10px] text-slate-400 font-bold">
                             Skill Level
                           </p>
                           <p className="text-sm font-bold text-slate-900">
@@ -236,31 +236,22 @@ const CourseCard = () => {
                     {/* Footer: Instructor & Price */}
                     <div className="flex items-center justify-between border-t border-slate-50 pt-6">
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center font-bold text-[#0e5da0]">
-                          {course.instructor.name.charAt(0)}
-                        </div>
-                        <div>
-                          <p className="text-xs font-bold text-slate-900 uppercase tracking-tight">
-                            {course.instructor.name}
+                         
+                          <p className="text-[10px] text-slate-400 font-bold">
+                            Price <span></span>
                           </p>
-                          <p className="text-[10px] text-slate-400 uppercase">
-                            {course.instructor.role}
-                          </p>
-                        </div>
+                          <div className="">
+                          <h1 className="text-3xl font-bold text-slate-900">
+                            ₹{course.price}
+                          </h1>
+                         </div>
                       </div>
 
                       <div className="flex items-center gap-6">
-                        <div className="text-right">
-                          <p className="text-[10px] text-slate-400 uppercase font-bold">
-                            Investment
-                          </p>
-                          <p className="text-3xl font-bold text-slate-900">
-                            ₹{course.price}
-                          </p>
-                        </div>
+                       
                         <Link
                           to="/course-details"
-                          className="flex items-center gap-3 px-5 py-5 bg-[#0e5da0] text-white rounded-full font-bold text-sm uppercase tracking-widest shadow-[0_20px_40px_rgba(14,93,160,0.3)] hover:shadow-[0_25px_50px_rgba(14,93,160,0.4)] hover:-translate-y-1 active:scale-95 transition-all duration-300"
+                          className="flex items-center gap-3 px-5 py-5 bg-color text-white rounded-full font-bold text-sm tracking-widest shadow-[0_20px_40px_rgba(14,93,160,0.3)] hover:shadow-[0_25px_50px_rgba(14,93,160,0.4)] hover:-translate-y-1 active:scale-95 transition-all duration-300"
                         >
                           Enroll Now
                           <BiChevronRight className="text-xl" />

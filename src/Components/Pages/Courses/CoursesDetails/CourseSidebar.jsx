@@ -20,7 +20,7 @@ const CourseSidebar = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
             </div>
-            <p className="text-[10px] md:text-[11px] font-bold text-rose-600 uppercase tracking-tight">
+            <p className="text-[10px] md:text-[11px] font-semibold text-rose-600 tracking-tight">
               12 hours left at this price!
             </p>
           </div>
@@ -29,7 +29,7 @@ const CourseSidebar = () => {
         {/* Primary Actions */}
         <div className="space-y-3 mb-6 md:mb-8">
             <Link to={"/checkout"}>
-          <button className="w-full py-4 md:py-5 bg-[#0e5da0] text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-[#0e5da0]/20 hover:-translate-y-1 active:scale-95 transition-all">
+          <button className="w-full py-4 md:py-4 bg-[#0e5da0] text-white rounded-2xl text-xl font-semibold tracking-widest shadow-xl shadow-[#0e5da0]/20 hover:-translate-y-1 active:scale-95 transition-all">
             Enroll Now
           </button>  
           </Link>
@@ -37,7 +37,7 @@ const CourseSidebar = () => {
 
         {/* Features List */}
         <div className="pt-6 border-t border-slate-50">
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">
+          <p className="text-[10px] font-bold text-slate-400 tracking-widest mb-4">
             This course includes:
           </p>
           <div className="grid grid-cols-1 gap-4">

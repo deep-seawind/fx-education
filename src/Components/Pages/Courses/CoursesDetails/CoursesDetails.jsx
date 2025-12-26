@@ -6,7 +6,7 @@ import {
 import { BiPlayCircle } from "react-icons/bi";
 import Breadcrumbs from "../../../common/Breadcrumbs"; 
 import TestimonialsSlider from "./TestimonialsSlider";
-import CourseModules from "./CourseModules";
+import CourseModules from "./CourseModules/CourseModules";
 import CourseSidebar from "./CourseSidebar";
 import { HiOutlineClock, HiOutlineGlobeAlt } from "react-icons/hi";
 import CourseReview from "./CourseReview";
@@ -19,7 +19,7 @@ const CoursesDetails = () => {
   const testimonialsRef = useRef(null);
   const reviewsRef = useRef(null);
 
-  const tabs = ["About", "Modules", "Testimonials", "Reviews"];
+  const tabs = ["About", "Syllabus", "Testimonials", "Reviews"];
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -30,7 +30,7 @@ const CoursesDetails = () => {
           block: "start",
         });
         break;
-      case "Modules":
+      case "Syllabus":
         modulesRef.current?.scrollIntoView({
           behavior: "smooth",
           block: "start",
@@ -101,25 +101,7 @@ const CoursesDetails = () => {
               </p>
 
               <div className="space-y-6">
-                {/* Instructor & Metadata */}
-                <div className="flex flex-wrap items-center gap-6 text-slate-500">
-                  <div className="flex items-center gap-3 bg-white p-1 pr-4 rounded-full shadow-sm border border-slate-100">
-                    <img
-                      src="https://i.pravatar.cc/150?u=forextrader"
-                      className="w-10 h-10 rounded-full"
-                      alt="Instructor"
-                    />
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Created by</span>
-                      <span className="text-sm font-bold text-slate-800 leading-none">Alex Rivera</span>
-                    </div>
-                  </div>
-                  
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase leading-none mb-1">Students Enrolled</span>
-                    <span className="text-sm font-bold text-slate-700 leading-none">450 Active Traders</span>
-                  </div>
-                </div>
+              
 
                 {/* Technical Specs */}
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-4">
