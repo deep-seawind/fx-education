@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
- 
-
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -10,6 +8,13 @@ body {
   min-height: 100vh;
   top: 0px !important;
 }
+
+:root {
+  --primary-dark: #0a2955;
+  --primary-blue: #0e5da0;
+  --secondary-color: #135f9b;
+}
+
 
 body.exam-mode header,
 body.exam-mode footer {
@@ -22,12 +27,6 @@ body.exam-mode {
 
 p {
   font-size: 16px;
-}
-
-:root {
-  --primary-dark: #0a2955;
-  --primary-blue: #0e5da0;
-  --secondary-color: #135f9b;
 }
 
 .bg-color {
@@ -80,10 +79,17 @@ p {
 }
 
 @keyframes pulse-fast {
-  0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(1.05); }
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
 }
 
 .animate-pulse-fast {
   animation: pulse-fast 2s infinite ease-in-out;
-} 
+}

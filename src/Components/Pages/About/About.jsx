@@ -11,9 +11,9 @@ const About = () => {
       <Breadcrumbs paths={["Home", "About Us"]} />
 
       <AboutHero />
-      <OurMission/>
-      <WhyChooseUs/>
-      <Faq/>
+      <OurMission />
+      <WhyChooseUs />
+      <Faq showBreadcrumb={false} />
     </>
   );
 };

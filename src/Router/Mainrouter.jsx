@@ -19,6 +19,9 @@ import Blog from "../Components/Pages/Blog/Blog";
 import BlogDetails from "../Components/Pages/Blog/BlogDetails";
 import Contact from "../Components/Pages/Contact/Contact";
 import MCQQuiz from "../Components/Pages/Courses/CoursesDetails/assessments/MCQQuiz";
+import Faq from "../Components/Pages/FAQ/Faq";
+import PrivacyPolicy from "../Components/Pages/PrivacyPolicy/PrivacyPolicy";
+import TermsCondition from "../Components/Pages/TermsCondition/TermsCondition";
 
 const Mainrouter = () => {
   return (
@@ -43,6 +46,9 @@ const Mainrouter = () => {
           <Route path="/blog-details" element={<BlogDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/course/quiz" element={<MCQQuiz />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-condition" element={<TermsCondition />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

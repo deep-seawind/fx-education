@@ -1,15 +1,12 @@
 import React from "react";
 // Professional Financial & Interface Icons from BoxIcons and Remix Icon sets
-import {
-  BiTrendingUp,
+import {  
   BiMailSend,
   BiPhoneCall,
   BiLogoYoutube,
   BiLogoInstagramAlt,
-  BiChevronRight,
-  BiShieldQuarter,
-  BiSend,
-  BiGlobe,
+  BiChevronRight, 
+  BiSend, 
 } from "react-icons/bi";
 import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
@@ -17,37 +14,50 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/white-logo.jpg";
 
 const footerLinks = {
-  company: [
-    { name: "About NIFESD", href: "#" },
-    { name: "Our Team", href: "#" },
-    { name: "Careers", href: "#careers" },
-    { name: "Press Kit", href: "#" },
+  main: [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
+    { name: "How It Works", href: "/how-it-works" },
+    { name: "Courses", href: "/main-courses" }, 
+    { name: "Contact Us", href: "/contact" },
   ],
-  programs: [
-    { name: "Global Markets", href: "#courses" },
-    { name: "Quant Trading", href: "#courses" },
-    { name: "Fund Management", href: "#courses" },
-    { name: "Compliance", href: "#courses" },
+
+  courses: [
+    {
+      name: "Global Financial Markets & Trading Foundation",
+      href: "/course-details",
+    },
+    {
+      name: "Quantitative Trading, AI & Algorithmic Models",
+      href: "/course-details",
+    },
+    {
+      name: "Fund Management, Portfolio Science & Risk Systems",
+      href: "/course-details",
+    },
+    {
+      name: "Financial Compliance, Ethics, AML & Institutional Processes",
+      href: "/course-details",
+    },
   ],
+
   resources: [
-    { name: "Institutional Blog", href: "#" },
-    { name: "Live Webinars", href: "#" },
-    { name: "Case Studies", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "Blog", href: "/blog" },
+    { name: "FAQs", href: "/faq" }, 
   ],
+
   legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
-    { name: "Cookie Policy", href: "#" },
-    { name: "Refund Policy", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms of Service", href: "/terms-condition" }, 
   ],
 };
+
 
 const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-slate-900 text-slate-300 pt-20 pb-10 overflow-hidden border-t border-slate-800"
+      className="bg-slate-900 text-slate-300 pt-20 pb-5 overflow-hidden border-t border-slate-800"
     >
       <div className="container mx-auto px-6">
         {/* --- 01. THE CALL-TO-ACTION BRIDGE --- */}
@@ -117,7 +127,7 @@ const Footer = () => {
           <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
             {Object.entries(footerLinks).map(([title, links]) => (
               <div key={title}>
-                <h4 className=" font-semibold text-blue-400 capitalize tracking-[0.2em] mb-8">
+                <h4 className=" font-semibold text-blue-400 capitalize mb-8">
                   {title}
                 </h4>
                 <ul className="space-y-4">
@@ -139,26 +149,12 @@ const Footer = () => {
         </div>
 
         {/* --- 03. COMPLIANCE & SOCIAL BAR --- */}
-        <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="pt-5 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <p className=" font-semibold text-slate-200 uppercase tracking-widest">
+            <p className=" font-semibold text-slate-200 tracking-widest">
               © {new Date().getFullYear()} NIFESD Institutional ecosystem
             </p>
-            <div className="flex items-center gap-4 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
-              <div className="flex items-center gap-2">
-                <BiShieldQuarter className="text-emerald-500" />
-                <span className="text-[9px] font-semibold text-slate-400 uppercase">
-                  ISO 27001
-                </span>
-              </div>
-              <div className="w-1px h-3 bg-slate-700" />
-              <div className="flex items-center gap-2">
-                <BiGlobe className="text-blue-400" />
-                <span className="text-[9px] font-semibold text-slate-400 uppercase">
-                  Global Access
-                </span>
-              </div>
-            </div>
+            
           </div>
 
           {/* Social Cluster */}
