@@ -33,7 +33,7 @@ const OurMission = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-white overflow-hidden">
+    <section className="relative lg:py-24 py-16 bg-white overflow-hidden">
       {/* Background Subtle Branding */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-[0.02] pointer-events-none">
         <h2 className="text-[30rem] font-semibold text-center leading-none uppercase tracking-tighter">
@@ -58,7 +58,7 @@ const OurMission = () => {
               </span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-semibold text-slate-900 leading-[1.1] mb-8">
+            <h2 className="text-3xl lg:text-5xl font-semibold text-slate-900 leading-[1.1] mb-8">
               Empowering the Next <br />
               <span className="text-transparent bg-clip-text"style={{ backgroundImage: `linear-gradient(to bottom, ${brandColor}, #073a66)` }}>
                 Generation of Elites.

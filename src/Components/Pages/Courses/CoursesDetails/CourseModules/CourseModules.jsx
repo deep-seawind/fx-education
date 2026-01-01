@@ -4,27 +4,23 @@ import EducationVideo from "../../../../../assets/education-video/education-vide
 import CourseHeader from "./CourseHeader";
 import CourseCompletionBanner from "./CourseCompletionBanner";
 
-// Lazy load heavy components
 const ModuleAccordion = lazy(() => import("./ModuleAccordion"));
 const CourseVideo = lazy(() => import("../CourseVideo"));
-
 import courseModulesData from "../../../../Data/courseModules.json";
 
 const CourseModules = () => {
-  const [openModule, setOpenModule] = useState(0);
+  const [openModuleIndex, setOpenModuleIndex] = useState(0);
   const [activeVideo, setActiveVideo] = useState(null);
   const [videoDurations, setVideoDurations] = useState({});
   const [completedVideos, setCompletedVideos] = useState({});
 
-  // Fixed date logic
   const currentDay = useMemo(() => {
     const start = new Date("2025-12-26T00:00:00");
     const daysSince = Math.floor((Date.now() - start) / 86400000);
     return Math.max(1, daysSince + 1);
   }, []);
 
-  // Add src to videos once
-  const modules = useMemo(() => 
+  const modules = useMemo(() =>
     courseModulesData.map(module => ({
       ...module,
       details: module.details.map(item =>
@@ -61,6 +57,36 @@ const CourseModules = () => {
     return `${m}:${s.toString().padStart(2, "0")}`;
   };
 
+  // -------------------
+  // Load metadata for all videos in the open module **in parallel**
+  // -------------------
+  useEffect(() => {
+    if (openModuleIndex === null) return;
+    const module = modules[openModuleIndex];
+    if (!module) return;
+
+    const videoDetails = module.details.filter(item => item.type === "video");
+    if (!videoDetails.length) return;
+
+    const videoElements = videoDetails.map(item => {
+      const v = document.createElement("video");
+      v.preload = "metadata";
+      v.src = item.src;
+      v.onloadedmetadata = () => {
+        setVideoDurations(prev => ({
+          ...prev,
+          [`${openModuleIndex}-${videoDetails.indexOf(item)}`]: formatTime(v.duration),
+        }));
+      };
+      return v;
+    });
+
+    // Cleanup on unmount or module change
+    return () => {
+      videoElements.forEach(v => { v.src = ""; });
+    };
+  }, [modules, openModuleIndex]);
+
   return (
     <section id="Modules" className="scroll-mt-24">
       <CourseHeader
@@ -70,15 +96,19 @@ const CourseModules = () => {
       />
 
       <div className="space-y-4">
-        <Suspense fallback={<div className="space-y-4">{Array(12).fill().map((_, i) => (
-          <div key={i} className="h-24 bg-slate-100 rounded-3xl animate-pulse" />
-        ))}</div>}>
-          {modules.map((module) => (
+        <Suspense fallback={
+          <div className="space-y-4">
+            {Array(12).fill().map((_, i) => (
+              <div key={i} className="h-24 bg-slate-100 rounded-3xl animate-pulse" />
+            ))}
+          </div>
+        }>
+          {modules.map((module, idx) => (
             <ModuleAccordion
               key={module.id}
               module={module}
-              isOpen={openModule === module.id}
-              onToggle={() => setOpenModule(openModule === module.id ? null : module.id)}
+              isOpen={openModuleIndex === idx}
+              onToggle={() => setOpenModuleIndex(openModuleIndex === idx ? null : idx)}
               currentDay={currentDay}
               videoDurations={videoDurations}
               completedVideos={completedVideos}
@@ -93,9 +123,13 @@ const CourseModules = () => {
         currentDay={currentDay}
       />
 
-      {/* Video Modal - Lazy Loaded */}
+      {/* Video Modal */}
       {activeVideo && (
-        <Suspense fallback={<div className="fixed inset-0 bg-black/80 flex items-center justify-center"><div className="text-white">Loading player...</div></div>}>
+        <Suspense fallback={
+          <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
+            <div className="text-white">Loading player...</div>
+          </div>
+        }>
           <CourseVideo
             video={activeVideo}
             onComplete={() => handleVideoComplete(activeVideo)}
@@ -103,28 +137,6 @@ const CourseModules = () => {
           />
         </Suspense>
       )}
-
-      {/* Critical Optimization: Only load metadata for visible/open modules */}
-      {modules
-        .filter((_, i) => openModule === i) // Only for open module
-        .flatMap((module, mIndex) =>
-          module.details
-            .filter(item => item.type === "video")
-            .map((item, idx) => (
-              <video
-                key={`${mIndex}-${idx}`}
-                src={item.src}
-                preload="metadata"
-                style={{ display: "none" }}
-                onLoadedMetadata={(e) =>
-                  setVideoDurations(prev => ({
-                    ...prev,
-                    [`${mIndex}-${idx}`]: formatTime(e.target.duration),
-                  }))
-                }
-              />
-            ))
-        )}
     </section>
   );
 };

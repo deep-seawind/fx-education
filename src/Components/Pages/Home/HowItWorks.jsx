@@ -87,10 +87,7 @@ const HowItWorks = () => {
     <section
       id="how-it-works"
       className="py-24 lg:py-10 bg-zinc-100 relative overflow-hidden"
-    >
-      {/* Background Accents */}
-      <div className="absolute top-0 right-0 w-125 h-125 bg-indigo-50/50 rounded-full blur-[120px] -mr-64 -mt-64" />
-      <div className="absolute bottom-0 left-0 w-125 h-125 bg-blue-50/50 rounded-full blur-[120px] -ml-64 -mb-64" />
+    > 
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}

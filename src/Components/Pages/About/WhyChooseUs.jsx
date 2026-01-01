@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-[#0a0d14] overflow-hidden text-white">
+    <section className="relative lg:py-24 py-16  bg-[#0a0d14] overflow-hidden text-white">
       {/* Background Glows */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 opacity-20 blur-[120px] rounded-full"
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-5xl lg:text-6xl font-semibold tracking-tighter"
+            className="text-3xl lg:text-6xl font-semibold tracking-tighter"
           >
             Why Professional Traders <br />
             <span
@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Bottom Trust Line */}
-        <div className="mt-20 pt-10 border-t border-white/5 flex flex-wrap justify-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+        <div className="mt-10 pt-10 border-t border-white/5 flex flex-wrap justify-center lg:gap-12 gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
           <span className="font-semibold italic text-2xl tracking-tighter">
             METATRADER 5
           </span>

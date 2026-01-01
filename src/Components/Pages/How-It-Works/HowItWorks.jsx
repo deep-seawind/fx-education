@@ -62,7 +62,7 @@ const HowItWorks = () => {
       <Breadcrumbs paths={["Home", "Learning Roadmap", "How It Works"]} />
 
       <section className="py-16 bg-[#FDFEFF] overflow-hidden">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto lg:px-0 px-4">
           {/* Section Header */}
           <motion.div
             className="flex flex-col items-center text-center mb-20"

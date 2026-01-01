@@ -76,7 +76,7 @@ const TestimonialSlider = () => {
             <span className="inline-block text-color font-semibold text-sm capitalize tracking-[0.3em] mb-4">
               Success Stories
             </span>
-            <h2 className="text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tighter leading-none">
+            <h2 className="text-3xl lg:text-5xl font-semibold text-slate-900">
               Trusted by the next
               <span className="text-color ps-4">generation of managers.</span>
             </h2>
@@ -112,43 +112,35 @@ const TestimonialSlider = () => {
           className="testimonial-swiper pb-20! overflow-visible!"
         >
           {testimonials.map((item, index) => (
-            <SwiperSlide key={index} className="h-auto">
-              {" "}
-              {/* h-auto lets the slide fill the container height */}
-              <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col justify-between relative group hover:border-indigo-100 transition-all duration-500 h-68">
-                {/* Decorative Quote Icon */}
+            <SwiperSlide key={index} className="h-auto"> 
+
+              <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.02)] flex flex-col justify-between relative group hover:border-indigo-100 transition-all duration-500 lg:h-68 h-100"> 
                 <div className="absolute top-10 right-10 text-6xl text-slate-50 opacity-10 group-hover:text-indigo-100 transition-colors pointer-events-none">
                   <BiSolidQuoteRight />
                 </div>
 
-                <div className="relative z-10 flex-1">
-                  {" "}
-                  {/* Rating Stars */}
+                <div className="relative z-10 flex-1"> 
                   <div className="flex gap-1 mb-6">
                     {[...Array(item.rating)].map((_, i) => (
                       <BsStarFill key={i} className="text-amber-400 " />
                     ))}
-                  </div>
-                  {/* Testimonial Content */}
+                  </div> 
+
                   <p className="  text-slate-800 mb-4 italic leading-relaxed">
                     "{item.content}"
                   </p>
                 </div>
-
-                {/* Author Profile - Always stays at the bottom due to flex-1 above */}
+ 
                 <div className="flex items-center justify-between pt-4 border-t border-slate-200 mt-auto">
                   <div className="flex items-center gap-4">
                      
-                    <div className="min-w-0">
-                      {" "}
-                      {/* Prevents text overflow */}
+                    <div className="min-w-0"> 
                       <h4 className="font-semibold text-slate-900 tracking-tight truncate">
                         {item.name}
                       </h4>
                     </div>
                   </div>
-
-                  {/* Subtle Badge */}
+ 
                   <div className="hidden xl:block shrink-0">
                     <span className="px-3 py-1 rounded-full bg-slate-50 text-[10px] font-semibold text-slate-400 uppercase tracking-widest border border-slate-100">
                       Certified Graduate

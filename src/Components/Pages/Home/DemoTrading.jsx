@@ -55,9 +55,9 @@ const stagger = {
 
 const DemoTrading = () => {
   return (
-    <section id="demo-trading" className="py-24 bg-[#F8FAFC] overflow-hidden">
+    <section id="demo-trading" className="lg:py-24 py-16 bg-[#F8FAFC] overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content Side */}
           <motion.div
             className="space-y-10"
@@ -75,7 +75,7 @@ const DemoTrading = () => {
                 </span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 leading-tight mb-6">
+              <h2 className="text-3xl md:text-5xl font-semibold text-slate-900 leading-tight mb-6">
                 Institutional Trading <br />
                 <span className="text-color">Without the Capital Risk.</span>
               </h2>
@@ -128,7 +128,7 @@ const DemoTrading = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            <div className="bg-white/80 backdrop-blur-xl rounded-[3.5rem] shadow-[0_50px_100px_-20px_rgba(79,70,229,0.15)] border border-white p-10 relative overflow-hidden">
+            <div className="bg-white/80 backdrop-blur-xl lg:rounded-[3.5rem] rounded-4xl shadow-[0_50px_100px_-20px_rgba(79,70,229,0.15)] border border-white lg:p-10 p-5 relative overflow-hidden">
               <div className="h-150 rounded-2xl overflow-hidden bg-white">
                 <TradingChartsTabs />
               </div>

@@ -18,10 +18,10 @@ const ProcessShowcase = () => {
   const brandColor = "#0e5da0";
 
   return (
-    <div className="space-y-32 pt-20 bg-[#FDFEFF]">
+    <div className="lg:space-y-32 space-y-10 pt-20 bg-[#FDFEFF]">
       {/* SECTION 1: THE TERMINAL (Image Left, Content Right) */}
       <motion.section
-        className="container mx-auto px-6"
+        className="container mx-auto lg:px-6 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -112,7 +112,7 @@ const ProcessShowcase = () => {
 
       {/* SECTION 2: THE BLUEPRINT (Content Left, Image Right) */}
       <motion.section
-        className="container mx-auto px-6"
+        className="container mx-auto lg:px-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -154,13 +154,13 @@ const ProcessShowcase = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="p-6 rounded-4xl bg-slate-50 border border-slate-100 shadow-inner">
                 <h4 className="text-2xl font-semibold text-slate-900">1:3+</h4>
-                <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mt-1">
+                <p className="text-[10px] font-semibold text-slate-400  mt-1">
                   Risk Reward Ratio
                 </p>
               </div>
               <div className="p-6 rounded-4xl bg-slate-50 border border-slate-100 shadow-inner">
                 <h4 className="text-2xl font-semibold text-slate-900">Pure</h4>
-                <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mt-1">
+                <p className="text-[10px] font-semibold text-slate-400  mt-1">
                   Price Action Logic
                 </p>
               </div>

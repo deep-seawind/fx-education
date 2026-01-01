@@ -220,7 +220,7 @@ const courses = [
               </p>
 
               {/* Meta Info */}
-              <div className="grid grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 bg-slate-50 rounded-xl">
                     <BiTimeFive className="text-[#0e5da0] text-xl" />
@@ -253,7 +253,7 @@ const courses = [
               </div>
 
               {/* Price + CTA */}
-              <div className="flex items-center justify-between pt-6 border-t border-slate-100">
+              <div className="lg:flex items-center justify-between pt-6 border-t border-slate-100 space-y-5">
                 <div>
                   <p className="text-sm text-slate-500 font-medium">Starting at</p>
                   <h2 className="text-3xl font-semibold text-slate-900">₹{course.price}</h2>

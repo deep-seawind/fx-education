@@ -17,8 +17,7 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
 
   const handleContextMenu = (e) => e.preventDefault();
 
-  const handleEnded = () => {
-    // 🔐 Store completion safely
+  const handleEnded = () => { 
     const stored =
       JSON.parse(sessionStorage.getItem("completedVideos")) || {};
 

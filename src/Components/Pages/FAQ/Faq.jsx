@@ -40,7 +40,7 @@ const Faq = ({ showBreadcrumb = true }) => {
   return (
     <>
       {showBreadcrumb && <Breadcrumbs paths={["Home", "FAQ"]} />}
-      <section className="relative py-24 bg-[#fafafa] overflow-hidden">
+      <section className="relative lg:py-24 py-16 bg-[#fafafa] overflow-hidden">
         {/* Background Graphic */}
         <div className="absolute top-0 right-0 p-20 opacity-[0.03] select-none pointer-events-none">
           <HiOutlineQuestionMarkCircle
@@ -64,7 +64,7 @@ const Faq = ({ showBreadcrumb = true }) => {
                 >
                   Knowledge Base
                 </span>
-                <h2 className="text-5xl font-semibold text-slate-900 tracking-tighter mb-6 leading-tight">
+                <h2 className="lg:text-5xl text-4xl font-semibold text-slate-900 tracking-tighter mb-6 leading-tight">
                   Frequently Asked <br />
                   <span
                     className="text-transparent bg-clip-text"
@@ -140,7 +140,7 @@ const Faq = ({ showBreadcrumb = true }) => {
                             {faq.category}
                           </span>
                           <h3
-                            className={`text-xl font-semibold transition-colors ${
+                            className={`lg:text-xl font-semibold transition-colors ${
                               activeIndex === index
                                 ? "text-slate-900"
                                 : "text-slate-600"

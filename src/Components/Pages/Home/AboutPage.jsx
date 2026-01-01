@@ -33,7 +33,7 @@ const AboutPage = () => {
         <div className="absolute top-20 left-10 w-64 h-64 bg-blue-100/30 rounded-full blur-3xl animate-pulse" />
 
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-20 items-center">
             <motion.div
               className="relative col-span-3"
               variants={fadeRight}
@@ -121,11 +121,9 @@ const AboutPage = () => {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              {/* Back Decorative Frame */}
-              <div className="absolute top-10 -right-10 w-full h-full border-2 border-dashed border-indigo-200 rounded-[4rem] -z-10 rotate-3" />
+            > 
 
-              <div className="relative rounded-[4rem] overflow-hidden shadow-2xl shadow-indigo-100 transition-transform hover:rotate-0 duration-700">
+              <div className="relative rounded-[4rem] overflow-hidden shadow-2xl shadow-indigo-100 mt-10 lg:mt-0">
                 <img
                   src={AboutUs}
                   alt="Trading"
@@ -136,54 +134,10 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* --- Section 2: Vision & Mission (The Floating Bento) --- */}
-      {/* <section className="py-24 relative bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-20">
-            <span className="text-[10px] font-semibold text-color uppercase tracking-[0.4em] mb-4 block">
-              Core Foundations
-            </span>
-            <h2 className="text-4xl font-semibold text-slate-900 tracking-tighter leading-tight">
-              Driven by Purpose, <br /> Governed by Discipline.
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            
-            <div className="group relative p-12 rounded-[4rem] bg-indigo-50/50 border border-indigo-100 hover:bg-white hover:shadow-3xl hover:shadow-indigo-100/50 transition-all duration-700 overflow-hidden">
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-white rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
-              <BiShow className="text-6xl text-color/20 mb-8 group-hover:text-color transition-colors duration-500" />
-              <h3 className="text-2xl font-semibold text-slate-900 mb-6">
-                Our Vision
-              </h3>
-              <p className="text-slate-500 font-medium leading-relaxed">
-                To become the global gold standard for trader certification,
-                where every NIFESD graduate is recognized by top-tier financial
-                institutions as an elite market practitioner.
-              </p>
-            </div>
-
-            
-            <div className="group relative p-12 rounded-[4rem] bg-white border border-slate-200 hover:border-indigo-600 transition-all duration-700 shadow-sm">
-              <div className="w-16 h-16 bg-slate-900 rounded-[1.5rem] flex items-center justify-center mb-8 shadow-xl group-hover:bg-color group-hover:rotate-[15deg] transition-all">
-                <BiTargetLock className="text-3xl text-white" />
-              </div>
-              <h3 className="text-2xl font-semibold text-slate-900 mb-6 tracking-tight">
-                Our Mission
-              </h3>
-              <p className="text-slate-500 font-medium leading-relaxed">
-                Democratizing high-finance by providing access to the same
-                tools, data, and mentorship used by the world's leading hedge
-                funds and asset management firms.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
+ 
 
       {/* --- Section 3: Numbers Achievement (The Clean Institutional Grid) --- */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-16 px-2 lg:px-0">
         <div className="container mx-auto ">
           <motion.div
             variants={fadeUp}
@@ -193,7 +147,7 @@ const AboutPage = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div
-              className="bg-slate-950 rounded-[5rem] p-5 lg:p-8 border border-slate-800 relative overflow-hidden shadow-2xl"
+              className="bg-slate-950 rounded-4xl lg:rounded-[5rem] p-5 lg:p-8 border border-slate-800 relative overflow-hidden shadow-2xl"
               style={{
                 backgroundImage: `url('${AboutBanner}')`,
                 backgroundSize: "cover",
@@ -202,9 +156,7 @@ const AboutPage = () => {
             >
               {/* GRADIENT MASK (Ensures readability and depth) */}
               <div className="absolute inset-0 bg-linear-to-r from-slate-950 via-slate-950/70 to-black z-0" />
-
-              {/* LIGHTING & DECOR */}
-              <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-color/20 rounded-full blur-[120px] pointer-events-none z-10" />
+ 
 
               <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none z-10">
                 <BiGlobe className="text-[30rem] -mr-32 -mb-32 text-indigo-500" />

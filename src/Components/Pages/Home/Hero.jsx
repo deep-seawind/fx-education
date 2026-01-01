@@ -74,7 +74,7 @@ const slides = [
             }}
           >
             <div className="container mx-auto px-6 relative z-10">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               
           {/* LEFT */}
           <div className="flex flex-col space-y-8">
@@ -83,7 +83,7 @@ const slides = [
               {slide.badge}
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-6xl font-semibold text-slate-100 leading-[1.1] tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-slate-100 leading-[1.1] tracking-tight">
               {slide.title}
             </h1>
 

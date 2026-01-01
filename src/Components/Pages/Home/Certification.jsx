@@ -158,7 +158,7 @@ const CertificationUI = () => {
               {levels.map((item, idx) => (
                 <div
                   key={idx}
-                  className={`flex items-center gap-6 p-6 rounded-4xl border transition-all duration-500 group cursor-default
+                  className={`lg:flex items-center gap-6 p-6 rounded-4xl border transition-all duration-500 group cursor-default
                   ${
                     item.status === "Locked"
                       ? "bg-slate-900/20 border-white/5 opacity-40"
@@ -179,7 +179,7 @@ const CertificationUI = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
-                      <h4 className="font-semibold text-white tracking-tight">
+                      <h4 className="font-semibold text-white tracking-tight pt-10 lg:pt-0">
                         {item.title}
                       </h4>
                       {item.status === "Completed" && (
