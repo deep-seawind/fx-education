@@ -30,7 +30,7 @@ const Header = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white backdrop-blur-md shadow-lg"
-          : "bg-transparent text-slate-100"
+          : "bg-transparent text-slate-900"
       }`}
     >
       <div className="container mx-auto py-3 px-6">

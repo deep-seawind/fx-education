@@ -169,7 +169,7 @@ const CoursesDetails = () => {
 
         <div className="container mx-auto px-4 md:px-6 grid lg:grid-cols-3 grid-cols-1 gap-8 lg:gap-16 mt-8 md:mt-12">
           {/* Left Content Area */}
-          <div className="lg:col-span-2 space-y-12 md:space-y-20">
+          <div className="lg:col-span-2 space-y-12 md:space-y-20 order-2 lg:order-1">
             {/* About Section */}
             <section ref={aboutRef} id="About" className="scroll-mt-32">
               <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6">
@@ -221,7 +221,7 @@ const CoursesDetails = () => {
           </div>
 
           {/* 3. Responsive Sidebar */}
-          <aside className="relative lg:col-span-1">
+          <aside className="relative lg:col-span-1 order-1 lg:order-2">
             <CourseSidebar/>
           </aside>
         </div>

@@ -19,181 +19,246 @@ import Bnnaer2 from "../../../assets/banner/banner-2.jpg";
 import Bnnaer3 from "../../../assets/banner/banner-3.jpg";
 
 const Hero = () => {
-const slides = [
-  {
-    image: Bnnaer1,
-    badge: "AI-Powered Finance Education",
-    title: "Become a Global Fund Manager in 90 Days",
-    description:
-      "Master the markets through live simulations, certifications, and direct career placement with Radiant Global Fund.",
-  },
-  {
-    image: Bnnaer2,
-    badge: "Professional Trading Program",
-    title: "Trade Global Markets With Confidence",
-    description:
-      "Learn institutional strategies, portfolio management, and risk control from industry experts.",
-  },
-  {
-    image: Bnnaer3,
-    badge: "Career-Focused Learning",
-    title: "From Beginner to Fund Manager",
-    description:
-      "Structured learning paths with real-world trading experience and placement support.",
-  },
-];
-
+  const slides = [
+    {
+      image: Bnnaer1,
+      badge: "AI-Powered Finance Education",
+      title: "Become a Global Fund Manager in 90 Days",
+      description:
+        "Master the markets through live simulations, certifications, and direct career placement with Radiant Global Fund.",
+    },
+    {
+      image: Bnnaer2,
+      badge: "Professional Trading Program",
+      title: "Trade Global Markets With Confidence",
+      description:
+        "Learn institutional strategies, portfolio management, and risk control from industry experts.",
+    },
+    {
+      image: Bnnaer3,
+      badge: "Career-Focused Learning",
+      title: "From Beginner to Fund Manager",
+      description:
+        "Structured learning paths with real-world trading experience and placement support.",
+    },
+  ];
 
   return (
-
     <div className=" ">
-    <Swiper
-      modules={[Autoplay, Pagination, EffectFade]}
-      effect="fade"
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-      }}
-      pagination={{ clickable: true }}
-      loop
-      className="min-h-screen"
-    >
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
-          <section
-            id="home"
-            className="relative min-h-screen pt-28 pb-20 overflow-hidden flex items-center "
-            style={{
-              backgroundImage: `linear-gradient(
-                to right,
-                rgba(0,0,0,0.95),
-                rgba(0,0,0,0.30)
-              ), url(${slide.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="container mx-auto px-6 relative z-10">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              
-          {/* LEFT */}
-          <div className="flex flex-col space-y-8">
-            <div className="inline-flex items-center gap-2.5 w-fit bg-white backdrop-blur border border-slate-200 shadow-sm rounded-full px-4 py-1.5 text-sm font-semibold text-slate-600">
-              <BiSolidCircle className="w-2 h-2 text-emerald-500 animate-pulse" />
-              {slide.badge}
-            </div>
+      <Swiper
+        modules={[Autoplay, Pagination, EffectFade]}
+        effect="fade"
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        loop
+        className="min-h-screen"
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <section
+              id="home"
+              className="relative min-h-[90vh] lg:min-h-screen pt-28 pb-20 overflow-hidden flex items-center bg-[#F8FAFC]"
+              style={{
+                backgroundImage: `linear-gradient(
+        to right,
+        rgba(255,255,255,0.98) 20%,
+        rgba(255,255,255,0.85) 50%,
+        rgba(255,255,255,0.4) 100%
+      ), url('${slide.image}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="container mx-auto px-6 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  {/* LEFT CONTENT */}
+                  <div className="flex flex-col space-y-10">
+                    <div className="inline-flex items-center gap-2.5 w-fit bg-white/80 backdrop-blur-md border border-slate-200/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-full px-5 py-2 text-sm font-bold text-slate-600 tracking-tight transition-all hover:border-indigo-200">
+                      <BiSolidCircle className="w-2 h-2 text-emerald-500 animate-pulse" />
+                      <span className="uppercase tracking-widest text-[11px]">
+                        {slide.badge}
+                      </span>
+                    </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-slate-100 leading-[1.1] tracking-tight">
-              {slide.title}
-            </h1>
+                    <div className="space-y-6">
+                      <h1 className="text-5xl md:text-7xl lg:text-7xl font-semibold text-slate-900 leading-[1.05] tracking-tight">
+                        Master the
+                        <span className="text-color"> Markets.</span>
+                      </h1>
 
-            <p className="text-lg md:text-xl text-slate-200 max-w-xl">
-              {slide.description}
-            </p>
+                      <p className="text-lg md:text-xl text-slate-600 ">
+                        Elevate your trading psychology and technical prowess
+                        with our institutional-grade learning ecosystem.
+                      </p>
+                    </div>
 
-            <div className="flex flex-wrap gap-4">
-              <button className="flex items-center gap-2 px-8 py-4 bg-primary-color hover:bg-white text-white hover:text-color rounded-2xl font-semibold shadow-xl transition-all hover:-translate-y-1">
-                Start Learning
-                <BiRightArrowAlt className="text-2xl" />
-              </button>
+                    <div className="flex flex-wrap gap-5">
+                      <button className="flex items-center gap-3 px-10 py-5 bg-slate-900 hover:bg-indigo-600 text-white rounded-2xl font-bold shadow-[0_20px_40px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-1.5 active:scale-95">
+                        Start Learning
+                        <BiRightArrowAlt className="text-2xl" />
+                      </button>
 
-              <button className="flex items-center gap-2 px-8 py-4 bg-white backdrop-blur border border-slate-200 text-slate-700 rounded-2xl font-semibold">
-                <BiPlayCircle className="text-2xl text-color" />
-                Explore Courses
-              </button>
-            </div>
-          </div>
+                      <button className="flex items-center gap-3 px-10 py-5 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300">
+                        <BiPlayCircle className="text-2xl text-indigo-600" />
+                        Explore Courses
+                      </button>
+                    </div>
 
-                {/* Right Visual Section */}
-                <div className="relative">
-                  <div className="relative bg-white rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.05)] p-8 border border-slate-100">
-                    {/* Dashboard Mockup */}
-                    <div className="space-y-8">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest">
-                            Portfolio Value
-                          </p>
-                          <h3 className="text-4xl font-semibold text-slate-900 mt-1">
-                            $124,500.00
-                          </h3>
-                        </div>
-                        <div className="bg-emerald-50 text-emerald-600 px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-1">
-                          <BiTrendingUp /> +12.4%
-                        </div>
-                      </div>
-
-                      {/* Simplified Professional Chart */}
-                      <div className="h-44 flex items-end gap-3 px-2">
-                        {[40, 65, 45, 80, 55, 90, 70, 85, 60, 95, 75, 88].map(
-                          (height, i) => (
-                            <div
-                              key={i}
-                              className="flex-1 bg-slate-50 rounded-t-lg relative group h-full"
-                            >
-                              <div
-                                className="absolute bottom-0 left-0 right-0 bg-indigo-500/20 group-hover:bg-indigo-500 rounded-t-lg transition-all duration-500"
-                                style={{ height: `${height}%` }}
-                              />
-                            </div>
-                          )
-                        )}
-                      </div>
-
-                      {/* Metric Grid */}
-                      <div className="grid grid-cols-3 gap-4">
-                        {["Trades", "Win Rate", "Rank"].map((item, i) => (
+                    {/* Trust Indicators */}
+                    <div className="pt-4 flex items-center gap-6 border-t border-slate-100 w-fit">
+                      <div className="flex -space-x-3">
+                        {[1, 2, 3, 4].map((i) => (
                           <div
                             key={i}
-                            className="bg-slate-50 rounded-2xl p-4 border border-slate-100/50"
+                            className="w-10 h-10 rounded-full border-4 border-white bg-slate-200 overflow-hidden"
                           >
-                            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-tighter mb-1">
-                              {item}
-                            </p>
-                            <p className="text-lg font-semibold text-slate-800">
-                              {i === 1 ? "78%" : i === 2 ? "Elite" : "247"}
-                            </p>
+                            <img
+                              src={`https://i.pravatar.cc/100?img=${i + 10}`}
+                              alt="user"
+                            />
                           </div>
                         ))}
                       </div>
+                      <p className="text-sm text-slate-400 font-medium">
+                        Joined by{" "}
+                        <span className="text-slate-900 font-bold">12k+</span>{" "}
+                        elite traders
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* RIGHT VISUAL (DASHBOARD) */} 
+                  <div className="relative lg:block hidden h-150 w-full">
+                    {/* 1. BACK LAYER: Currency Strength Heatmap */}
+                    <div className="absolute top-10 right-0 w-[85%] h-105 bg-white/40 backdrop-blur-sm rounded-[3rem] border border-white/50 -rotate-3 transition-transform hover:rotate-0 duration-1000 shadow-xl shadow-slate-200/40">
+                      <div className="p-8 opacity-40">
+                        <div className="flex justify-between mb-8 items-center">
+                          <div className="h-5 w-40 bg-slate-200 rounded-full"></div>
+                          <div className="flex gap-3">
+                            <div className="h-2 w-8 bg-emerald-300 rounded-full"></div>
+                            <div className="h-2 w-8 bg-rose-200 rounded-full"></div>
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-4 gap-4">
+                          {[
+                            "EUR",
+                            "USD",
+                            "GBP",
+                            "JPY",
+                            "AUD",
+                            "CAD",
+                            "CHF",
+                            "NZD",
+                          ].map((curr) => (
+                            <div
+                              key={curr}
+                              className="p-4 bg-slate-50 rounded-2xl flex flex-col items-center gap-2"
+                            >
+                              <div className="text-[10px] font-bold text-slate-400">
+                                {curr}
+                              </div>
+                              <div
+                                className={`h-1.5 w-full rounded-full ${
+                                  curr === "USD" || curr === "GBP"
+                                    ? "bg-emerald-400"
+                                    : "bg-slate-200"
+                                }`}
+                              ></div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
 
-                    {/* High-Impact Floating Cards */}
-                    <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-2xl p-4 border border-slate-100 flex items-center gap-4 animate-bounce duration-3000">
-                      <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
-                        <BiAward className="w-6 h-6 text-emerald-600" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-slate-900 tracking-tight">
-                          Level 3 Complete
-                        </p>
-                        <p className="text-[10px] font-semibold text-emerald-500 uppercase">
-                          Certified Global Trader
-                        </p>
-                      </div>
-                    </div>
+                    {/* 2. MIDDLE LAYER: Live Forex Signal & Pip Tracker */}
+                    <div className="absolute inset-x-4 top-20 bg-white/90 backdrop-blur-2xl rounded-[3rem] shadow-[0_50px_100px_rgba(15,23,42,0.1)] p-10 py-20 border border-white z-20 group hover:-translate-y-2 transition-all duration-500 ">
+                      <div className="space-y-8 ">
+                        <div className="flex justify-between items-start">
+                          <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-200">
+                              <BiTrendingUp className="text-2xl" />
+                            </div>
+                            <div>
+                              <h4 className="text-2xl font-bold text-slate-900 tracking-tight">
+                                GBP/USD{" "}
+                                <span className="text-slate-400 font-light">
+                                  Long
+                                </span>
+                              </h4>
+                              <p className="text-[10px] font-semibold text-emerald-500 mt-0.5">
+                                Price Action Signal • High Prob
+                              </p>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-semibold text-slate-900">
+                              +82.4{" "}
+                              <span className="text-sm text-slate-400 font-medium">
+                                PIPS
+                              </span>
+                            </p>
+                            <p className="text-[10px] font-bold text-emerald-500 ">
+                              Live Profit
+                            </p>
+                          </div>
+                        </div>
 
-                    <div className="absolute -bottom-6 -left-6 bg-slate-900 rounded-2xl shadow-2xl p-5 flex items-center gap-4 border-t border-white/10">
-                      <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center">
-                        <BiTrendingUp className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-white tracking-tight">
-                          Active Trade Profit
-                        </p>
-                        <p className="text-xs font-semibold text-emerald-400">
-                          +$2,450.00
-                        </p>
+                        {/* Institutional Order Block Visual */}
+                        <div className="relative h-32 w-full bg-slate-50 rounded-4xl overflow-hidden border border-slate-100">
+                          <div className="absolute inset-0 flex items-center justify-around px-4">
+                            {[50, 80, 40, 90, 60, 100, 70].map((h, i) => (
+                              <div
+                                key={i}
+                                className="w-4 bg-indigo-100 rounded-full relative group h-full flex flex-col justify-end pb-4"
+                              >
+                                <div className="absolute top-1/2 left-0 w-full h-0.5 bg-slate-200"></div>
+                                <div
+                                  className={`w-full rounded-full transition-all duration-1000 ${
+                                    i === 5
+                                      ? "bg-indigo-600 shadow-[0_0_15px_rgba(79,70,229,0.5)]"
+                                      : "bg-indigo-300"
+                                  }`}
+                                  style={{ height: `${h}%` }}
+                                ></div>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="absolute top-2 left-4 text-[9px] font-bold text-slate-400 uppercase">
+                            Volume Profile
+                          </div>
+                        </div>
+
+                        {/* Forex Indicators Grid */}
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
+                            <p className="text-[9px] font-bold text-emerald-600  mb-1">
+                              RSI Sentiment
+                            </p>
+                            <p className="text-lg font-semibold text-emerald-700 ">
+                              Oversold
+                            </p>
+                          </div>
+                          <div className="p-4 bg-indigo-50 rounded-2xl border border-indigo-100">
+                            <p className="text-[9px] font-bold text-indigo-600  mb-1">
+                              Market Bias
+                            </p>
+                            <p className="text-lg font-semibold text-indigo-700 ">
+                              Bullish
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+            </section>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

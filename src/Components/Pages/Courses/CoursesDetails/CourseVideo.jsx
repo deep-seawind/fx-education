@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
-import { IoCloseCircleOutline, IoPlayCircleOutline } from "react-icons/io5";
-
-import { MediaPlayer, MediaProvider, Track } from "@vidstack/react";
+import { IoCloseCircleOutline, IoPlayCircleOutline } from "react-icons/io5"; 
+import { MediaPlayer, MediaProvider, SeekButton, Track } from "@vidstack/react";
 import {
   DefaultVideoLayout,
   defaultLayoutIcons,
@@ -9,6 +8,10 @@ import {
 
 import "@vidstack/react/player/styles/default/theme.css";
 import "@vidstack/react/player/styles/default/layouts/video.css";
+import { GrForwardTen } from "react-icons/gr";
+import { TbRewindBackward10 } from "react-icons/tb";
+import ForwardIcon from "../../../../assets/icnos/forward-icon.png"
+import BackwardIcon from "../../../../assets/icnos/backward-icon.png"
 
 const CourseVideo = ({ video, onClose, onComplete }) => {
   if (!video) return null;
@@ -17,17 +20,16 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
 
   const handleContextMenu = (e) => e.preventDefault();
 
-  const handleEnded = () => { 
-    const stored =
-      JSON.parse(sessionStorage.getItem("completedVideos")) || {};
+  const handleEnded = () => {
+    const stored = JSON.parse(sessionStorage.getItem("completedVideos")) || {};
 
     stored[video.src] = true;
 
     sessionStorage.setItem("completedVideos", JSON.stringify(stored));
- 
+
     setTimeout(() => {
       onComplete?.();
-    }, 300); 
+    }, 300);
   };
 
   return (
@@ -62,7 +64,7 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
             title={video.title}
             playsInline
             className="w-full h-full"
-            onEnded={handleEnded} // ✅ SAFE
+            onEnded={handleEnded}
           >
             <MediaProvider>
               {video.subtitles && (
@@ -77,6 +79,14 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
             </MediaProvider>
 
             <DefaultVideoLayout icons={defaultLayoutIcons} noDownload />
+
+            <SeekButton className="vds-button" seconds={-10}>
+              <img src={BackwardIcon} alt="" />
+            </SeekButton>
+
+            <SeekButton className="vds-button" seconds={10}>
+              <img src={ForwardIcon} alt="" /> 
+            </SeekButton>
           </MediaPlayer>
         </div>
       </div>
