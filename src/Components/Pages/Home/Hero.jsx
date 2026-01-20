@@ -1,11 +1,4 @@
-import {
-  BiSolidCircle,
-  BiRightArrowAlt,
-  BiPlayCircle,
-  BiGroup,
-  BiAward,
-  BiTrendingUp,
-} from "react-icons/bi";
+import { BiSolidCircle, BiRightArrowAlt, BiPlayCircle } from "react-icons/bi";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
@@ -14,9 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import Bnnaer1 from "../../../assets/banner/banner-1.jpg";
-import Bnnaer2 from "../../../assets/banner/banner-2.jpg";
-import Bnnaer3 from "../../../assets/banner/banner-3.jpg";
+import Bnnaer1 from "../../../assets/banner/main-banner.jpg";
+import Bnnaer2 from "../../../assets/banner/main-banner-1.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const slides = [
@@ -33,13 +26,6 @@ const Hero = () => {
       title: "Trade Global Markets With Confidence",
       description:
         "Learn institutional strategies, portfolio management, and risk control from industry experts.",
-    },
-    {
-      image: Bnnaer3,
-      badge: "Career-Focused Learning",
-      title: "From Beginner to Fund Manager",
-      description:
-        "Structured learning paths with real-world trading experience and placement support.",
     },
   ];
 
@@ -60,16 +46,9 @@ const Hero = () => {
           <SwiperSlide key={index}>
             <section
               id="home"
-              className="relative min-h-[90vh] lg:min-h-screen pt-28 pb-20 overflow-hidden flex items-center bg-[#F8FAFC]"
+              className="relative min-h-[90vh] lg:min-h-screen pt-28 pb-20 overflow-hidden flex items-center bg-[#F8FAFC] bg-cover bg-no-repeat"
               style={{
-                backgroundImage: `linear-gradient(
-        to right,
-        rgba(255,255,255,0.98) 20%,
-        rgba(255,255,255,0.85) 50%,
-        rgba(255,255,255,0.4) 100%
-      ), url('${slide.image}')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundImage: `url('${slide.image}')`,
               }}
             >
               <div className="container mx-auto px-6 relative z-10">
@@ -96,15 +75,19 @@ const Hero = () => {
                     </div>
 
                     <div className="flex flex-wrap gap-5">
-                      <button className="flex items-center gap-3 px-10 py-5 bg-slate-900 hover:bg-indigo-600 text-white rounded-2xl font-bold shadow-[0_20px_40px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-1.5 active:scale-95">
+                      <Link to={"/signup"}>
+                      <button className="flex items-center gap-3 px-10 py-5 bg-slate-900 hover:bg-indigo-600 text-white rounded-2xl font-bold shadow-[0_20px_40px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-1.5 active:scale-95 cursor-pointer">
                         Start Learning
                         <BiRightArrowAlt className="text-2xl" />
                       </button>
+                      </Link>
 
-                      <button className="flex items-center gap-3 px-10 py-5 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300">
+                      <Link to={"/main-courses"}>
+                      <button className="flex items-center gap-3 px-10 py-5 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 cursor-pointer">
                         <BiPlayCircle className="text-2xl text-indigo-600" />
                         Explore Courses
                       </button>
+                      </Link>
                     </div>
 
                     {/* Trust Indicators */}
@@ -130,9 +113,9 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  {/* RIGHT VISUAL (DASHBOARD) */} 
-                  <div className="relative lg:block hidden h-150 w-full">
-                    {/* 1. BACK LAYER: Currency Strength Heatmap */}
+                  {/* RIGHT VISUAL (DASHBOARD) */}
+                  {/* <div className="relative lg:block hidden h-150 w-full">
+                    
                     <div className="absolute top-10 right-0 w-[85%] h-105 bg-white/40 backdrop-blur-sm rounded-[3rem] border border-white/50 -rotate-3 transition-transform hover:rotate-0 duration-1000 shadow-xl shadow-slate-200/40">
                       <div className="p-8 opacity-40">
                         <div className="flex justify-between mb-8 items-center">
@@ -173,7 +156,7 @@ const Hero = () => {
                       </div>
                     </div>
 
-                    {/* 2. MIDDLE LAYER: Live Forex Signal & Pip Tracker */}
+                   
                     <div className="absolute inset-x-4 top-20 bg-white/90 backdrop-blur-2xl rounded-[3rem] shadow-[0_50px_100px_rgba(15,23,42,0.1)] p-10 py-20 border border-white z-20 group hover:-translate-y-2 transition-all duration-500 ">
                       <div className="space-y-8 ">
                         <div className="flex justify-between items-start">
@@ -205,8 +188,7 @@ const Hero = () => {
                             </p>
                           </div>
                         </div>
-
-                        {/* Institutional Order Block Visual */}
+ 
                         <div className="relative h-32 w-full bg-slate-50 rounded-4xl overflow-hidden border border-slate-100">
                           <div className="absolute inset-0 flex items-center justify-around px-4">
                             {[50, 80, 40, 90, 60, 100, 70].map((h, i) => (
@@ -230,8 +212,7 @@ const Hero = () => {
                             Volume Profile
                           </div>
                         </div>
-
-                        {/* Forex Indicators Grid */}
+ 
                         <div className="grid grid-cols-2 gap-4">
                           <div className="p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
                             <p className="text-[9px] font-bold text-emerald-600  mb-1">
@@ -252,7 +233,7 @@ const Hero = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </section>

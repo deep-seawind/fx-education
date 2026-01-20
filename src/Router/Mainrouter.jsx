@@ -22,6 +22,7 @@ import MCQQuiz from "../Components/Pages/Courses/CoursesDetails/assessments/MCQQ
 import Faq from "../Components/Pages/FAQ/Faq";
 import PrivacyPolicy from "../Components/Pages/PrivacyPolicy/PrivacyPolicy";
 import TermsCondition from "../Components/Pages/TermsCondition/TermsCondition";
+import PlacementSupport from "../Components/Pages/PlacementSupport/PlacementSupport";
 
 const Mainrouter = () => {
   return (
@@ -49,6 +50,8 @@ const Mainrouter = () => {
           <Route path="/faq" element={<Faq />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-condition" element={<TermsCondition />} />
+          <Route path="/placement-support" element={<PlacementSupport />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

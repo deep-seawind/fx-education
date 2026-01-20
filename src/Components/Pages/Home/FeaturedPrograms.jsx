@@ -12,35 +12,43 @@ import { motion } from "framer-motion";
 const programs = [
   {
     icon: BiGlobe,
-    title: "Global Markets",
+    title: "Global Financial Markets & Trading Foundation",
     description:
-      "Master international markets, forex trading, and cross-border investment strategies.",
+      "Build a strong foundation in global financial markets, trading instruments, market structure, and professional trading practices.",
     duration: "8 Weeks",
     color: "indigo",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=80",
   },
   {
     icon: BiStats,
-    title: "Quant & Algo Trading",
+    title: "Quantitative Trading, AI & Algorithmic Models",
     description:
-      "Learn algorithmic trading, quantitative analysis, and automated trading systems.",
+      "Master quantitative finance, AI-driven trading strategies, algorithmic models, and automated execution systems.",
     duration: "10 Weeks",
     color: "emerald",
+    image:
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=900&q=80",
   },
   {
     icon: BiBriefcaseAlt,
-    title: "Fund Management",
+    title: "Fund Management, Portfolio Science & Risk Systems",
     description:
-      "Comprehensive training on portfolio management, risk assessment, and fund operations.",
+      "Learn professional fund management, portfolio optimization, institutional risk systems, and performance analytics.",
     duration: "12 Weeks",
     color: "blue",
+    image:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?w=900&q=80",
   },
   {
     icon: BiShieldQuarter,
-    title: "Compliance & Risk",
+    title: "Financial Compliance, Ethics, AML & Institutional Processes",
     description:
-      "Understand regulatory frameworks, compliance requirements, and risk management.",
+      "Understand financial regulations, compliance frameworks, AML processes, ethics, and institutional governance.",
     duration: "6 Weeks",
     color: "slate",
+    image:
+      "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -132,12 +140,22 @@ const FeaturedPrograms = () => {
                 <program.icon className="w-8 h-8" />
               </motion.div>
 
+              {/* Image */}
+              <div className="relative w-full h-40 mb-6 rounded-2xl overflow-hidden">
+                <img
+                  src={program.image}
+                  alt={program.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent" />
+              </div>
+
               {/* Content */}
               <div className="mb-4">
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">
                   {program.title}
                 </h3>
-                <p className="text-slate-500 text-[14px] leading-relaxed">
+                <p className="text-slate-500 text-[10px]">
                   {program.description}
                 </p>
               </div>
@@ -171,38 +189,9 @@ const FeaturedPrograms = () => {
             </motion.div>
           ))}
         </motion.div>
+ 
 
-        {/* Bottom CTA */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="mt-16 bg-white p-4 rounded-3xl border border-slate-100 shadow-sm inline-flex items-center gap-6 relative left-1/2 -translate-x-1/2"
-        >
-          <div className="flex -space-x-3 pl-2">
-            {[1, 2, 3, 4].map((i) => (
-              <div
-                key={i}
-                className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"
-              >
-                <img
-                  src={`https://i.pravatar.cc/100?img=${i + 10}`}
-                  alt="student"
-                />
-              </div>
-            ))}
-          </div>
-          <p className="text-sm font-semibold text-slate-700 hidden sm:block">
-            Join <span className="text-color underline">1,200+ students</span>{" "}
-            learning this week
-          </p>
-          <button className="bg-primary-color text-white px-6 py-3 rounded-2xl text-sm font-semibold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100">
-            Explore All Courses
-          </button>
-        </motion.div>
-
-        <p className="mt-4 text-sm text-slate-400 font-medium italic text-center">
+        <p className="mt-12 text-sm text-slate-400 font-medium italic text-center">
           *Certified by Radiant Global Fund Partners
         </p>
       </div>

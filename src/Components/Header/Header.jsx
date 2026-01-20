@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import { BiMenu, BiTrendingUp, BiX, BiChevronRight } from "react-icons/bi";
+import { BiMenu, BiX, BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/white-logo.jpg";
-import LanguageSelector from "../../language/LanguageSelector";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -55,18 +54,6 @@ const Header = () => {
 
           {/* <LanguageSelector /> */}
 
-          {/* <select
-        value={language}
-        onChange={(e) => setLanguage(e.target.value)}
-        className="lang-select"
-      >
-        <option value="en">English</option>
-        <option value="fr">French</option>
-        <option value="es">Spanish</option>
-        <option value="de">German</option>
-        <option value="hi">Hindi</option>
-      </select>  */}
-
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <Link to="/login">
@@ -78,6 +65,24 @@ const Header = () => {
             <Link to="/signup">
               <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-primary-color cursor-pointer">
                 Sign Up
+              </button>
+            </Link>
+            {/* Job Guarantee / Placement CTA */}
+            <Link to="/placement-support">
+              <button
+                className="
+              px-5 py-2.5 text-sm font-semibold
+              text-white
+              rounded-full
+              bg-linear-to-r from-emerald-500 to-teal-500
+              hover:from-emerald-600 hover:to-teal-600
+              shadow-md shadow-emerald-200
+              transition-all duration-300
+              active:scale-95
+              whitespace-nowrap
+            "
+              >
+                100% Placement Support
               </button>
             </Link>
           </div>

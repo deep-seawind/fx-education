@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { HiOutlineArrowNarrowUp } from "react-icons/hi"; // A sleeker, more modern arrow
+import { HiOutlineArrowNarrowUp } from "react-icons/hi";  
 
 const BottomToTopButton = () => {
   const [completion, setCompletion] = useState(0);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Calculate scroll percentage
+    const handleScroll = () => { 
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrolled = (window.scrollY / scrollHeight) * 100;
       setCompletion(scrolled);
-
-      // Show/Hide logic
+ 
       if (window.scrollY > 300) setShowButton(true);
       else setShowButton(false);
     };
