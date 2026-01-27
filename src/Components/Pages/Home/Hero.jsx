@@ -63,7 +63,7 @@ const Hero = () => {
                     </div>
 
                     <div className="space-y-6">
-                      <h1 className="text-5xl md:text-7xl lg:text-7xl font-semibold text-slate-900 leading-[1.05] tracking-tight">
+                      <h1 className="text-5xl md:text-7xl lg:text-6xl font-semibold text-slate-900 leading-[1.05] tracking-tight">
                         Master the
                         <span className="text-color"> Markets.</span>
                       </h1>
