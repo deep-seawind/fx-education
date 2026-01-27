@@ -7,8 +7,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import Bnnaer1 from "../../../assets/banner/main-banner.jpg";
-import Bnnaer2 from "../../../assets/banner/main-banner-1.jpg";
+import Bnnaer1 from "../../../assets/banner/NIFDSD-banner-1.jpg";
+import Bnnaer2 from "../../../assets/banner/NIFDSD-banner-2.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
