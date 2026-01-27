@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
                 <img
                   src={Logo}
                   alt="Market Analysis"
-                  className="w-full h-full object-contain bg-white p-5 group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-contain bg-white p-10 group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
             </motion.div>

@@ -2,11 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   HiOutlineMail,
-  HiOutlineLocationMarker,
-  HiOutlineGlobe,
+  HiOutlineLocationMarker, 
   HiOutlineChatAlt2,
 } from "react-icons/hi";
-import { SiTelegram, SiWhatsapp } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 import { SiInstagram, SiYoutube, SiFacebook, SiX } from "react-icons/si";
 
 const ContactInfo = () => {
@@ -15,7 +14,7 @@ const contactMethods = [
   {
     icon: <HiOutlineMail />,
     title: "Email Dispatch",
-    detail: "support@academy.com",
+    detail: "support@FINANSHAM.com",
     desc: "Response within 2 hours",
     color: "bg-blue-500",
     isFullWidth: false,

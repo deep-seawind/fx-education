@@ -103,8 +103,8 @@ const Footer = () => {
         <div className="grid lg:grid-cols-12 gap-12 pb-16">
           {/* Brand & Corporate ID */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="flex items-center gap-3">
-              <img src={Logo} alt="" className="w-28 bg-white p-2 rounded-md" />
+            <div className=" bg-white px-8 rounded-md table">
+              <img src={Logo} alt="" className="w-24 p-2 " />
             </div>
 
             <div className="space-y-4">
@@ -112,7 +112,7 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
                   <BiMailSend className="text-xl group-hover:text-white" />
                 </div>
-                <span className="text-sm font-semibold">admissions@nifesd.com</span>
+                <span className="text-sm font-semibold">support@FINANSHAM.com</span>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
@@ -152,7 +152,7 @@ const Footer = () => {
         <div className="pt-5 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p className=" font-semibold text-slate-200 tracking-widest">
-              © {new Date().getFullYear()} NIFESD Institutional ecosystem
+              © {new Date().getFullYear()} FINANSHAM Institutional ecosystem
             </p>
             
           </div>

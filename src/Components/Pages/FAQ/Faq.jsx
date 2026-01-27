@@ -92,7 +92,7 @@ const Faq = ({ showBreadcrumb = true }) => {
                       Still have questions?
                     </h4>
                     <p className="text-sm text-slate-400">
-                      support@NIFESDforex.com
+                      support@FINANSHAMforex.com
                     </p>
                   </div>
                 </div>

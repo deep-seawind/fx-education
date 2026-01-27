@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BiMenu, BiX, BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo/white-logo.jpg";
+import Logo from "../../assets/logo/logo.png";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -33,10 +33,10 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto py-3 px-6">
-        <nav className="flex items-center justify-between h-18 lg:h-20">
+        <nav className="flex items-center justify-between  ">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group outline-none">
-            <img src={Logo} alt="" className="w-28 bg-white p-2 rounded-md" />
+            <img src={Logo} alt="" className="w-20" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -56,17 +56,6 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Link to="/login">
-              <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color cursor-pointer">
-                Login
-              </button>
-            </Link>
-
-            <Link to="/signup">
-              <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-primary-color cursor-pointer">
-                Sign Up
-              </button>
-            </Link>
             {/* Job Guarantee / Placement CTA */}
             <Link to="/placement-support">
               <button
@@ -83,6 +72,17 @@ const Header = () => {
             "
               >
                 100% Placement Support
+              </button>
+            </Link>
+            <Link to="/login">
+              <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color cursor-pointer">
+                Login
+              </button>
+            </Link>
+
+            <Link to="/signup">
+              <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-primary-color cursor-pointer">
+                Sign Up
               </button>
             </Link>
           </div>

@@ -54,7 +54,7 @@ const TermsCondition = () => {
                 The <span className="text-transparent bg-clip-text bg-linear-to-r from-[#0e5da0] to-blue-500">Foundation</span> of Trust.
               </h1>
               <p className="text-slate-500 text-xl font-medium max-w-xl leading-relaxed">
-                NIFESD provides a professional environment for financial growth. By accessing our platform, you commit to our institutional standards and ethical guidelines.
+                FINANSHAM provides a professional environment for financial growth. By accessing our platform, you commit to our institutional standards and ethical guidelines.
               </p>
             </div>
             
@@ -108,7 +108,7 @@ const TermsCondition = () => {
                 </div>
                 <div className="prose prose-xl max-w-none text-slate-600 font-medium leading-relaxed">
                   <p className="mb-8">
-                    By using the services of the <strong>National Institute of Financial Education & Skill Development (NIFESD)</strong>, you represent that you have read, understood, and agreed to be bound by these terms. This document constitutes a legally binding agreement between you and NIFESD.
+                    By using the services of the <strong>National Institute of Financial Education & Skill Development (FINANSHAM)</strong>, you represent that you have read, understood, and agreed to be bound by these terms. This document constitutes a legally binding agreement between you and FINANSHAM.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
                      <div className="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-all">
@@ -119,7 +119,7 @@ const TermsCondition = () => {
                      <div className="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-all">
                         <FiCheck className="text-emerald-500 mb-4 text-xl" />
                         <h4 className="font-semibold text-slate-900 uppercase text-xs mb-2">Modification</h4>
-                        <p className="text-[13px] text-slate-500 leading-relaxed">NIFESD reserves the right to refine these terms as the financial landscape evolves.</p>
+                        <p className="text-[13px] text-slate-500 leading-relaxed">FINANSHAM reserves the right to refine these terms as the financial landscape evolves.</p>
                      </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const TermsCondition = () => {
                    <div className="relative z-10">
                       <h2 className="text-4xl font-semibold mb-8">Intellectual Property</h2>
                       <p className="text-xl font-light opacity-80 leading-relaxed max-w-2xl mb-10">
-                        All curriculum material, trading simulator algorithms, and proprietary financial modules are the sole property of NIFESD. Redistribution, unauthorized broadcasting, or reverse engineering of our codebase is strictly prohibited and subject to international legal action.
+                        All curriculum material, trading simulator algorithms, and proprietary financial modules are the sole property of FINANSHAM. Redistribution, unauthorized broadcasting, or reverse engineering of our codebase is strictly prohibited and subject to international legal action.
                       </p>
                       <div className="items-center gap-4 text-xs font-semibold tracking-widest uppercase py-3 px-6 rounded-full bg-white/10 border border-white/20 inline-flex">
                          <span className="w-2 h-2 rounded-full bg-blue-400" /> No Reproduction Allowed
@@ -158,7 +158,7 @@ const TermsCondition = () => {
                 <div className="space-y-4">
                   {[
                     'Students must provide truthful academic and financial documentation.',
-                    'Any attempt to manipulate the NIFESD trading simulator data is a breach of trust.',
+                    'Any attempt to manipulate the FINANSHAM trading simulator data is a breach of trust.',
                     'Platform sharing is strictly prohibited; one license per individual user.',
                     'Users must maintain professional decorum in all community financial forums.'
                   ].map((text, i) => (
