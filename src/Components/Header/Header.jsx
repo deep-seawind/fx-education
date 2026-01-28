@@ -57,23 +57,24 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             {/* Job Guarantee / Placement CTA */}
-            <Link to="/placement-support">
-              <button
-                className="
-              px-5 py-2.5 text-sm font-semibold
-              text-white
-              rounded-full
-              bg-linear-to-r from-emerald-500 to-teal-500
-              hover:from-emerald-600 hover:to-teal-600
-              shadow-md shadow-emerald-200
-              transition-all duration-300
-              active:scale-95
-              whitespace-nowrap
-            "
-              >
-                100% Placement Support
-              </button>
-            </Link>
+           <Link to="/placement-support">
+            <button
+              className="
+                px-5 py-2.5 text-sm font-semibold
+                text-white
+                rounded-full
+                bg-linear-to-r from-emerald-800 to-green-800
+                hover:from-emerald-800 hover:to-green-800
+                shadow-md shadow-green-300/50
+                transition-all duration-300
+                active:scale-95
+                whitespace-nowrap
+              "
+            >
+              100% Placement Support
+            </button>
+          </Link>
+
             <Link to="/login">
               <button className="px-5 py-2.5 text-sm font-semibold text-white rounded-full hover:bg-slate-900 shadow-sm transition-all duration-300 active:scale-95 bg-color cursor-pointer">
                 Login

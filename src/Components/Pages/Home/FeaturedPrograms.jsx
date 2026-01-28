@@ -127,7 +127,7 @@ const FeaturedPrograms = () => {
               key={program.title}
               variants={card}
               whileHover={{ y: -8 }}
-              className="group relative bg-zinc-50 rounded-3xl p-8 border border-slate-200 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-500"
+              className="group relative bg-zinc-50 rounded-3xl p-4 border border-slate-200 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-500"
             >
               {/* Icon */}
               <motion.div
@@ -155,7 +155,7 @@ const FeaturedPrograms = () => {
                 <h3 className="text-lg font-semibold text-slate-900 mb-3">
                   {program.title}
                 </h3>
-                <p className="text-slate-500 text-[10px]">
+                <p className="text-slate-500 text-[10px] line-clamp-3">
                   {program.description}
                 </p>
               </div>

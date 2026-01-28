@@ -34,13 +34,7 @@ const BlogSection = () => {
                 </span>
               </h2>
             </div>
-
-            <button
-              className="px-8 py-4 rounded-2xl font-semibold text-white transition-transform hover:scale-105 shadow-xl shadow-blue-100 bg-color"
-        
-            >
-              View All Articles
-            </button>
+ 
           </div>
 
           {/* Blog Cards */}

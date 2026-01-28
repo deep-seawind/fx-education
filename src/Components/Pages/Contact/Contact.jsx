@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <>
-      <Breadcrumbs paths={["Home", "Company", "Contact Us"]} />
+      <Breadcrumbs paths={["Home", "Contact Us"]} />
 
       <div className="py-20">
         <ContactInfo />

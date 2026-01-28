@@ -8,7 +8,7 @@ const MainCourses = () => {
   return (
     <>
       <CourseFilterProvider>
-        <Breadcrumbs paths={["Home", "Courses", "Institutional Courses"]} />
+        <Breadcrumbs paths={["Home", "Courses"]} />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-20">
        

@@ -107,7 +107,7 @@ const TestimonialSlider = () => {
           pagination={{ clickable: true, dynamicBullets: true }}
           breakpoints={{
             768: { slidesPerView: 2 },
-            1280: { slidesPerView: 2.5 },
+            1280: { slidesPerView: 3.5 },
           }}
           className="testimonial-swiper pb-20! overflow-visible!"
         >

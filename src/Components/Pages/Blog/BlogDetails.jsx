@@ -18,7 +18,7 @@ const BlogDetails = () => {
           <article className="col-span-12 lg:col-span-8">
             {/* Header Section */}
             <header className="mb-8">
-              <h1 className="text-4xl md:text-6xl font-semibold text-slate-900  ">
+              <h1 className="text-4xl md:text-5xl font-semibold text-slate-900  ">
                 Mastering Institutional
               </h1>
 

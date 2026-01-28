@@ -69,7 +69,7 @@ const Footer = () => {
             <div className="relative z-10 text-center lg:text-left space-y-3">
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <RiVerifiedBadgeFill className="text-color text-xl" />
-                <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-color">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white">
                   Join the Elite 1%
                 </span>
               </div>
@@ -100,9 +100,9 @@ const Footer = () => {
         </div>
 
         {/* --- 02. NAVIGATION ARCHITECTURE --- */}
-        <div className="grid lg:grid-cols-12 gap-12 pb-16">
+        <div className="grid lg:grid-cols-5 gap-12 pb-16">
           {/* Brand & Corporate ID */}
-          <div className="lg:col-span-4 space-y-8">
+          <div className="lg:col-span-1 space-y-8">
             <div className=" bg-white px-8 rounded-md table">
               <img src={Logo} alt="" className="w-24 p-2 " />
             </div>
@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
 
           {/* Links Grid */}
-          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-8">
             {Object.entries(footerLinks).map(([title, links]) => (
               <div key={title}>
                 <h4 className=" font-semibold text-blue-400 capitalize mb-8">
@@ -133,13 +133,13 @@ const Footer = () => {
                 <ul className="space-y-4">
                   {links.map((link) => (
                     <li key={link.name}>
-                      <a
-                        href={link.href}
-                        className="text-sm font-semibold hover:text-white flex items-center group transition-colors"
+                      <Link
+                        to={link.href}
+                        className="text-sm  hover:text-white flex items-center group transition-colors"
                       >
                         <BiChevronRight className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-indigo-400" />
                         {link.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -151,10 +151,11 @@ const Footer = () => {
         {/* --- 03. COMPLIANCE & SOCIAL BAR --- */}
         <div className="pt-5 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <p className=" font-semibold text-slate-200 tracking-widest">
-              © {new Date().getFullYear()} FINANSHAM Institutional ecosystem
-            </p>
-            
+         <p className="text-slate-200">
+            © {new Date().getFullYear()} FINANSHAM. All rights reserved. Powered by FinanSham.
+          </p>
+
+
           </div>
 
           {/* Social Cluster */}
