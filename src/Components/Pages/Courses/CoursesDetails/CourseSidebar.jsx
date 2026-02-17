@@ -10,9 +10,9 @@ const CourseSidebar = () => {
         {/* Pricing Section */}
         <div className="mb-6">
           <div className="flex flex-wrap items-baseline gap-2 mb-1">
-            <span className="text-4xl md:text-5xl font-semibold text-slate-900">₹549</span>
-            <span className="text-base md:text-lg text-slate-400 line-through decoration-rose-500/30">₹799</span>
-            <span className="text-xs font-semibold text-emerald-500 bg-emerald-50 px-2 py-0.5 rounded-lg">31% OFF</span>
+            <span className="text-4xl md:text-5xl font-semibold text-slate-900">₹19,999</span>
+            <span className="text-base md:text-lg text-slate-400 line-through decoration-rose-500/30">₹64,999</span>
+            <span className="text-xs font-semibold text-emerald-500 bg-emerald-50 px-2 py-0.5 rounded-lg">69% OFF</span>
           </div>
 
           <div className="flex items-center gap-2 mt-4 p-3 bg-rose-50 rounded-2xl border border-rose-100/50">

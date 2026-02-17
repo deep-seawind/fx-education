@@ -21,7 +21,7 @@ const courses = [
     duration: "90 Days",
     rating: "4.9",
     reviews: "12.8k",
-    price: "9,999",
+    price: "19,999",
     students: "24,500",
     highlights: [
       "Market Structure Mastery",
@@ -37,10 +37,10 @@ const courses = [
     title: "Quantitative Trading, AI & Algorithmic Models",
     category: "Algo & AI Trading",
     courseLevel: "Advanced",
-    duration: "16 Weeks",
+    duration: "90 Days",
     rating: "4.8",
     reviews: "8.7k",
-    price: "14,999",
+    price: "19,999",
     students: "9,800",
     highlights: [
       "Python Backtesting",
@@ -56,7 +56,7 @@ const courses = [
     title: "Fund Management, Portfolio Science & Risk Systems",
     category: "Portfolio Management",
     courseLevel: "Expert",
-    duration: "14 Weeks",
+    duration: "90 Days",
     rating: "5.0",
     reviews: "6.2k",
     price: "19,999",
@@ -75,10 +75,10 @@ const courses = [
     title: "Financial Compliance, Ethics, AML & Institutional Processes",
     category: "Compliance & Governance",
     courseLevel: "Intermediate",
-    duration: "8 Weeks",
+     duration: "90 Days",
     rating: "4.7",
     reviews: "5.1k",
-    price: "7,999",
+    price: "19,999",
     students: "11,200",
     highlights: [
       "SEBI & Global Regulations",
@@ -255,8 +255,9 @@ const courses = [
               {/* Price + CTA */}
               <div className="lg:flex items-center justify-between pt-6 border-t border-slate-100 space-y-5">
                 <div>
-                  <p className="text-sm text-slate-500 font-medium">Starting at</p>
-                  <h2 className="text-3xl font-semibold text-slate-900">₹{course.price}</h2>
+                  <p className="text-sm text-slate-500 font-medium">Starting at</p> 
+                    <span className="text-3xl font-semibold text-slate-900">₹{course.price}</span>
+                    <span className="text-base md:text-lg text-slate-400 line-through decoration-rose-500/30 ml-2">₹64,999</span>
                 </div>
 
                 <Link

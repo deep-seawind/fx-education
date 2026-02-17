@@ -191,9 +191,9 @@ const FeaturedPrograms = () => {
         </motion.div>
  
 
-        <p className="mt-12 text-sm text-slate-400 font-medium italic text-center">
+        {/* <p className="mt-12 text-sm text-slate-400 font-medium italic text-center">
           *Certified by Radiant Global Fund Partners
-        </p>
+        </p> */}
       </div>
     </section>
   );

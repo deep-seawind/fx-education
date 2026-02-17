@@ -51,7 +51,7 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
           <button onClick={onClose}>
             <IoCloseCircleOutline
               size={28}
-              className="text-slate-400 hover:text-red-500"
+              className="text-slate-400 hover:text-red-500 cursor-pointer"
             />
           </button>
         </div>
@@ -80,13 +80,25 @@ const CourseVideo = ({ video, onClose, onComplete }) => {
 
             <DefaultVideoLayout icons={defaultLayoutIcons} noDownload />
 
-            <SeekButton className="vds-button" seconds={-10}>
-              <img src={BackwardIcon} alt="" />
-            </SeekButton>
+            {/* Left Seek Button */}
+    <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
+      <SeekButton
+        seconds={-10}
+        className="bg-black/60 hover:bg-black/80 p-3 rounded-full transition-all duration-200"
+      >
+        <img src={BackwardIcon} alt="Backward 10 seconds" className="w-6 h-6" />
+      </SeekButton>
+    </div>
 
-            <SeekButton className="vds-button" seconds={10}>
-              <img src={ForwardIcon} alt="" /> 
-            </SeekButton>
+    {/* Right Seek Button */}
+    <div className="absolute right-4 top-1/2 -translate-y-1/2 z-20">
+      <SeekButton
+        seconds={10}
+        className="bg-black/60 hover:bg-black/80 p-3 rounded-full transition-all duration-200"
+      >
+        <img src={ForwardIcon} alt="Forward 10 seconds" className="w-6 h-6" />
+      </SeekButton>
+    </div>
           </MediaPlayer>
         </div>
       </div>

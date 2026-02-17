@@ -63,7 +63,7 @@ const CoursesDetails = () => {
     price: "$89.99",
     instructor: "Alex Rivers",
     description:
-      "Learn to build scalable design systems from scratch. This course covers everything from atomic design principles to advanced prototyping in Figma and React.",
+      "Finamsham isn't just a trading course; it's a professional transition. We strip away the retail noise and equip you with the exact framework used by top-tier liquidity providers to identify, execute, and scale high-probability setups.",
   };
 
   return (
@@ -144,7 +144,7 @@ const CoursesDetails = () => {
         </section>
 
         {/* 2. Sticky Tab Navigation - top adjusted for mobile header height if any */}
-        <div className="sticky top-0 lg:top-24 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 container mx-auto">
+        <div className="sticky top-0 lg:top-30 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 container mx-auto">
           <div className="container mx-auto px-4 md:px-6">
             <nav className="flex gap-6 md:gap-8 overflow-x-auto no-scrollbar scroll-smooth">
               {tabs.map((tab) => (
@@ -180,10 +180,12 @@ const CoursesDetails = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 {[
-                  "Build production-ready Figma files",
-                  "Implement atomic design in React",
-                  "Advanced Prototyping techniques",
-                  "Design System documentation",
+                "Master Institutional Liquidity & Order Flow",
+                "Advanced Behavioral Trading Psychology",
+                "Proprietary Risk & Capital Preservation",
+                "Macro-Economic Sentiment Analysis",
+                "High-Frequency Execution Strategies",
+                "Professional Funded Account Management"
                 ].map((skill, i) => (
                   <div
                     key={i}

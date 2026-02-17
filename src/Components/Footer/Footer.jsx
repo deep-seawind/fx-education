@@ -8,7 +8,7 @@ import {
   BiChevronRight, 
   BiSend, 
 } from "react-icons/bi";
-import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/white-logo.jpg";
@@ -125,8 +125,8 @@ const Footer = () => {
 
           {/* Links Grid */}
           <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {Object.entries(footerLinks).map(([title, links]) => (
-              <div key={title}>
+            {Object.entries(footerLinks).map(([title, links, ],index) => (
+              <div key={index}>
                 <h4 className=" font-semibold text-blue-400 capitalize mb-8">
                   {title}
                 </h4>
@@ -152,7 +152,7 @@ const Footer = () => {
         <div className="pt-5 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
          <p className="text-slate-200">
-            © {new Date().getFullYear()} FINANSHAM. All rights reserved. Powered by FinanSham.
+            © {new Date().getFullYear()} FINANSHAM. All rights reserved.
           </p>
 
 
@@ -161,21 +161,21 @@ const Footer = () => {
           {/* Social Cluster */}
           <div className="flex items-center gap-3">
             {[
-              { icon: FaXTwitter, label: "Twitter", links: "https://x.com/" },
+              { icon: FaXTwitter, label: "Twitter", links: "https://x.com/finansham" },
               {
                 icon: FaFacebookF,
                 label: "Facebook",
-                links: "https://www.facebook.com/",
+                links: "https://www.facebook.com/finansham",
               },
               {
-                icon: BiLogoYoutube,
-                label: "YouTube",
-                links: "https://www.youtube.com/",
+                icon: FaLinkedin,
+                label: "Linkedin",
+                links: "https://www.linkedin.com/company/finansham/",
               },
               {
                 icon: BiLogoInstagramAlt,
                 label: "Instagram",
-                links: "https://www.instagram.com/",
+                links: "https://www.instagram.com/finansham/"
               },
             ].map((social) => (
               <Link

@@ -54,7 +54,7 @@ const ModuleAccordion = ({
     <div className="flex items-center gap-4 sm:gap-5 min-w-0">
       {/* Module Icon */}
       <div
-        className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-md flex-shrink-0 ${
+        className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-md shrink-0 ${
           isModuleComplete
             ? "bg-emerald-500 text-white"
             : isOpen
