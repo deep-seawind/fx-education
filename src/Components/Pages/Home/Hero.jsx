@@ -76,7 +76,7 @@ const Hero = () => {
 
                     <div className="flex flex-wrap gap-5">
                       <Link to={"/signup"}>
-                      <button className="flex items-center gap-3 px-10 py-5 bg-slate-900 hover:bg-indigo-600 text-white rounded-2xl font-bold shadow-[0_20px_40px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-1.5 active:scale-95 cursor-pointer">
+                      <button className="flex items-center gap-3 px-10 py-5 bg-color text-white rounded-2xl font-bold shadow-[0_20px_40px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-1.5 active:scale-95 cursor-pointer">
                         Start Learning
                         <BiRightArrowAlt className="text-2xl" />
                       </button>
@@ -84,7 +84,7 @@ const Hero = () => {
 
                       <Link to={"/main-courses"}>
                       <button className="flex items-center gap-3 px-10 py-5 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 cursor-pointer">
-                        <BiPlayCircle className="text-2xl text-indigo-600" />
+                        <BiPlayCircle className="text-2xl text-color" />
                         Explore Courses
                       </button>
                       </Link>

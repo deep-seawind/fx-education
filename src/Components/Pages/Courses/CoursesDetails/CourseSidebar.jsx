@@ -29,7 +29,7 @@ const CourseSidebar = () => {
         {/* Primary Actions */}
         <div className="space-y-3 mb-6 md:mb-8">
             <Link to={"/checkout"}>
-          <button className="w-full py-4 md:py-4 bg-color text-white rounded-2xl text-xl font-semibold tracking-widest shadow-xl shadow-[#0e5da0]/20 hover:-translate-y-1 active:scale-95 transition-all">
+          <button className="w-full py-4 md:py-4 bg-color text-white rounded-2xl text-xl font-semibold tracking-widest shadow-xl shadow-[#0e5da0]/20 hover:-translate-y-1 active:scale-95 transition-all cursor-pointer">
             Enroll Now
           </button>  
           </Link>

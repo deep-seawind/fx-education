@@ -36,12 +36,12 @@ const OrderSummary = () => {
           <div className="space-y-4 mb-8">
             <div className="flex justify-between items-center text-sm font-medium text-slate-400">
               <span>Course Price</span>
-              <span className="text-white line-through">₹799</span>
+              <span className="text-white line-through">₹64,999</span>
             </div>
 
             <div className="flex justify-between items-center text-sm font-medium text-slate-400">
-              <span>Discount (31% Off)</span>
-              <span className="text-emerald-400">-₹250</span>
+              <span>Discount (69% Off)</span>
+              <span className="text-emerald-400">-₹45,000</span>
             </div>
 
             <div className="h-px bg-white/10 w-full" />
@@ -49,7 +49,7 @@ const OrderSummary = () => {
             <div className="flex justify-between items-center">
               <span className="text-lg font-semibold">Total Amount</span>
               <span className="text-3xl font-semibold text-white tracking-tighter">
-                ₹549
+                ₹19,999
               </span>
             </div>
           </div>
@@ -68,8 +68,8 @@ const OrderSummary = () => {
           </div>
 
           {/* Pay Button */}
-          <button className="w-full py-5 bg-[#0e5da0] text-white rounded-4xl font-semibold text-sm uppercase tracking-[0.2em] shadow-2xl shadow-blue-900/40 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3">
-            Pay Now ₹549 <HiOutlineShieldCheck className="text-xl" />
+          <button className="w-full py-5 bg-primary-color text-white rounded-4xl font-semibold uppercase tracking-widest shadow-2xl shadow-blue-900/40 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3">
+            Pay Now ₹19,999 <HiOutlineShieldCheck className="text-xl" />
           </button>
         </div>
       </div>

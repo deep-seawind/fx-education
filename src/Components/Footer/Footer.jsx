@@ -2,8 +2,7 @@ import React from "react";
 // Professional Financial & Interface Icons from BoxIcons and Remix Icon sets
 import {  
   BiMailSend,
-  BiPhoneCall,
-  BiLogoYoutube,
+  BiPhoneCall, 
   BiLogoInstagramAlt,
   BiChevronRight, 
   BiSend, 
@@ -12,9 +11,12 @@ import { FaFacebookF, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/white-logo.png";
+import { motion } from "framer-motion";
+import LoaderImage from "../../assets/logo/loaderimage.webp"
+
 
 const footerLinks = {
-  main: [
+   "Quick Links": [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
     { name: "How It Works", href: "/how-it-works" },
@@ -91,7 +93,7 @@ const Footer = () => {
                   placeholder="Market Newsletter"
                   className="w-full px-5 py-4 bg-slate-900/50 border border-slate-700 rounded-xl focus:outline-none focus:border-indigo-400 transition-all text-sm"
                 />
-                <button className="absolute right-2 top-2 p-2.5 bg-primary-color rounded-lg hover:text-white transition-colors">
+                <button className="absolute right-2 top-2 p-2.5 bg-primary-color rounded-lg hover:text-white transition-colors cursor-pointer">
                   <BiSend />
                 </button>
               </div>
@@ -103,24 +105,41 @@ const Footer = () => {
         <div className="grid lg:grid-cols-5 gap-12 pb-16">
           {/* Brand & Corporate ID */}
           <div className="lg:col-span-1 space-y-8">
-            <div className=" bg-white px-8 rounded-md table">
-              <img src={Logo} alt="" className="w-90 p-2 " />
+            <div className=" bg-white px-2 rounded-md table">
+              <img src={Logo} alt="" className="lg:w-50 w-40 p-2 " />
             </div>
-
             <div className="space-y-4">
+              
+              {/* Email */}
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
                   <BiMailSend className="text-xl group-hover:text-white" />
                 </div>
-                <span className="text-sm font-semibold">info@Finansham.com</span>
+
+                <a
+                  href="mailto:info@finansham.com"
+                  className="text-sm font-semibold hover:text-color transition-colors"
+                >
+                  info@Finansham.com
+                </a>
               </div>
+
+              {/* Phone */}
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
                   <BiPhoneCall className="text-xl group-hover:text-white" />
                 </div>
-                <span className="text-sm font-semibold">+91 123 456 7890</span>
+
+                <a
+                  href="tel:+911234567890"
+                  className="text-sm font-semibold hover:text-color transition-colors"
+                >
+                  +91 123 456 7890
+                </a>
               </div>
+
             </div>
+
           </div>
 
           {/* Links Grid */}
@@ -150,13 +169,39 @@ const Footer = () => {
 
         {/* --- 03. COMPLIANCE & SOCIAL BAR --- */}
         <div className="pt-5 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-         <p className="text-slate-200">
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+
+          {/* Copyright */}
+          <p className="text-slate-200 text-xs sm:text-sm">
             © {new Date().getFullYear()} Finansham Education Private Limited. All rights reserved.
           </p>
 
+          {/* Developer Credit */}
+          <p className="text-slate-400 text-xs sm:text-sm flex flex-wrap items-center justify-center md:justify-start gap-2">
+            
+            <span>Designed & Developed by</span>
 
-          </div>
+            <a
+              href="https://seawindsolution.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:text-color transition-colors"
+            >
+              Seawind Solution Pvt. Ltd.
+            </a>
+
+            <motion.img
+              src={LoaderImage}
+              alt="Logo"
+              className="w-4 h-4 sm:w-5 sm:h-5"
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
+            />
+
+          </p>
+
+        </div> 
 
           {/* Social Cluster */}
           <div className="flex items-center gap-3">

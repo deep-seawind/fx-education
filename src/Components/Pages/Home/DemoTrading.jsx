@@ -55,7 +55,7 @@ const stagger = {
 
 const DemoTrading = () => {
   return (
-    <section id="demo-trading" className="lg:py-24 py-16 bg-[#F8FAFC] overflow-hidden">
+    <section id="demo-trading" className="lg:py-24 py-8 bg-[#F8FAFC] overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content Side */}
@@ -129,7 +129,7 @@ const DemoTrading = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
             <div className="bg-white/80 backdrop-blur-xl lg:rounded-[3.5rem] rounded-4xl shadow-[0_50px_100px_-20px_rgba(79,70,229,0.15)] border border-white lg:p-10 p-5 relative overflow-hidden">
-              <div className="h-150 rounded-2xl overflow-hidden bg-white">
+              <div className="md:h-150 rounded-2xl overflow-hidden bg-white">
                 <TradingChartsTabs />
               </div>
             </div>

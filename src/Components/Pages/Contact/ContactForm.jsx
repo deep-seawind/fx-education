@@ -21,7 +21,7 @@ const ContactForm = () => {
   `;
 
   return (
-    <div className="py-20 px-4 bg-slate-200/50 min-h-screen">
+    <div className="py-20 px-4 bg-slate-200/50">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -57,31 +57,7 @@ const ContactForm = () => {
           className="relative z-10 space-y-8"
           onSubmit={(e) => e.preventDefault()}
         >
-          {/* Subject Selection Tags */}
-          <div className="space-y-4">
-            <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">
-              Select Department
-            </span>
-            <div className="flex flex-wrap gap-3">
-              {["General Inquiry", "Funded Accounts", "Technical Support"].map(
-                (tag) => (
-                  <button
-                    key={tag}
-                    type="button"
-                    onClick={() => setSelectedTag(tag)}
-                    className={`px-6 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-300 border
-                    ${
-                      selectedTag === tag
-                        ? "bg-slate-900 border-slate-900 text-white shadow-lg"
-                        : "bg-white border-slate-100 text-slate-400 hover:border-slate-300"
-                    }`}
-                  >
-                    {tag}
-                  </button>
-                )
-              )}
-            </div>
-          </div>
+  
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Name Field */}

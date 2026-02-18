@@ -8,6 +8,7 @@ import {
 import AboutUs from "../../../assets/about-us/about-us.avif";
 import AboutBanner from "../../../assets/about-us/about-us-background.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   const fadeUp = {
@@ -27,7 +28,7 @@ const AboutPage = () => {
   return (
     <div className="bg-[#fcfcfd] overflow-hidden">
       {/* --- Section 1: Hero Context --- */}
-      <section className="py-16 relative">
+      <section className="lg:py-16 py-8 relative">
         {/* Modernist Geometric Decorations */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-indigo-50/40 to-transparent -z-10" />
         <div className="absolute top-20 left-10 w-64 h-64 bg-blue-100/30 rounded-full blur-3xl animate-pulse" />
@@ -91,9 +92,12 @@ const AboutPage = () => {
 
               {/* Action Group */}
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-color text-white rounded-2xl font-semibold flex items-center gap-2 hover:bg-indigo-700 transition-all hover:shadow-xl hover:shadow-indigo-200">
-                  Explore Programs <BiChevronRight className="text-xl" />
+
+                <Link to={"/about-us"}>
+                <button className="px-8 py-4 bg-color text-white rounded-2xl font-semibold flex items-center gap-2 hover:bg-indigo-700 transition-all hover:shadow-xl hover:shadow-indigo-200 cursor-pointer">
+                  Know More <BiChevronRight className="text-xl" />
                 </button>
+                </Link>
                 <div className="flex -space-x-3 items-center ml-4">
                   {[1, 2, 3, 4].map((i) => (
                     <div
@@ -127,7 +131,7 @@ const AboutPage = () => {
                 <img
                   src={AboutUs}
                   alt="Trading"
-                  className="w-full h-100 object-cover  transition-transform duration-1000"
+                  className="w-full lg:h-100 h-80 object-cover  transition-transform duration-1000"
                 />
               </div>
             </motion.div>
@@ -137,7 +141,7 @@ const AboutPage = () => {
  
 
       {/* --- Section 3: Numbers Achievement (The Clean Institutional Grid) --- */}
-      <section className="bg-white py-16 px-2 lg:px-0">
+      <section className="bg-white lg:py-16 py-4 px-2 lg:px-0">
         <div className="container mx-auto ">
           <motion.div
             variants={fadeUp}
@@ -164,7 +168,7 @@ const AboutPage = () => {
 
               <div className="grid lg:grid-cols-12 gap-16 items-center relative z-20">
                 <div className="lg:col-span-6">
-                  <h2 className="text-4xl lg:text-5xl font-semibold text-white mb-8 tracking-tighter">
+                  <h2 className="text-2xl lg:text-5xl font-semibold text-white mb-8 tracking-tighter">
                     Quantifying our
                     <span className="text-color ps-2">
                       Institutional Impact.
@@ -209,7 +213,7 @@ const AboutPage = () => {
                   ].map((stat) => (
                     <div
                       key={stat.label}
-                      className="group relative bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:border-indigo-500/50 hover:bg-white/10 transition-all duration-500 overflow-hidden"
+                      className="group relative bg-white/5 backdrop-blur-md lg:p-8 p-4 rounded-2xl border border-white/10 hover:border-indigo-500/50 hover:bg-white/10 transition-all duration-500 overflow-hidden"
                     >
                       <div className="absolute inset-0 bg-linear-to-br from-indigo-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -217,10 +221,10 @@ const AboutPage = () => {
                         <div className="text-3xl mb-4 group-hover:scale-110 transition-transform bg-primary-color table rounded p-1">
                           {stat.icon}
                         </div>
-                        <div className="text-3xl font-semibold text-white mb-1 tracking-tighter">
+                        <div className="lg:text-3xl text-xl font-semibold text-white mb-1 tracking-tighter">
                           {stat.val}
                         </div>
-                        <div className="text-[10px] font-semibold text-slate-200 uppercase tracking-[0.2em] group-hover:text-slate-300">
+                        <div className="text-[10px] font-semibold text-slate-200 tracking-widest group-hover:text-slate-300">
                           {stat.label}
                         </div>
                       </div>

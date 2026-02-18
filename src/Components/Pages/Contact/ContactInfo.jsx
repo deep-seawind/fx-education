@@ -6,7 +6,8 @@ import {
   HiOutlineChatAlt2,
 } from "react-icons/hi";
 import { SiWhatsapp } from "react-icons/si";
-import { SiInstagram, SiYoutube, SiFacebook, SiX } from "react-icons/si";
+import { SiInstagram, SiFacebook, SiX } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 
 const ContactInfo = () => {
 
@@ -14,64 +15,65 @@ const contactMethods = [
   {
     icon: <HiOutlineMail />,
     title: "Email Dispatch",
-    detail: "info@Finansham.com",
-    desc: "Response within 2 hours",
+    detail: "info@Finansham.com", 
     color: "bg-blue-500",
     isFullWidth: false,
   },
   {
     icon: <HiOutlineChatAlt2 />,
     title: "Live Chat Desk",
-    detail: "24/5 Trading Support",
-    desc: "Instant help from our analysts",
+    detail: "24/5 Trading Support", 
     color: "bg-indigo-500",
     isFullWidth: false,
   },
   {
     icon: <SiWhatsapp />,
     title: "WhatsApp Direct",
-    detail: "+91 123 456 7890",
-    desc: "For enrollment queries",
+    detail: "+91 123 456 7890", 
     color: "bg-emerald-500",
     isFullWidth: false,
   },
   {
     icon: <HiOutlineLocationMarker />,
     title: "Corporate Headquarters",
-    detail: "Mondeal Heights, B-1103, near Novotel Hotel, Ramdev Nagar, Ahmedabad, Gujarat 380015",
-    desc: "Visit our trading floor",
+    detail: "B-1103, Mondeal Heights, Near Novotel Hotel, SG Highway, Ahmedabad, Gujarat, 380015.", 
     color: "bg-[#0e5da0]",
     isFullWidth: true,
     isDark: true,
   },
 ];
 
-  const socialLinks = [
-    {
-      icon: <SiInstagram />,
-      color: "hover:text-[#E1306C]",
-      bg: "hover:bg-[#E1306C]/10",
-      border: "hover:border-[#E1306C]/30",
-    },
-    {
-      icon: <SiYoutube />,
-      color: "hover:text-[#FF0000]",
-      bg: "hover:bg-[#FF0000]/10",
-      border: "hover:border-[#FF0000]/30",
-    },
-    {
-      icon: <SiFacebook />,
-      color: "hover:text-[#1877F2]",
-      bg: "hover:bg-[#1877F2]/10",
-      border: "hover:border-[#1877F2]/30",
-    },
-    {
-      icon: <SiX />,
-      color: "hover:text-black",
-      bg: "hover:bg-black/5",
-      border: "hover:border-black/30",
-    },
-  ];
+ const socialLinks = [
+  {
+    icon: <SiInstagram />,
+    url: "https://www.instagram.com/Finansham/",
+    color: "hover:text-[#E1306C]",
+    bg: "hover:bg-[#E1306C]/10",
+    border: "hover:border-[#E1306C]/30",
+  },
+  {
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/company/finansham/",
+    color: "hover:text-[#FF0000]",
+    bg: "hover:bg-[#FF0000]/10",
+    border: "hover:border-[#FF0000]/30",
+  },
+  {
+    icon: <SiFacebook />,
+    url: "https://www.facebook.com/finansham/",
+    color: "hover:text-[#1877F2]",
+    bg: "hover:bg-[#1877F2]/10",
+    border: "hover:border-[#1877F2]/30",
+  },
+  {
+    icon: <SiX />,
+    url: "https://x.com/Finansham",
+    color: "hover:text-black",
+    bg: "hover:bg-black/5",
+    border: "hover:border-black/30",
+  },
+];
+
 
   return (
     <section className="pb-20 overflow-hidden">
@@ -92,22 +94,26 @@ const contactMethods = [
                 programs? Our team is active 24/5 during market hours.
               </p>
 
-              <div className="flex gap-4">
-                {socialLinks.map((item, i) => (
-                  <motion.button
-                    key={i}
-                    whileHover={{ y: -4 }}
-                    whileTap={{ scale: 0.95 }}
-                    className={`
-            w-12 h-12 flex items-center justify-center rounded-2xl border border-slate-200 
-            text-slate-400 transition-all duration-300 
-            ${item.color} ${item.bg} ${item.border}
-          `}
-                  >
-                    <span className="text-xl">{item.icon}</span>
-                  </motion.button>
-                ))}
-              </div>
+             <div className="flex gap-4">
+  {socialLinks.map((item, i) => (
+    <motion.a
+      key={i}
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ y: -4 }}
+      whileTap={{ scale: 0.95 }}
+      className={`
+        w-12 h-12 flex items-center justify-center rounded-2xl border border-slate-200 
+        text-slate-400 transition-all duration-300 cursor-pointer
+        ${item.color} ${item.bg} ${item.border}
+      `}
+    >
+      <span className="text-xl">{item.icon}</span>
+    </motion.a>
+  ))}
+</div>
+
             </motion.div>
           </div>
 
@@ -132,10 +138,7 @@ const contactMethods = [
                 </h4>
                 <p className="text-xl font-semibold text-slate-900 mb-2">
                   {method.detail}
-                </p>
-                <p className="text-sm text-slate-500 font-medium">
-                  {method.desc}
-                </p>
+                </p> 
               </motion.div>
             ))}
           </div>

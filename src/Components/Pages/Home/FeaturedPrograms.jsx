@@ -8,6 +8,7 @@ import {
   BiCheckCircle,
 } from "react-icons/bi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const programs = [
   {
@@ -178,13 +179,16 @@ const FeaturedPrograms = () => {
                   <BiTimeFive className="text-lg text-indigo-500" />
                   {program.duration}
                 </div>
+
+                <Link to={"/course-details"}>
                 <motion.button
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-12 h-12 rounded-full bg-color text-white flex items-center justify-center group-hover:bg-color transition-all"
+                  className="w-12 h-12 rounded-full bg-color text-white flex items-center justify-center group-hover:bg-color transition-all cursor-pointer"
                 >
                   <BiRightArrowAlt className="text-2xl" />
                 </motion.button>
+                </Link>
               </div>
             </motion.div>
           ))}

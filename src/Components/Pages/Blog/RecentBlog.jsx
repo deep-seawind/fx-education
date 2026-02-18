@@ -70,10 +70,7 @@ const RecentBlog = () => {
             </Link>
           ))}
         </div>
-
-        <button className="w-full mt-8 py-4 border-2 border-slate-100 rounded-2xl text-xs font-semibold uppercase tracking-widest text-slate-400  bg-color hover:text-white   transition-all">
-          View Newsroom
-        </button>
+ 
       </div>
     </div>
   );

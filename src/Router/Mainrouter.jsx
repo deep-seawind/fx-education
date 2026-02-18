@@ -28,7 +28,7 @@ import RecruitmentFramework from "../Components/Pages/RecruitmentFramework/Recru
 const Mainrouter = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/finansham">
         <GoogleTranslate/>
         <ScrollToTop />
         <BottomToTopButton />

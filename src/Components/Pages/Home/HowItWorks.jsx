@@ -86,7 +86,7 @@ const HowItWorks = () => {
   return (
     <section
       id="how-it-works"
-      className="py-24 lg:py-10 bg-zinc-100 relative overflow-hidden"
+      className="py-4 lg:py-10 bg-zinc-100 relative overflow-hidden"
     > 
 
       <div className="container mx-auto px-6 relative z-10">
@@ -201,7 +201,7 @@ const HowItWorks = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="bg-slate-900 rounded-3xl p-8 md:p-12 w-full max-w-5xl relative overflow-hidden shadow-2xl shadow-indigo-200">
+          <div className="bg-slate-900 rounded-3xl p-4 md:p-12 w-full max-w-5xl relative overflow-hidden shadow-2xl shadow-indigo-200">
             <div className="absolute top-0 right-0 p-8 opacity-10">
               <BiRocket className="text-9xl text-white" />
             </div>

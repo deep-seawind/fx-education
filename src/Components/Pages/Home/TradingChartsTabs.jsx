@@ -15,7 +15,7 @@ const TradingChartsTabs = () => {
   const [activeTab, setActiveTab] = useState(charts[0].symbol);
 
   return (
-    <div className="min-h-screen  ">
+    <div className="md:min-h-screen  ">
       <div className=" mx-auto">
         {/* Header Section */}
         <div className=" mb-10 gap-4">
@@ -59,7 +59,7 @@ const TradingChartsTabs = () => {
           key={activeTab}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="relative bg-white p-2 rounded-4xl shadow-2xl shadow-blue-100/50 border border-white"
+          className="relative bg-white md:p-2 rounded-4xl shadow-2xl shadow-blue-100/50 border border-white"
         >
    
 
@@ -73,7 +73,7 @@ const TradingChartsTabs = () => {
                     src={`https://s.tradingview.com/widgetembed/?symbol=${
                       chart.symbol
                     }&interval=60&theme=light&hidesidetoolbar=1&hideideas=1&style=1&timezone=Etc%2FUTC`}
-                    className="w-full h-125 md:h-150"
+                    className="w-full h-80 md:h-150"
                     frameBorder="0"
                     scrolling="no"
                   />

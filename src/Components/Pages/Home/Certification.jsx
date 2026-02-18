@@ -37,7 +37,7 @@ const CertificationUI = () => {
   return (
     <section
       id="certifications"
-      className="py-24 lg:py-16 bg-[#020617] relative overflow-hidden"
+      className="py-8 lg:py-16 bg-[#020617] relative overflow-hidden"
     >
       {/* Dynamic Background Glows */}
       <div className="absolute top-0 -left-20 w-150 h-150 bg-indigo-500/10 rounded-full blur-[140px] pointer-events-none" />
@@ -50,20 +50,20 @@ const CertificationUI = () => {
             {/* Background Decorative Frame */}
             <div className="absolute top-6 left-6 w-full h-full border border-slate-200 rounded-[3rem] -z-10 bg-white" />
 
-            <div className="bg-white rounded-[3rem] p-12 shadow-[0_30px_80px_rgba(15,23,42,0.12)] border border-slate-200 relative group overflow-hidden">
+            <div className="bg-white rounded-[3rem] lg:p-12 p-5 shadow-[0_30px_80px_rgba(15,23,42,0.12)] border border-slate-200 relative group overflow-hidden">
               {/* Subtle Pattern Overlay */}
               <div className="absolute inset-0 opacity-[0.04] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/paper-fibers.png')]" />
 
               {/* Header */}
-              <div className="flex justify-between items-start mb-16 relative">
+              <div className="flex justify-between items-start lg:mb-16 mb-8 relative">
                 <div className="space-y-1">
                   <div className="flex items-center gap-2 text-[#0e5da0] mb-2">
                     <BiShieldQuarter className="text-2xl" />
-                    <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">
+                    <span className="text-[10px] font-semibold tracking-[0.3em]">
                       Official Credentials
                     </span>
                   </div>
-                  <h3 className="text-2xl font-semibold text-slate-900 tracking-tighter">
+                  <h3 className="lg:text-2xl font-semibold text-slate-900 tracking-tighter">
                     Board of Governors
                   </h3>
                 </div>
@@ -75,11 +75,11 @@ const CertificationUI = () => {
 
               {/* Awarded To */}
               <div className="mb-20 relative">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
+                <p className="text-xs font-semibold text-slate-500 tracking-widest mb-4">
                   Awarded To
                 </p>
                 <div className="relative inline-block">
-                  <h4 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tighter">
+                  <h4 className="text-2xl md:text-5xl font-semibold text-slate-900 tracking-tighter">
                     Alexander Pierce
                   </h4>
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-linear-to-r from-[#0e5da0] to-transparent rounded-full" />
@@ -87,7 +87,7 @@ const CertificationUI = () => {
               </div>
 
               {/* Level */}
-              <div className="flex items-center gap-6 mb-16">
+              <div className="flex items-center gap-6 lg:mb-16 mb-8">
                 <div className="px-5 py-2 rounded-full bg-[#0e5da0] text-white text-xs font-semibold tracking-widest uppercase shadow">
                   Level 04 Certified
                 </div>
