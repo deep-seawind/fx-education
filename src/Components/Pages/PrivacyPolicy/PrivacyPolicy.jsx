@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
               </div>
               <div className="flex flex-col">
                 <span style={{ color: brandBlue }} className="text-[10px] font-semibold tracking-[0.5em] uppercase">
-                  FINANSHAM Compliance
+                  Finansham Compliance
                 </span>
                 <span className="text-[9px] text-slate-400 font-bold uppercase tracking-widest mt-1">ISO 27001 Certified Standards</span>
               </div>
@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
               Data <span className="text-transparent bg-clip-text bg-linear-to-r from-[#0e5da0] to-blue-400">Governance</span>
             </h1>
             <p className="text-slate-500 text-xl max-w-2xl font-medium leading-relaxed">
-              As a premier financial education institute, FINANSHAM ensures that your academic and financial records are protected by the same encryption standards used by global banking institutions.
+              As a premier financial education institute, Finansham ensures that your academic and financial records are protected by the same encryption standards used by global banking institutions.
             </p>
           </div>
         </div>
@@ -94,12 +94,12 @@ const PrivacyPolicy = () => {
                 </div>
                 <div className="prose prose-xl max-w-none text-slate-600 font-medium leading-relaxed">
                   <p className="mb-8">
-                    The <strong>National Institute of Financial Education & Skill Development (FINANSHAM)</strong> recognizes the sensitivity of financial learning data. This policy establishes the global standards by which student, faculty, and stakeholder information is managed.
+                    The <strong>National Institute of Financial Education & Skill Development (Finansham)</strong> recognizes the sensitivity of financial learning data. This policy establishes the global standards by which student, faculty, and stakeholder information is managed.
                   </p>
                   <div className={`p-10 border-l-[6px] rounded-r-[3rem] bg-slate-900 text-white shadow-2xl relative overflow-hidden`} style={{ borderColor: brandBlue }}>
                     <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl rounded-full" />
                     <p className="italic text-lg font-light leading-relaxed relative z-10 text-blue-100">
-                      "Empowering financial literacy requires a foundation of absolute transparency. At FINANSHAM, your data privacy is our primary regulatory obligation."
+                      "Empowering financial literacy requires a foundation of absolute transparency. At Finansham, your data privacy is our primary regulatory obligation."
                     </p>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
                     <div className="md:w-2/3">
                         <h2 className="text-4xl font-semibold mb-8 leading-none">Financial-Grade <br/>Security Protocol</h2>
                         <p className="text-xl font-light leading-relaxed opacity-90">
-                          FINANSHAM utilizes **Military-Grade AES-256 Encryption** for all stored data. Our servers are monitored 24/7 by cyber-security experts to prevent unauthorized access and ensure your financial skill-building journey remains a secure sanctuary.
+                          Finansham utilizes **Military-Grade AES-256 Encryption** for all stored data. Our servers are monitored 24/7 by cyber-security experts to prevent unauthorized access and ensure your financial skill-building journey remains a secure sanctuary.
                         </p>
                     </div>
                     <div className="md:w-1/3 flex justify-center">

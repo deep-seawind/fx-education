@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { BiMenu, BiX, BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo/logo.png";
+import Logo from "../../assets/logo/white-logo.png";
 import { AiFillHome } from "react-icons/ai";
 
 const navItems = [
   { name: "About Us", href: "/about-us" },
   { name: "How It Works", href: "/how-it-works" },
   { name: "Courses", href: "/main-courses" },
-  { name: "FINANSHAM Examination", href: "/recruitment" },
+  { name: "Finansham Examination", href: "/recruitment" },
   { name: "Blog", href: "/blog" },
   { name: "Contact Us", href: "/contact" },
 ];
@@ -40,7 +40,7 @@ const Header = () => {
             <img
               src={Logo}
               alt=""
-              className="h-16 sm:h-20 lg:h-28 w-auto object-contain"
+              className="h-16 sm:h-20 lg:h-24 xl:h-24 2xl:h-28 w-auto object-contain"
             />
           </Link>
 
@@ -58,7 +58,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className="px-4 py-2 font-semibold  hover:text-[#135f9b] rounded-full hover:bg-slate-50 transition-all duration-200 text-sm"
+                className="2xl:px-4 xl:px-3 py-2 px-4 font-semibold  hover:text-[#135f9b] rounded-full hover:bg-slate-50 transition-all duration-200 text-sm"
               >
                 {item.name}
               </Link>
@@ -127,7 +127,7 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                  <BiChevronRight className="w-4 h-4 opacity-50" />
+                  
                 </a>
               ))}
               <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-slate-50">

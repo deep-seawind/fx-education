@@ -26,7 +26,7 @@ const CheckoutLogin = () => {
             <p className="text-[15px] leading-relaxed text-slate-500 font-medium">
               A{" "}
               <span className="text-slate-900 font-semibold">
-                Forex Mastery account
+                TradingMastery account
               </span>{" "}
               is required to access your purchased courses. Please verify that
               your email address is correct, as we’ll use it to send your order

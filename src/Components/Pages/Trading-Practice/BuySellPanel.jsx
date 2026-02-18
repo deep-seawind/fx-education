@@ -6,7 +6,7 @@ import { HiOutlineLightningBolt } from "react-icons/hi";
 
 const BuySellPanel = () => {
   const { buy, sell, currentPrice } = useTrading();
-  const [qty, setQty] = useState(1); // Standard Forex Micro-lot
+  const [qty, setQty] = useState(1); // Standard TradingMicro-lot
   const [livePrice, setLivePrice] = useState(currentPrice);
   const [priceColor, setPriceColor] = useState("text-white");
 

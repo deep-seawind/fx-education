@@ -103,7 +103,7 @@ const FeaturedPrograms = () => {
           className="text-center mb-20"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-[0.2em] uppercase text-color bg-indigo-50 rounded-full">
-            FINANSHAM Curriculum
+            Finansham Curriculum
           </span>
           <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6 tracking-tight">
             Industry-Leading Finance Courses

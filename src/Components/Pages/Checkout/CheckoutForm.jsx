@@ -185,7 +185,7 @@ const ForexCheckoutForm = () => {
           </div>
         </div>
 
-        {/* Forex Mastery Custom Legal Note */}
+        {/* TradingMastery Custom Legal Note */}
         <div className="mt-10 p-5 rounded-3xl bg-blue-50/40 border border-blue-100 flex gap-4">
           <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
             <HiOutlineInformationCircle className="text-[#0e5da0] text-lg" />

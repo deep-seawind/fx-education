@@ -27,7 +27,7 @@ const OrderSummary = () => {
                 Beginner 2026
               </p>
               <h4 className="font-semibold text-sm leading-snug">
-                Forex Trading Mastery: MT4/MT5 Strategy
+                TradingTrading Mastery: MT4/MT5 Strategy
               </h4>
             </div>
           </div>

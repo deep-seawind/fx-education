@@ -52,10 +52,10 @@ const AboutPage = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-semibold text-slate-900 tracking-tighter mb-8 leading-[1.1]">
+              <h1 className="text-3xl lg:text-5xl font-semibold text-slate-900 tracking-tighter mb-8 leading-[1.1]">
                 We are redefining
                 <span className="relative ms-4">
-                  <span className="relative z-10 text-color italic font-serif">
+                  <span className="relative z-10 text-color italic">
                     Institutional
                   </span>
                   <svg

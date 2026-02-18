@@ -14,7 +14,7 @@ const contactMethods = [
   {
     icon: <HiOutlineMail />,
     title: "Email Dispatch",
-    detail: "support@FINANSHAM.com",
+    detail: "info@Finansham.com",
     desc: "Response within 2 hours",
     color: "bg-blue-500",
     isFullWidth: false,
@@ -30,7 +30,7 @@ const contactMethods = [
   {
     icon: <SiWhatsapp />,
     title: "WhatsApp Direct",
-    detail: "+91 98765 43210",
+    detail: "+91 123 456 7890",
     desc: "For enrollment queries",
     color: "bg-emerald-500",
     isFullWidth: false,
@@ -38,7 +38,7 @@ const contactMethods = [
   {
     icon: <HiOutlineLocationMarker />,
     title: "Corporate Headquarters",
-    detail: "Financial District, Mumbai, MH 400051",
+    detail: "Mondeal Heights, B-1103, near Novotel Hotel, Ramdev Nagar, Ahmedabad, Gujarat 380015",
     desc: "Visit our trading floor",
     color: "bg-[#0e5da0]",
     isFullWidth: true,

@@ -39,7 +39,7 @@ const ProcessShowcase = () => {
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]">
               <img
                 src={Image_1}
-                alt="Forex Terminal"
+                alt="TradingTerminal"
                 className="w-full h-100 object-cover"
               />
               <div className="absolute bottom-6 left-6 p-4 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl">

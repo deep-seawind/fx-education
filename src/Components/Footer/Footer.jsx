@@ -11,7 +11,7 @@ import {
 import { FaFacebookF, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo/white-logo.jpg";
+import Logo from "../../assets/logo/white-logo.png";
 
 const footerLinks = {
   main: [
@@ -104,7 +104,7 @@ const Footer = () => {
           {/* Brand & Corporate ID */}
           <div className="lg:col-span-1 space-y-8">
             <div className=" bg-white px-8 rounded-md table">
-              <img src={Logo} alt="" className="w-24 p-2 " />
+              <img src={Logo} alt="" className="w-90 p-2 " />
             </div>
 
             <div className="space-y-4">
@@ -112,7 +112,7 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
                   <BiMailSend className="text-xl group-hover:text-white" />
                 </div>
-                <span className="text-sm font-semibold">support@FINANSHAM.com</span>
+                <span className="text-sm font-semibold">info@Finansham.com</span>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center group-hover:bg-color transition-all">
@@ -152,7 +152,7 @@ const Footer = () => {
         <div className="pt-5 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
          <p className="text-slate-200">
-            © {new Date().getFullYear()} FINANSHAM. All rights reserved.
+            © {new Date().getFullYear()} Finansham Education Private Limited. All rights reserved.
           </p>
 
 
@@ -161,21 +161,21 @@ const Footer = () => {
           {/* Social Cluster */}
           <div className="flex items-center gap-3">
             {[
-              { icon: FaXTwitter, label: "Twitter", links: "https://x.com/finansham" },
+              { icon: FaXTwitter, label: "Twitter", links: "https://x.com/Finansham" },
               {
                 icon: FaFacebookF,
                 label: "Facebook",
-                links: "https://www.facebook.com/finansham",
+                links: "https://www.facebook.com/Finansham",
               },
               {
                 icon: FaLinkedin,
                 label: "Linkedin",
-                links: "https://www.linkedin.com/company/finansham/",
+                links: "https://www.linkedin.com/company/Finansham/",
               },
               {
                 icon: BiLogoInstagramAlt,
                 label: "Instagram",
-                links: "https://www.instagram.com/finansham/"
+                links: "https://www.instagram.com/Finansham/"
               },
             ].map((social) => (
               <Link

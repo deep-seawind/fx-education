@@ -9,7 +9,7 @@ const Checkout = () => {
   const loggedIn = isLoggedIn();
   return (
     <>
-      <Breadcrumbs paths={["Home", "Forex Mastery", "Checkout"]} />
+      <Breadcrumbs paths={["Home", "TradingMastery", "Checkout"]} />
       <div className="min-h-screen bg-[#FDFEFF] text-slate-900 font-sans selection:bg-[#0e5da0]/10">
         <div className="max-w-7xl mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-16 items-start">

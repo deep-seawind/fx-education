@@ -108,14 +108,14 @@ const RecruitmentJourney = () => {
             className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-blue-50 text-color mb-6"
           >
             <HiOutlineSparkles className="text-sm" />
-            <span className="text-[10px] font-bold uppercase tracking-widest">FINANSHAM Recruitment Framework</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest">Finansham Recruitment Framework</span>
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tighter mb-6 leading-tight">
             90-Day Professional Certification <br />
             <span className="text-color italic ">& Examination Journey.</span>
           </h2>
           <p className="text-slate-500 max-w-3xl mx-auto text-lg leading-relaxed">
-            This document outlines the structured examination, evaluation, and recruitment framework applicable to candidates at <span className="text-slate-900 font-bold tracking-tight">FINANSHAM</span>.
+            This document outlines the structured examination, evaluation, and recruitment framework applicable to candidates at <span className="text-slate-900 font-bold tracking-tight">Finansham</span>.
           </p>
         </div>
 

@@ -20,7 +20,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Fund Manager at Radiant Global", 
     content:
-      "FINANSHAM transformed my career. The structured learning path and demo trading simulator gave me the confidence to manage real portfolios. Within 6 months, I secured a position at Radiant Global Fund.",
+      "Finansham transformed my career. The structured learning path and demo trading simulator gave me the confidence to manage real portfolios. Within 6 months, I secured a position at Radiant Global Fund.",
     rating: 5,
     verified: true,
   },
@@ -36,7 +36,7 @@ const testimonials = [
     name: "Ananya Patel",
     role: "Portfolio Manager", 
     content:
-      "What sets FINANSHAM apart is their placement support. The QR-verifiable certificates are recognized industry-wide, and the career guidance helped me land my dream job.",
+      "What sets Finansham apart is their placement support. The QR-verifiable certificates are recognized industry-wide, and the career guidance helped me land my dream job.",
     rating: 5,
     verified: true,
   },
@@ -44,7 +44,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Fund Manager at Radiant Global", 
     content:
-      "FINANSHAM transformed my career. The structured learning path and demo trading simulator gave me the confidence to manage real portfolios. Within 6 months, I secured a position at Radiant Global Fund.",
+      "Finansham transformed my career. The structured learning path and demo trading simulator gave me the confidence to manage real portfolios. Within 6 months, I secured a position at Radiant Global Fund.",
     rating: 5,
     verified: true,
   },
@@ -60,7 +60,7 @@ const testimonials = [
     name: "Ananya Patel",
     role: "Portfolio Manager", 
     content:
-      "What sets FINANSHAM apart is their placement support. The QR-verifiable certificates are recognized industry-wide, and the career guidance helped me land my dream job.",
+      "What sets Finansham apart is their placement support. The QR-verifiable certificates are recognized industry-wide, and the career guidance helped me land my dream job.",
     rating: 5,
     verified: true,
   },

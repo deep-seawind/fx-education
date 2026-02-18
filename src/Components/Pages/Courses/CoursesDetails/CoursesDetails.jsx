@@ -79,7 +79,7 @@ const CoursesDetails = () => {
 
           <div className="container mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             
-            {/* Left Content: Forex Course Details */}
+            {/* Left Content: TradingCourse Details */}
             <div className="order-2 lg:order-1">
               <div className="flex flex-wrap items-center gap-3 mb-6">
                 <span className="px-3 py-1 rounded-lg bg-orange-100 text-orange-700 text-[10px] font-semibold uppercase tracking-widest shadow-sm border border-orange-200">
@@ -95,7 +95,7 @@ const CoursesDetails = () => {
               </h1>
 
               <p className="text-lg text-slate-600 mb-8 leading-relaxed   font-medium">
-                Learn Forex trading with 85% Accuracy: High-probability 
+                Learn Tradingtrading with 85% Accuracy: High-probability 
                 <span className="text-slate-900 font-semibold"> Live setups </span> 
                 on TradingView + MT4/MT5 strategies designed for 2026 markets.
               </p>
@@ -130,7 +130,7 @@ const CoursesDetails = () => {
                 <img
                   src="https://images.unsplash.com/photo-1713461983836-de0a45009424?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTk5fHx0cmFkaW5nfGVufDB8fDB8fHww"
                   className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105"
-                  alt="Forex Trading Setup"
+                  alt="TradingTrading Setup"
                 />
                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/40 transition-all flex items-center justify-center">
                   <div className="relative">

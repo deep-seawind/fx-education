@@ -5,7 +5,7 @@ import BreadcrumbBanner from "../../assets/banner/breadcrumb-banner.jpg";
 import { Link } from "react-router-dom";
 
 const Breadcrumbs = ({
-  paths = ["Forex Academy", "Institutional Flow", "Order Blocks"],
+  paths = ["TradingAcademy", "Institutional Flow", "Order Blocks"],
 }) => {
   return (
     <section className="relative w-full flex flex-col items-center justify-center pt-34 pb-18 px-4 sm:px-6 overflow-hidden min-h-55">
@@ -14,7 +14,7 @@ const Breadcrumbs = ({
           className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
           style={{ backgroundImage: `url(${BreadcrumbBanner})` }}
         />
-        <div className="absolute inset-0 bg-linear-to-b from-white via-white/80 to-white backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-linear-to-b from-white via-white/90 to-white backdrop-blur-[1px]" />
 
         <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"

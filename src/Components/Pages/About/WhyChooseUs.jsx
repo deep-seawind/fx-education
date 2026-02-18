@@ -6,7 +6,7 @@ import {
   HiOutlineShieldCheck,
   HiOutlineUserGroup,
 } from "react-icons/hi2";
-import Logo from "../../../assets/logo/white-logo.jpg";
+import Logo from "../../../assets/logo/white-logo.png";
 
 const WhyChooseUs = () => {
   const brandColor = "#0e5da0";
